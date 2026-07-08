@@ -10,6 +10,72 @@ import plotly.graph_objects as go
 from periods import DEFAULT_PERIOD_END, DEFAULT_PERIOD_SIZE, DEFAULT_PERIOD_START, build_periods, period_bounds
 
 
+def _period_axis_artifacts(
+    period_order: dict[str, int],
+    x_start: float,
+    x_end: float,
+    y_axis: float,
+    y_label: float,
+    label_prefix: str = "",
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    if not period_order:
+        return [], []
+
+    denom = max(len(period_order) - 1, 1)
+    tick_positions = {
+        period: x_start + (x_end - x_start) * (idx / denom)
+        for period, idx in period_order.items()
+    }
+    axis_shapes: list[dict[str, object]] = [
+        {
+            "type": "line",
+            "xref": "paper",
+            "yref": "paper",
+            "x0": x_start,
+            "x1": x_end,
+            "y0": y_axis,
+            "y1": y_axis,
+            "line": {"color": "rgba(51,65,85,0.55)", "width": 1.5},
+        }
+    ]
+    axis_annotations: list[dict[str, object]] = [
+        {
+            "xref": "paper",
+            "yref": "paper",
+            "x": (x_start + x_end) / 2,
+            "y": y_label - 0.045,
+            "text": f"{label_prefix}Period".strip(),
+            "showarrow": False,
+            "font": {"size": 13, "color": "#334155"},
+        }
+    ]
+    for period, x_pos in tick_positions.items():
+        axis_shapes.append(
+            {
+                "type": "line",
+                "xref": "paper",
+                "yref": "paper",
+                "x0": x_pos,
+                "x1": x_pos,
+                "y0": y_axis,
+                "y1": y_axis + 0.018,
+                "line": {"color": "rgba(51,65,85,0.55)", "width": 1.5},
+            }
+        )
+        axis_annotations.append(
+            {
+                "xref": "paper",
+                "yref": "paper",
+                "x": x_pos,
+                "y": y_label,
+                "text": period,
+                "showarrow": False,
+                "font": {"size": 13, "color": "#0f172a"},
+            }
+        )
+    return axis_annotations, axis_shapes
+
+
 def count_by_topic_period(tagged_df: pd.DataFrame) -> dict[tuple[str, str], int]:
     grouped = tagged_df.groupby(["topic", "period"]).size()
     return {(topic, period): int(count) for (topic, period), count in grouped.items()}
@@ -223,12 +289,20 @@ def render_sankey(nodes_df: pd.DataFrame, edges_df: pd.DataFrame, output_path: P
         }
         for period, idx in period_order.items()
     ]
+    axis_annotations, axis_shapes = _period_axis_artifacts(
+        period_order=period_order,
+        x_start=0.001 if len(period_order) == 1 else 0.0,
+        x_end=0.999 if len(period_order) == 1 else 1.0,
+        y_axis=-0.045,
+        y_label=-0.08,
+    )
     fig.update_layout(
         title="Topic Transition Sankey",
         font={"size": 12},
-        annotations=period_annotations,
+        annotations=period_annotations + axis_annotations,
+        shapes=axis_shapes,
         height=max(900, 70 * max_nodes_in_period),
-        margin={"t": 70, "l": 20, "r": 20, "b": 20},
+        margin={"t": 70, "l": 20, "r": 20, "b": 90},
     )
     fig.write_html(str(output_path), include_plotlyjs="cdn")
 
@@ -383,7 +457,7 @@ def render_sankey_preview(
         font={"size": 16, "color": "#0f172a"},
         width=1600,
         height=900,
-        margin={"t": 80, "l": 40, "r": 40, "b": 30},
+        margin={"t": 80, "l": 40, "r": 40, "b": 110},
         paper_bgcolor="white",
         plot_bgcolor="white",
         annotations=[
@@ -397,7 +471,21 @@ def render_sankey_preview(
                 "font": {"size": 17, "color": "#0f172a"},
             }
             for period, idx in period_order.items()
-        ],
+        ]
+        + _period_axis_artifacts(
+            period_order=period_order,
+            x_start=0.04,
+            x_end=0.96,
+            y_axis=-0.05,
+            y_label=-0.09,
+        )[0],
+        shapes=_period_axis_artifacts(
+            period_order=period_order,
+            x_start=0.04,
+            x_end=0.96,
+            y_axis=-0.05,
+            y_label=-0.09,
+        )[1],
     )
     fig.write_html(str(output_path), include_plotlyjs="cdn")
 

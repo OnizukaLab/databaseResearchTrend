@@ -18,7 +18,7 @@ Interactive version:
 
 Static preview:
 
-![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.png)
+![Topic Transition Sankey](outputs/html/topic_transition_sankey.png)
 
 ## Pipeline Overview
 
