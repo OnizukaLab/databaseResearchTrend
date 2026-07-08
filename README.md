@@ -233,7 +233,7 @@ Interactive version:
 
 Static preview:
 
-<img src="outputs/html/topic_transition_sankey_preview.png" alt="Topic Transition Sankey Preview" width="900">
+![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.svg)
 
 ## Repository Structure
 
