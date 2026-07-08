@@ -8,6 +8,18 @@ It generates two main kinds of visualizations:
 - topic transition Sankey diagrams across periods
 
 
+## Sankey Preview
+
+The interactive Sankey diagram is available as HTML in the repository.
+
+Interactive version:
+
+- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
+
+Static preview:
+
+![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.png)
+
 ## Pipeline Overview
 
 The project builds the visualizations in the following stages.
@@ -211,18 +223,6 @@ The interactive HTML outputs are mirrored under:
 
 - `https://onizukalab.github.io/databaseResearchTrend/outputs/html/index.html`
 - `https://onizukalab.github.io/databaseResearchTrend/outputs/html/topic_transition_sankey.html`
-
-## Sankey Preview
-
-The interactive Sankey diagram is available as HTML in the repository.
-
-Interactive version:
-
-- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
-
-Static preview:
-
-![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.png)
 
 ## Repository Structure
 
