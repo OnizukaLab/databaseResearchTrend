@@ -233,12 +233,182 @@ def render_sankey(nodes_df: pd.DataFrame, edges_df: pd.DataFrame, output_path: P
     fig.write_html(str(output_path), include_plotlyjs="cdn")
 
 
+def _preview_topic_order(nodes_df: pd.DataFrame) -> list[str]:
+    topic_totals = (
+        nodes_df.groupby("topic", as_index=False)["count"]
+        .sum()
+        .sort_values(["count", "topic"], ascending=[False, True])
+    )
+    return topic_totals["topic"].tolist()
+
+
+def _build_preview_frames(
+    nodes_df: pd.DataFrame,
+    edges_df: pd.DataFrame,
+    max_topics_per_period: int = 5,
+    max_cross_edges_per_step: int = 6,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if nodes_df.empty:
+        return nodes_df.copy(), edges_df.iloc[0:0].copy()
+
+    topic_order = _preview_topic_order(nodes_df)
+    topic_rank = {topic: idx for idx, topic in enumerate(topic_order)}
+    periods = nodes_df["period"].drop_duplicates().tolist()
+
+    selected_topics: set[str] = set()
+    for period in periods:
+        period_nodes = (
+            nodes_df[nodes_df["period"] == period]
+            .sort_values(["count", "topic"], ascending=[False, True])
+            .head(max_topics_per_period)
+        )
+        selected_topics.update(period_nodes["topic"].tolist())
+
+    preview_nodes = nodes_df[nodes_df["topic"].isin(selected_topics)].copy()
+    preview_nodes = preview_nodes.sort_values(
+        ["period", "topic"],
+        key=lambda col: col.map(topic_rank) if col.name == "topic" else col,
+    )
+
+    preview_edges: list[pd.DataFrame] = []
+
+    persistence = edges_df[
+        (edges_df["transition_type"] == "persistence")
+        & (edges_df["source_topic"].isin(selected_topics))
+        & (edges_df["target_topic"].isin(selected_topics))
+    ].copy()
+    preview_edges.append(persistence)
+
+    for left_period, right_period in zip(periods, periods[1:]):
+        cross = edges_df[
+            (edges_df["transition_type"] == "cooccurrence")
+            & (edges_df["source_period"] == left_period)
+            & (edges_df["target_period"] == right_period)
+            & (edges_df["source_topic"].isin(selected_topics))
+            & (edges_df["target_topic"].isin(selected_topics))
+        ].copy()
+        cross = cross.sort_values(
+            ["weight", "source_topic", "target_topic"],
+            ascending=[False, True, True],
+        ).head(max_cross_edges_per_step)
+        preview_edges.append(cross)
+
+    preview_edges_df = (
+        pd.concat(preview_edges, ignore_index=True)
+        if preview_edges
+        else edges_df.iloc[0:0].copy()
+    )
+    preview_edges_df = preview_edges_df.drop_duplicates(
+        subset=["source", "target", "transition_type"]
+    ).copy()
+    return preview_nodes, preview_edges_df
+
+
+def render_sankey_preview(
+    nodes_df: pd.DataFrame,
+    edges_df: pd.DataFrame,
+    output_path: Path,
+) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    if nodes_df.empty:
+        go.Figure().write_html(str(output_path), include_plotlyjs="cdn")
+        return
+
+    preview_nodes, preview_edges = _build_preview_frames(nodes_df, edges_df)
+    node_names = list(preview_nodes["node"])
+    node_index = {name: idx for idx, name in enumerate(node_names)}
+    periods = preview_nodes["period"].drop_duplicates().tolist()
+    period_order = {period: idx for idx, period in enumerate(periods)}
+    topic_order = _preview_topic_order(preview_nodes)
+    topic_rank = {topic: idx for idx, topic in enumerate(topic_order)}
+
+    node_x = [
+        0.02 if len(period_order) == 1 else 0.04 + 0.92 * period_order[period] / max(len(period_order) - 1, 1)
+        for period in preview_nodes["period"]
+    ]
+
+    node_y_by_name: dict[str, float] = {}
+    for period, group in preview_nodes.groupby("period", sort=False):
+        group = group.sort_values(
+            ["topic"],
+            key=lambda col: col.map(topic_rank),
+        ).reset_index(drop=True)
+        count = len(group)
+        if count == 1:
+            positions = [0.5]
+        else:
+            top_margin = 0.1
+            bottom_margin = 0.08
+            usable = 1.0 - top_margin - bottom_margin
+            slot = usable / count
+            positions = [top_margin + slot * idx + slot / 2 for idx in range(count)]
+        for position, node_name in zip(positions, group["node"]):
+            node_y_by_name[node_name] = position
+    node_y = [node_y_by_name[name] for name in node_names]
+
+    preview_edges = preview_edges[
+        preview_edges["source"].isin(node_index) & preview_edges["target"].isin(node_index)
+    ].copy()
+    preview_edges["link_color"] = preview_edges["transition_type"].map(
+        {"persistence": "rgba(59, 130, 246, 0.45)", "cooccurrence": "rgba(15, 23, 42, 0.18)"}
+    ).fillna("rgba(120,120,120,0.2)")
+
+    fig = go.Figure(
+        data=[
+            go.Sankey(
+                arrangement="fixed",
+                node={
+                    "label": preview_nodes["topic"].tolist(),
+                    "pad": 22,
+                    "thickness": 20,
+                    "line": {"color": "rgba(30,41,59,0.35)", "width": 1},
+                    "color": "rgba(251,146,60,0.72)",
+                    "x": node_x,
+                    "y": node_y,
+                    "customdata": preview_nodes["period"].tolist(),
+                    "hovertemplate": "%{label}<br>%{customdata}<extra></extra>",
+                },
+                link={
+                    "source": [node_index[src] for src in preview_edges["source"]],
+                    "target": [node_index[tgt] for tgt in preview_edges["target"]],
+                    "value": preview_edges["weight"].tolist(),
+                    "color": preview_edges["link_color"].tolist(),
+                    "hovertemplate": "%{source.label} -> %{target.label}<br>weight=%{value}<extra></extra>",
+                },
+            )
+        ]
+    )
+    fig.update_layout(
+        title="Topic Transition Sankey",
+        font={"size": 16, "color": "#0f172a"},
+        width=1600,
+        height=900,
+        margin={"t": 80, "l": 40, "r": 40, "b": 30},
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+        annotations=[
+            {
+                "xref": "paper",
+                "yref": "paper",
+                "x": 0.02 if len(period_order) == 1 else 0.04 + 0.92 * idx / max(len(period_order) - 1, 1),
+                "y": 1.07,
+                "text": period,
+                "showarrow": False,
+                "font": {"size": 17, "color": "#0f172a"},
+            }
+            for period, idx in period_order.items()
+        ],
+    )
+    fig.write_html(str(output_path), include_plotlyjs="cdn")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
     parser.add_argument("--nodes-output", required=True)
     parser.add_argument("--edges-output", required=True)
     parser.add_argument("--html-output", required=True)
+    parser.add_argument("--preview-html-output")
     parser.add_argument("--min-weight", type=int, default=2)
     parser.add_argument("--period-start", type=int, default=DEFAULT_PERIOD_START)
     parser.add_argument("--period-end", type=int, default=DEFAULT_PERIOD_END)
@@ -256,6 +426,8 @@ def main() -> None:
     nodes_df.to_csv(args.nodes_output, index=False, encoding="utf-8")
     edges_df.to_csv(args.edges_output, index=False, encoding="utf-8")
     render_sankey(nodes_df, edges_df, Path(args.html_output), args.min_weight)
+    if args.preview_html_output:
+        render_sankey_preview(nodes_df, edges_df, Path(args.preview_html_output))
 
 
 if __name__ == "__main__":
