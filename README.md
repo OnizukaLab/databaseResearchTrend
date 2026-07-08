@@ -40,7 +40,7 @@ Instead of using the full `dblp.xml` directly, the pipeline first extracts only 
 
 Relevant script:
 
-- [extract_dblp_xml_subset.py](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/src/extract_dblp_xml_subset.py)
+- [extract_dblp_xml_subset.py](src/extract_dblp_xml_subset.py)
 
 What it does:
 
@@ -65,8 +65,8 @@ Next, paper titles are matched against a keyword dictionary to assign topics.
 
 Relevant scripts:
 
-- [topic_dictionary.py](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/src/topic_dictionary.py)
-- [extract_topics.py](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/src/extract_topics.py)
+- [topic_dictionary.py](src/topic_dictionary.py)
+- [extract_topics.py](src/extract_topics.py)
 
 What it does:
 
@@ -86,7 +86,7 @@ Topic trend and burst statistics are computed to capture how topics increase or 
 
 Relevant script:
 
-- [build_graphs.py](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/src/build_graphs.py)
+- [build_graphs.py](src/build_graphs.py)
 
 Outputs:
 
@@ -115,7 +115,7 @@ The period-wise co-occurrence graphs are exported to interactive HTML with PyVis
 
 Relevant script:
 
-- [visualize_pyvis.py](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/src/visualize_pyvis.py)
+- [visualize_pyvis.py](src/visualize_pyvis.py)
 
 Outputs:
 
@@ -129,7 +129,7 @@ Finally, topic continuity and topic connections across periods are visualized as
 
 Relevant script:
 
-- [build_sankey.py](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/src/build_sankey.py)
+- [build_sankey.py](src/build_sankey.py)
 
 Sankey nodes:
 
@@ -197,8 +197,8 @@ Example:
 
 ```bash
 python src/extract_dblp_xml_subset.py ^
-  --xml-path "C:\home\makoto\work\gnn\dblp.xml" ^
-  --output "C:\home\makoto\work\gnn\dblp_vldb_sigmod_2010_2025_full.csv" ^
+  --xml-path "$HOME/work/gnn/dblp.xml" ^
+  --output "$HOME/work/gnn/dblp_vldb_sigmod_2010_2025_full.csv" ^
   --start-year 2010 ^
   --end-year 2025 ^
   --progress-every 1000
@@ -210,13 +210,13 @@ python src/extract_dblp_xml_subset.py ^
 python src/run_pipeline.py ^
   --start-year 2010 ^
   --end-year 2025 ^
-  --manual-raw-file "C:\home\makoto\work\gnn\dblp_vldb_sigmod_2010_2025_full.csv"
+  --manual-raw-file "$HOME/work/gnn/dblp_vldb_sigmod_2010_2025_full.csv"
 ```
 
 ## Main Outputs
 
-- [outputs/html/index.html](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/outputs/html/index.html)
-- [outputs/html/topic_transition_sankey.html](/C:/Users/oni/Onizuka%20Lab%20Dropbox/onizuka%20makoto/notePC/makoto/Codex/GNN/vldb_sigmod_topic_evolution/outputs/html/topic_transition_sankey.html)
+- [outputs/html/index.html](outputs/html/index.html)
+- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
 - `outputs/html/topic_network_*.html`
 - `outputs/csv/topic_trend.csv`
 - `outputs/csv/topic_burst.csv`
@@ -225,40 +225,41 @@ python src/run_pipeline.py ^
 
 ## Sankey Preview
 
-For GitHub-friendly preview, a static PNG snapshot of the Sankey diagram is stored alongside the interactive HTML.
+The interactive Sankey diagram is available as HTML in the repository.
 
 Interactive version:
 
-- `outputs/html/topic_transition_sankey.html`
+- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
 
-Static preview:
+Optional local static preview:
 
-![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.png)
+- `outputs/html/topic_transition_sankey_preview.png`
+- this PNG can be generated locally when a static snapshot is needed for slides or external documents
 
 ## Repository Structure
 
 ```text
-vldb_sigmod_topic_evolution/
-  README.md
-  requirements.txt
-  .gitignore
-  src/
-    extract_dblp_xml_subset.py
-    fetch_dblp.py
-    topic_dictionary.py
-    extract_topics.py
-    build_graphs.py
-    build_sankey.py
-    visualize_pyvis.py
-    periods.py
-    run_pipeline.py
-  data/
-    raw/
-    processed/
-  outputs/
-    csv/
-    gephi/
-    html/
+.
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── src/
+│   ├── extract_dblp_xml_subset.py
+│   ├── fetch_dblp.py
+│   ├── topic_dictionary.py
+│   ├── extract_topics.py
+│   ├── build_graphs.py
+│   ├── build_sankey.py
+│   ├── visualize_pyvis.py
+│   ├── periods.py
+│   └── run_pipeline.py
+├── data/
+│   ├── raw/
+│   └── processed/
+└── outputs/
+    ├── csv/
+    ├── gephi/
+    └── html/
 ```
 
 ## Notes
