@@ -14,7 +14,7 @@ The interactive Sankey diagram is available as HTML in the repository.
 
 Interactive version:
 
-- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
+- [GitHub Pages: Topic Transition Sankey](https://onizukalab.github.io/databaseResearchTrend/outputs/html/topic_transition_sankey.html)
 
 Static preview:
 
