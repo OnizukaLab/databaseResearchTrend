@@ -231,10 +231,9 @@ Interactive version:
 
 - [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
 
-Optional local static preview:
+Static preview:
 
-- `outputs/html/topic_transition_sankey_preview.png`
-- this PNG can be generated locally when a static snapshot is needed for slides or external documents
+![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.png)
 
 ## Repository Structure
 
