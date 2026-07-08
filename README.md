@@ -9,26 +9,14 @@ It generates two main kinds of visualizations:
 
 ## What Is Visualized
 
-The target venues are:
-
-- `SIGMOD`
-- `VLDB`
-- `PVLDB`
-- `PACMMOD`
-
+The target venues are: VLDB (PVLDB), SIGMOD (PACMMOD).
 The default year range is `2010` to `2025`.
 
 The visualization uses the following period labels:
 
-- `2010-2015`
-- `2015-2020`
+- `2010-2014`
+- `2015-2019`
 - `2020-2025`
-
-To avoid overlap between periods, the actual year assignment is:
-
-- display label `2010-2015`: years `2010-2014`
-- display label `2015-2020`: years `2015-2019`
-- display label `2020-2025`: years `2020-2025`
 
 ## Pipeline Overview
 
