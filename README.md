@@ -223,6 +223,17 @@ python src/run_pipeline.py ^
 - `outputs/csv/sankey_nodes.csv`
 - `outputs/csv/sankey_edges.csv`
 
+## GitHub Pages
+
+If GitHub Pages is configured to publish from `main /docs`, the public entry point is:
+
+- `https://onizukalab.github.io/databaseResearchTrend/`
+
+The interactive HTML outputs are mirrored under:
+
+- `https://onizukalab.github.io/databaseResearchTrend/outputs/html/index.html`
+- `https://onizukalab.github.io/databaseResearchTrend/outputs/html/topic_transition_sankey.html`
+
 ## Sankey Preview
 
 The interactive Sankey diagram is available as HTML in the repository.
@@ -233,7 +244,7 @@ Interactive version:
 
 Static preview:
 
-![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.svg)
+![Topic Transition Sankey Preview](outputs/html/topic_transition_sankey_preview.png)
 
 ## Repository Structure
 

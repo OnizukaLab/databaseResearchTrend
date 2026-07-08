@@ -1,8 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import math
-from html import escape
 from itertools import product
 from pathlib import Path
 
@@ -404,159 +402,6 @@ def render_sankey_preview(
     fig.write_html(str(output_path), include_plotlyjs="cdn")
 
 
-def _build_preview_svg_edges(
-    edges_df: pd.DataFrame,
-    max_cross_edges_per_step: int = 20,
-) -> pd.DataFrame:
-    if edges_df.empty:
-        return edges_df.iloc[0:0].copy()
-
-    preview_edges: list[pd.DataFrame] = [
-        edges_df[edges_df["transition_type"] == "persistence"].copy()
-    ]
-    period_pairs = (
-        edges_df[["source_period", "target_period"]]
-        .drop_duplicates()
-        .itertuples(index=False, name=None)
-    )
-    for left_period, right_period in period_pairs:
-        cross = edges_df[
-            (edges_df["transition_type"] == "cooccurrence")
-            & (edges_df["source_period"] == left_period)
-            & (edges_df["target_period"] == right_period)
-        ].copy()
-        cross = cross.sort_values(
-            ["weight", "source_topic", "target_topic"],
-            ascending=[False, True, True],
-        ).head(max_cross_edges_per_step)
-        preview_edges.append(cross)
-
-    return pd.concat(preview_edges, ignore_index=True).drop_duplicates(
-        subset=["source", "target", "transition_type"]
-    )
-
-
-def render_sankey_preview_svg(
-    nodes_df: pd.DataFrame,
-    edges_df: pd.DataFrame,
-    output_path: Path,
-) -> None:
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    if nodes_df.empty:
-        output_path.write_text(
-            '<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"></svg>',
-            encoding="utf-8",
-        )
-        return
-
-    width = 2000
-    height = 1120
-    left_margin = 140
-    right_margin = 140
-    top_margin = 120
-    bottom_margin = 60
-    node_width = 26
-    column_gap = (width - left_margin - right_margin - node_width) / max(
-        len(nodes_df["period"].drop_duplicates()) - 1, 1
-    )
-    period_order = {period: idx for idx, period in enumerate(nodes_df["period"].drop_duplicates())}
-
-    ordered_nodes: list[str] = []
-    node_meta: dict[str, dict[str, float | str]] = {}
-    for period, group in nodes_df.groupby("period", sort=False):
-        group = group.sort_values(["count", "topic"], ascending=[False, True]).reset_index(drop=True)
-        heights = [20 + 9 * math.sqrt(float(count)) for count in group["count"]]
-        gap = 18
-        total_height = sum(heights) + gap * max(len(heights) - 1, 0)
-        start_y = top_margin + max((height - top_margin - bottom_margin - total_height) / 2, 0)
-        x = left_margin + column_gap * period_order[period]
-        cursor_y = start_y
-        for row, rect_height in zip(group.itertuples(index=False), heights):
-            node_meta[row.node] = {
-                "x": x,
-                "y": cursor_y,
-                "h": rect_height,
-                "period": row.period,
-                "topic": row.topic,
-                "count": float(row.count),
-            }
-            ordered_nodes.append(row.node)
-            cursor_y += rect_height + gap
-
-    preview_edges = _build_preview_svg_edges(edges_df)
-    persistence_max = max(
-        preview_edges.loc[preview_edges["transition_type"] == "persistence", "weight"].max(),
-        1,
-    )
-    cross_max = max(
-        preview_edges.loc[preview_edges["transition_type"] == "cooccurrence", "weight"].max(),
-        1,
-    )
-
-    svg_lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<rect width="100%" height="100%" fill="white"/>',
-        '<style>',
-        'text { font-family: "Segoe UI", Arial, sans-serif; fill: #0f172a; }',
-        '.period { font-size: 28px; font-weight: 600; }',
-        '.label { font-size: 20px; }',
-        '.title { font-size: 34px; font-weight: 700; }',
-        '</style>',
-        '<text class="title" x="140" y="56">Topic Transition Sankey</text>',
-    ]
-
-    for period, idx in period_order.items():
-        x = left_margin + column_gap * idx + node_width / 2
-        svg_lines.append(
-            f'<text class="period" x="{x:.1f}" y="95" text-anchor="middle">{escape(str(period))}</text>'
-        )
-
-    for edge in preview_edges.itertuples(index=False):
-        source = node_meta.get(edge.source)
-        target = node_meta.get(edge.target)
-        if not source or not target:
-            continue
-        x1 = float(source["x"]) + node_width
-        y1 = float(source["y"]) + float(source["h"]) / 2
-        x2 = float(target["x"])
-        y2 = float(target["y"]) + float(target["h"]) / 2
-        dx = (x2 - x1) * 0.48
-        stroke = "#3b82f6" if edge.transition_type == "persistence" else "#475569"
-        opacity = 0.48 if edge.transition_type == "persistence" else 0.18
-        if edge.transition_type == "persistence":
-            stroke_width = 1.5 + 8.5 * math.sqrt(float(edge.weight) / float(persistence_max))
-        else:
-            stroke_width = 1.0 + 18.0 * math.sqrt(float(edge.weight) / float(cross_max))
-        svg_lines.append(
-            (
-                f'<path d="M {x1:.1f} {y1:.1f} '
-                f'C {x1 + dx:.1f} {y1:.1f}, {x2 - dx:.1f} {y2:.1f}, {x2:.1f} {y2:.1f}" '
-                f'fill="none" stroke="{stroke}" stroke-opacity="{opacity:.2f}" '
-                f'stroke-width="{stroke_width:.2f}" stroke-linecap="round"/>'
-            )
-        )
-
-    for node_name in ordered_nodes:
-        meta = node_meta[node_name]
-        x = float(meta["x"])
-        y = float(meta["y"])
-        h = float(meta["h"])
-        topic = escape(str(meta["topic"]))
-        period = str(meta["period"])
-        is_rightmost = period_order[period] == len(period_order) - 1
-        label_x = x - 18 if is_rightmost else x + node_width + 18
-        anchor = "end" if is_rightmost else "start"
-        svg_lines.append(
-            f'<rect x="{x:.1f}" y="{y:.1f}" width="{node_width}" height="{h:.1f}" rx="4" fill="#fb923c" fill-opacity="0.76" stroke="#c2410c" stroke-opacity="0.55"/>'
-        )
-        svg_lines.append(
-            f'<text class="label" x="{label_x:.1f}" y="{y + h / 2 + 7:.1f}" text-anchor="{anchor}">{topic}</text>'
-        )
-
-    svg_lines.append("</svg>")
-    output_path.write_text("\n".join(svg_lines), encoding="utf-8")
-
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
@@ -564,7 +409,6 @@ def main() -> None:
     parser.add_argument("--edges-output", required=True)
     parser.add_argument("--html-output", required=True)
     parser.add_argument("--preview-html-output")
-    parser.add_argument("--preview-svg-output")
     parser.add_argument("--min-weight", type=int, default=2)
     parser.add_argument("--period-start", type=int, default=DEFAULT_PERIOD_START)
     parser.add_argument("--period-end", type=int, default=DEFAULT_PERIOD_END)
@@ -584,8 +428,6 @@ def main() -> None:
     render_sankey(nodes_df, edges_df, Path(args.html_output), args.min_weight)
     if args.preview_html_output:
         render_sankey_preview(nodes_df, edges_df, Path(args.preview_html_output))
-    if args.preview_svg_output:
-        render_sankey_preview_svg(nodes_df, edges_df, Path(args.preview_svg_output))
 
 
 if __name__ == "__main__":
