@@ -173,17 +173,17 @@ Current coverage for `2010-2024`:
 
 Database:
 
-- overall: `1411 / 3703 = 38.10%`
-- `2010-2014`: `282 / 862 = 32.71%`
-- `2015-2019`: `378 / 1026 = 36.84%`
-- `2020-2024`: `751 / 1815 = 41.38%`
+- overall: `2553 / 3703 = 68.94%`
+- `2010-2014`: `580 / 862 = 67.29%`
+- `2015-2019`: `722 / 1026 = 70.37%`
+- `2020-2024`: `1251 / 1815 = 68.93%`
 
 NeurIPS:
 
-- overall: `2873 / 4654 = 61.73%`
-- `2010-2014`: `210 / 376 = 55.85%`
-- `2015-2019`: `532 / 940 = 56.60%`
-- `2020-2024`: `2131 / 3338 = 63.84%`
+- overall: `3376 / 4654 = 72.54%`
+- `2010-2014`: `253 / 376 = 67.29%`
+- `2015-2019`: `675 / 940 = 71.81%`
+- `2020-2024`: `2448 / 3338 = 73.34%`
 
 
 ## How To Run
@@ -223,7 +223,7 @@ python src/extract_dblp_xml_subset.py ^
 python src/run_pipeline.py ^
   --start-year 2010 ^
   --end-year 2024 ^
-  --manual-raw-file "data/raw/papers.csv" ^
+  --manual-raw-file "data/raw/database/papers.csv" ^
   --period-start 2010 ^
   --period-end 2024 ^
   --period-size 5
@@ -249,4 +249,4 @@ python src/run_pipeline.py ^
 - topic assignment is keyword-based and title-only
 - raw DBLP XML should stay outside the repository
 - venue directories are now the primary organization unit for generated artifacts
-- older root-level output files may remain as legacy artifacts, but new runs write to venue-specific directories
+- generated outputs are stored under `database/` and `neurips/`
