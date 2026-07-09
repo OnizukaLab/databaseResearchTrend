@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 
 from periods import DEFAULT_PERIOD_END, DEFAULT_PERIOD_SIZE, DEFAULT_PERIOD_START, period_of
-from topic_dictionary import GENERIC_TERMS, TOPIC_DICT
+from topic_dictionary import GENERIC_TERMS, topic_dict_for_venue
 
 TAGGED_COLUMNS = [
     "paper_id",
@@ -27,19 +27,33 @@ def normalize_text(text: str) -> str:
     return re.sub(r"\s+", " ", lowered).strip()
 
 
+def canonical_token(token: str) -> str:
+    normalized = normalize_text(token)
+    if normalized.endswith("ies") and len(normalized) > 4:
+        return normalized[:-3] + "y"
+    if normalized.endswith("es") and len(normalized) > 4:
+        return normalized[:-2]
+    if normalized.endswith("s") and len(normalized) > 3:
+        return normalized[:-1]
+    return normalized
+
+
 def keyword_matches(normalized_title: str, keyword: str) -> bool:
     keyword = normalize_text(keyword)
     if keyword in GENERIC_TERMS:
         return False
     if " " in keyword or "-" in keyword or "/" in keyword:
         return keyword in normalized_title
-    return re.search(rf"(?<!\w){re.escape(keyword)}(?!\w)", normalized_title) is not None
+    title_tokens = re.findall(r"[a-z0-9-]+", normalized_title)
+    canonical_keyword = canonical_token(keyword)
+    return any(canonical_token(token) == canonical_keyword for token in title_tokens)
 
 
-def match_topics(title: str) -> list[dict[str, str]]:
+def match_topics(title: str, venue: str) -> list[dict[str, str]]:
     normalized_title = normalize_text(title)
     matches: list[dict[str, str]] = []
-    for topic, config in TOPIC_DICT.items():
+    topic_dict = topic_dict_for_venue(venue)
+    for topic, config in topic_dict.items():
         matched_keyword = next(
             (keyword for keyword in config["keywords"] if keyword_matches(normalized_title, keyword)),
             None,
@@ -65,7 +79,7 @@ def tag_papers(
     untagged_rows: list[dict[str, object]] = []
 
     for row in papers_df.to_dict("records"):
-        matches = match_topics(row["title"])
+        matches = match_topics(row["title"], row["venue"])
         if not matches:
             untagged_rows.append(row)
             continue

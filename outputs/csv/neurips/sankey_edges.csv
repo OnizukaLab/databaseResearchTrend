@@ -1,0 +1,436 @@
+source,target,source_topic,target_topic,source_period,target_period,weight,transition_type
+"Biology, Molecules & Health@2010-2014","Biology, Molecules & Health@2015-2019","Biology, Molecules & Health","Biology, Molecules & Health",2010-2014,2015-2019,2,persistence
+"Causality, Dynamics & Scientific ML@2010-2014","Causality, Dynamics & Scientific ML@2015-2019","Causality, Dynamics & Scientific ML","Causality, Dynamics & Scientific ML",2010-2014,2015-2019,11,persistence
+Classical Statistical ML@2010-2014,Classical Statistical ML@2015-2019,Classical Statistical ML,Classical Statistical ML,2010-2014,2015-2019,77,persistence
+Computer Vision & 3D Perception@2010-2014,Computer Vision & 3D Perception@2015-2019,Computer Vision & 3D Perception,Computer Vision & 3D Perception,2010-2014,2015-2019,29,persistence
+Federated & Distributed Learning@2010-2014,Federated & Distributed Learning@2015-2019,Federated & Distributed Learning,Federated & Distributed Learning,2010-2014,2015-2019,8,persistence
+Games & Mechanism Design@2010-2014,Games & Mechanism Design@2015-2019,Games & Mechanism Design,Games & Mechanism Design,2010-2014,2015-2019,3,persistence
+Generative Models & Diffusion@2010-2014,Generative Models & Diffusion@2015-2019,Generative Models & Diffusion,Generative Models & Diffusion,2010-2014,2015-2019,3,persistence
+Graph Machine Learning@2010-2014,Graph Machine Learning@2015-2019,Graph Machine Learning,Graph Machine Learning,2010-2014,2015-2019,11,persistence
+Language Models & NLP@2010-2014,Language Models & NLP@2015-2019,Language Models & NLP,Language Models & NLP,2010-2014,2015-2019,5,persistence
+Optimization & Learning Theory@2010-2014,Optimization & Learning Theory@2015-2019,Optimization & Learning Theory,Optimization & Learning Theory,2010-2014,2015-2019,50,persistence
+Probabilistic Modeling@2010-2014,Probabilistic Modeling@2015-2019,Probabilistic Modeling,Probabilistic Modeling,2010-2014,2015-2019,84,persistence
+Reinforcement Learning & Bandits@2010-2014,Reinforcement Learning & Bandits@2015-2019,Reinforcement Learning & Bandits,Reinforcement Learning & Bandits,2010-2014,2015-2019,25,persistence
+Representation Learning@2010-2014,Representation Learning@2015-2019,Representation Learning,Representation Learning,2010-2014,2015-2019,42,persistence
+"Robustness, Privacy & Safety@2010-2014","Robustness, Privacy & Safety@2015-2019","Robustness, Privacy & Safety","Robustness, Privacy & Safety",2010-2014,2015-2019,14,persistence
+"Biology, Molecules & Health@2010-2014","Causality, Dynamics & Scientific ML@2015-2019","Biology, Molecules & Health","Causality, Dynamics & Scientific ML",2010-2014,2015-2019,70,cooccurrence
+"Biology, Molecules & Health@2010-2014",Classical Statistical ML@2015-2019,"Biology, Molecules & Health",Classical Statistical ML,2010-2014,2015-2019,254,cooccurrence
+"Biology, Molecules & Health@2010-2014",Computer Vision & 3D Perception@2015-2019,"Biology, Molecules & Health",Computer Vision & 3D Perception,2010-2014,2015-2019,104,cooccurrence
+"Biology, Molecules & Health@2010-2014",Federated & Distributed Learning@2015-2019,"Biology, Molecules & Health",Federated & Distributed Learning,2010-2014,2015-2019,28,cooccurrence
+"Biology, Molecules & Health@2010-2014",Games & Mechanism Design@2015-2019,"Biology, Molecules & Health",Games & Mechanism Design,2010-2014,2015-2019,28,cooccurrence
+"Biology, Molecules & Health@2010-2014",Generative Models & Diffusion@2015-2019,"Biology, Molecules & Health",Generative Models & Diffusion,2010-2014,2015-2019,94,cooccurrence
+"Biology, Molecules & Health@2010-2014",Graph Machine Learning@2015-2019,"Biology, Molecules & Health",Graph Machine Learning,2010-2014,2015-2019,64,cooccurrence
+"Biology, Molecules & Health@2010-2014",Language Models & NLP@2015-2019,"Biology, Molecules & Health",Language Models & NLP,2010-2014,2015-2019,94,cooccurrence
+"Biology, Molecules & Health@2010-2014",Multimodal & Vision-Language@2015-2019,"Biology, Molecules & Health",Multimodal & Vision-Language,2010-2014,2015-2019,18,cooccurrence
+"Biology, Molecules & Health@2010-2014",Optimization & Learning Theory@2015-2019,"Biology, Molecules & Health",Optimization & Learning Theory,2010-2014,2015-2019,324,cooccurrence
+"Biology, Molecules & Health@2010-2014",Probabilistic Modeling@2015-2019,"Biology, Molecules & Health",Probabilistic Modeling,2010-2014,2015-2019,312,cooccurrence
+"Biology, Molecules & Health@2010-2014",Reinforcement Learning & Bandits@2015-2019,"Biology, Molecules & Health",Reinforcement Learning & Bandits,2010-2014,2015-2019,190,cooccurrence
+"Biology, Molecules & Health@2010-2014",Representation Learning@2015-2019,"Biology, Molecules & Health",Representation Learning,2010-2014,2015-2019,178,cooccurrence
+"Biology, Molecules & Health@2010-2014","Robustness, Privacy & Safety@2015-2019","Biology, Molecules & Health","Robustness, Privacy & Safety",2010-2014,2015-2019,124,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014","Biology, Molecules & Health@2015-2019","Causality, Dynamics & Scientific ML","Biology, Molecules & Health",2010-2014,2015-2019,77,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Classical Statistical ML@2015-2019,"Causality, Dynamics & Scientific ML",Classical Statistical ML,2010-2014,2015-2019,1397,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Computer Vision & 3D Perception@2015-2019,"Causality, Dynamics & Scientific ML",Computer Vision & 3D Perception,2010-2014,2015-2019,572,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Federated & Distributed Learning@2015-2019,"Causality, Dynamics & Scientific ML",Federated & Distributed Learning,2010-2014,2015-2019,154,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Games & Mechanism Design@2015-2019,"Causality, Dynamics & Scientific ML",Games & Mechanism Design,2010-2014,2015-2019,154,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Generative Models & Diffusion@2015-2019,"Causality, Dynamics & Scientific ML",Generative Models & Diffusion,2010-2014,2015-2019,517,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Graph Machine Learning@2015-2019,"Causality, Dynamics & Scientific ML",Graph Machine Learning,2010-2014,2015-2019,352,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Language Models & NLP@2015-2019,"Causality, Dynamics & Scientific ML",Language Models & NLP,2010-2014,2015-2019,517,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Multimodal & Vision-Language@2015-2019,"Causality, Dynamics & Scientific ML",Multimodal & Vision-Language,2010-2014,2015-2019,99,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Optimization & Learning Theory@2015-2019,"Causality, Dynamics & Scientific ML",Optimization & Learning Theory,2010-2014,2015-2019,1782,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Probabilistic Modeling@2015-2019,"Causality, Dynamics & Scientific ML",Probabilistic Modeling,2010-2014,2015-2019,1716,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Reinforcement Learning & Bandits@2015-2019,"Causality, Dynamics & Scientific ML",Reinforcement Learning & Bandits,2010-2014,2015-2019,1045,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014",Representation Learning@2015-2019,"Causality, Dynamics & Scientific ML",Representation Learning,2010-2014,2015-2019,979,cooccurrence
+"Causality, Dynamics & Scientific ML@2010-2014","Robustness, Privacy & Safety@2015-2019","Causality, Dynamics & Scientific ML","Robustness, Privacy & Safety",2010-2014,2015-2019,682,cooccurrence
+Classical Statistical ML@2010-2014,"Biology, Molecules & Health@2015-2019",Classical Statistical ML,"Biology, Molecules & Health",2010-2014,2015-2019,539,cooccurrence
+Classical Statistical ML@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Classical Statistical ML,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,2695,cooccurrence
+Classical Statistical ML@2010-2014,Computer Vision & 3D Perception@2015-2019,Classical Statistical ML,Computer Vision & 3D Perception,2010-2014,2015-2019,4004,cooccurrence
+Classical Statistical ML@2010-2014,Federated & Distributed Learning@2015-2019,Classical Statistical ML,Federated & Distributed Learning,2010-2014,2015-2019,1078,cooccurrence
+Classical Statistical ML@2010-2014,Games & Mechanism Design@2015-2019,Classical Statistical ML,Games & Mechanism Design,2010-2014,2015-2019,1078,cooccurrence
+Classical Statistical ML@2010-2014,Generative Models & Diffusion@2015-2019,Classical Statistical ML,Generative Models & Diffusion,2010-2014,2015-2019,3619,cooccurrence
+Classical Statistical ML@2010-2014,Graph Machine Learning@2015-2019,Classical Statistical ML,Graph Machine Learning,2010-2014,2015-2019,2464,cooccurrence
+Classical Statistical ML@2010-2014,Language Models & NLP@2015-2019,Classical Statistical ML,Language Models & NLP,2010-2014,2015-2019,3619,cooccurrence
+Classical Statistical ML@2010-2014,Multimodal & Vision-Language@2015-2019,Classical Statistical ML,Multimodal & Vision-Language,2010-2014,2015-2019,693,cooccurrence
+Classical Statistical ML@2010-2014,Optimization & Learning Theory@2015-2019,Classical Statistical ML,Optimization & Learning Theory,2010-2014,2015-2019,12474,cooccurrence
+Classical Statistical ML@2010-2014,Probabilistic Modeling@2015-2019,Classical Statistical ML,Probabilistic Modeling,2010-2014,2015-2019,12012,cooccurrence
+Classical Statistical ML@2010-2014,Reinforcement Learning & Bandits@2015-2019,Classical Statistical ML,Reinforcement Learning & Bandits,2010-2014,2015-2019,7315,cooccurrence
+Classical Statistical ML@2010-2014,Representation Learning@2015-2019,Classical Statistical ML,Representation Learning,2010-2014,2015-2019,6853,cooccurrence
+Classical Statistical ML@2010-2014,"Robustness, Privacy & Safety@2015-2019",Classical Statistical ML,"Robustness, Privacy & Safety",2010-2014,2015-2019,4774,cooccurrence
+Computer Vision & 3D Perception@2010-2014,"Biology, Molecules & Health@2015-2019",Computer Vision & 3D Perception,"Biology, Molecules & Health",2010-2014,2015-2019,203,cooccurrence
+Computer Vision & 3D Perception@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Computer Vision & 3D Perception,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,1015,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Classical Statistical ML@2015-2019,Computer Vision & 3D Perception,Classical Statistical ML,2010-2014,2015-2019,3683,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Federated & Distributed Learning@2015-2019,Computer Vision & 3D Perception,Federated & Distributed Learning,2010-2014,2015-2019,406,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Games & Mechanism Design@2015-2019,Computer Vision & 3D Perception,Games & Mechanism Design,2010-2014,2015-2019,406,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Generative Models & Diffusion@2015-2019,Computer Vision & 3D Perception,Generative Models & Diffusion,2010-2014,2015-2019,1363,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Graph Machine Learning@2015-2019,Computer Vision & 3D Perception,Graph Machine Learning,2010-2014,2015-2019,928,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Language Models & NLP@2015-2019,Computer Vision & 3D Perception,Language Models & NLP,2010-2014,2015-2019,1363,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Multimodal & Vision-Language@2015-2019,Computer Vision & 3D Perception,Multimodal & Vision-Language,2010-2014,2015-2019,261,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Optimization & Learning Theory@2015-2019,Computer Vision & 3D Perception,Optimization & Learning Theory,2010-2014,2015-2019,4698,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Probabilistic Modeling@2015-2019,Computer Vision & 3D Perception,Probabilistic Modeling,2010-2014,2015-2019,4524,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Reinforcement Learning & Bandits@2015-2019,Computer Vision & 3D Perception,Reinforcement Learning & Bandits,2010-2014,2015-2019,2755,cooccurrence
+Computer Vision & 3D Perception@2010-2014,Representation Learning@2015-2019,Computer Vision & 3D Perception,Representation Learning,2010-2014,2015-2019,2581,cooccurrence
+Computer Vision & 3D Perception@2010-2014,"Robustness, Privacy & Safety@2015-2019",Computer Vision & 3D Perception,"Robustness, Privacy & Safety",2010-2014,2015-2019,1798,cooccurrence
+Federated & Distributed Learning@2010-2014,"Biology, Molecules & Health@2015-2019",Federated & Distributed Learning,"Biology, Molecules & Health",2010-2014,2015-2019,56,cooccurrence
+Federated & Distributed Learning@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Federated & Distributed Learning,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,280,cooccurrence
+Federated & Distributed Learning@2010-2014,Classical Statistical ML@2015-2019,Federated & Distributed Learning,Classical Statistical ML,2010-2014,2015-2019,1016,cooccurrence
+Federated & Distributed Learning@2010-2014,Computer Vision & 3D Perception@2015-2019,Federated & Distributed Learning,Computer Vision & 3D Perception,2010-2014,2015-2019,416,cooccurrence
+Federated & Distributed Learning@2010-2014,Games & Mechanism Design@2015-2019,Federated & Distributed Learning,Games & Mechanism Design,2010-2014,2015-2019,112,cooccurrence
+Federated & Distributed Learning@2010-2014,Generative Models & Diffusion@2015-2019,Federated & Distributed Learning,Generative Models & Diffusion,2010-2014,2015-2019,376,cooccurrence
+Federated & Distributed Learning@2010-2014,Graph Machine Learning@2015-2019,Federated & Distributed Learning,Graph Machine Learning,2010-2014,2015-2019,256,cooccurrence
+Federated & Distributed Learning@2010-2014,Language Models & NLP@2015-2019,Federated & Distributed Learning,Language Models & NLP,2010-2014,2015-2019,376,cooccurrence
+Federated & Distributed Learning@2010-2014,Multimodal & Vision-Language@2015-2019,Federated & Distributed Learning,Multimodal & Vision-Language,2010-2014,2015-2019,72,cooccurrence
+Federated & Distributed Learning@2010-2014,Optimization & Learning Theory@2015-2019,Federated & Distributed Learning,Optimization & Learning Theory,2010-2014,2015-2019,1296,cooccurrence
+Federated & Distributed Learning@2010-2014,Probabilistic Modeling@2015-2019,Federated & Distributed Learning,Probabilistic Modeling,2010-2014,2015-2019,1248,cooccurrence
+Federated & Distributed Learning@2010-2014,Reinforcement Learning & Bandits@2015-2019,Federated & Distributed Learning,Reinforcement Learning & Bandits,2010-2014,2015-2019,760,cooccurrence
+Federated & Distributed Learning@2010-2014,Representation Learning@2015-2019,Federated & Distributed Learning,Representation Learning,2010-2014,2015-2019,712,cooccurrence
+Federated & Distributed Learning@2010-2014,"Robustness, Privacy & Safety@2015-2019",Federated & Distributed Learning,"Robustness, Privacy & Safety",2010-2014,2015-2019,496,cooccurrence
+Games & Mechanism Design@2010-2014,"Biology, Molecules & Health@2015-2019",Games & Mechanism Design,"Biology, Molecules & Health",2010-2014,2015-2019,21,cooccurrence
+Games & Mechanism Design@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Games & Mechanism Design,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,105,cooccurrence
+Games & Mechanism Design@2010-2014,Classical Statistical ML@2015-2019,Games & Mechanism Design,Classical Statistical ML,2010-2014,2015-2019,381,cooccurrence
+Games & Mechanism Design@2010-2014,Computer Vision & 3D Perception@2015-2019,Games & Mechanism Design,Computer Vision & 3D Perception,2010-2014,2015-2019,156,cooccurrence
+Games & Mechanism Design@2010-2014,Federated & Distributed Learning@2015-2019,Games & Mechanism Design,Federated & Distributed Learning,2010-2014,2015-2019,42,cooccurrence
+Games & Mechanism Design@2010-2014,Generative Models & Diffusion@2015-2019,Games & Mechanism Design,Generative Models & Diffusion,2010-2014,2015-2019,141,cooccurrence
+Games & Mechanism Design@2010-2014,Graph Machine Learning@2015-2019,Games & Mechanism Design,Graph Machine Learning,2010-2014,2015-2019,96,cooccurrence
+Games & Mechanism Design@2010-2014,Language Models & NLP@2015-2019,Games & Mechanism Design,Language Models & NLP,2010-2014,2015-2019,141,cooccurrence
+Games & Mechanism Design@2010-2014,Multimodal & Vision-Language@2015-2019,Games & Mechanism Design,Multimodal & Vision-Language,2010-2014,2015-2019,27,cooccurrence
+Games & Mechanism Design@2010-2014,Optimization & Learning Theory@2015-2019,Games & Mechanism Design,Optimization & Learning Theory,2010-2014,2015-2019,486,cooccurrence
+Games & Mechanism Design@2010-2014,Probabilistic Modeling@2015-2019,Games & Mechanism Design,Probabilistic Modeling,2010-2014,2015-2019,468,cooccurrence
+Games & Mechanism Design@2010-2014,Reinforcement Learning & Bandits@2015-2019,Games & Mechanism Design,Reinforcement Learning & Bandits,2010-2014,2015-2019,285,cooccurrence
+Games & Mechanism Design@2010-2014,Representation Learning@2015-2019,Games & Mechanism Design,Representation Learning,2010-2014,2015-2019,267,cooccurrence
+Games & Mechanism Design@2010-2014,"Robustness, Privacy & Safety@2015-2019",Games & Mechanism Design,"Robustness, Privacy & Safety",2010-2014,2015-2019,186,cooccurrence
+Generative Models & Diffusion@2010-2014,"Biology, Molecules & Health@2015-2019",Generative Models & Diffusion,"Biology, Molecules & Health",2010-2014,2015-2019,21,cooccurrence
+Generative Models & Diffusion@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Generative Models & Diffusion,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,105,cooccurrence
+Generative Models & Diffusion@2010-2014,Classical Statistical ML@2015-2019,Generative Models & Diffusion,Classical Statistical ML,2010-2014,2015-2019,381,cooccurrence
+Generative Models & Diffusion@2010-2014,Computer Vision & 3D Perception@2015-2019,Generative Models & Diffusion,Computer Vision & 3D Perception,2010-2014,2015-2019,156,cooccurrence
+Generative Models & Diffusion@2010-2014,Federated & Distributed Learning@2015-2019,Generative Models & Diffusion,Federated & Distributed Learning,2010-2014,2015-2019,42,cooccurrence
+Generative Models & Diffusion@2010-2014,Games & Mechanism Design@2015-2019,Generative Models & Diffusion,Games & Mechanism Design,2010-2014,2015-2019,42,cooccurrence
+Generative Models & Diffusion@2010-2014,Graph Machine Learning@2015-2019,Generative Models & Diffusion,Graph Machine Learning,2010-2014,2015-2019,96,cooccurrence
+Generative Models & Diffusion@2010-2014,Language Models & NLP@2015-2019,Generative Models & Diffusion,Language Models & NLP,2010-2014,2015-2019,141,cooccurrence
+Generative Models & Diffusion@2010-2014,Multimodal & Vision-Language@2015-2019,Generative Models & Diffusion,Multimodal & Vision-Language,2010-2014,2015-2019,27,cooccurrence
+Generative Models & Diffusion@2010-2014,Optimization & Learning Theory@2015-2019,Generative Models & Diffusion,Optimization & Learning Theory,2010-2014,2015-2019,486,cooccurrence
+Generative Models & Diffusion@2010-2014,Probabilistic Modeling@2015-2019,Generative Models & Diffusion,Probabilistic Modeling,2010-2014,2015-2019,468,cooccurrence
+Generative Models & Diffusion@2010-2014,Reinforcement Learning & Bandits@2015-2019,Generative Models & Diffusion,Reinforcement Learning & Bandits,2010-2014,2015-2019,285,cooccurrence
+Generative Models & Diffusion@2010-2014,Representation Learning@2015-2019,Generative Models & Diffusion,Representation Learning,2010-2014,2015-2019,267,cooccurrence
+Generative Models & Diffusion@2010-2014,"Robustness, Privacy & Safety@2015-2019",Generative Models & Diffusion,"Robustness, Privacy & Safety",2010-2014,2015-2019,186,cooccurrence
+Graph Machine Learning@2010-2014,"Biology, Molecules & Health@2015-2019",Graph Machine Learning,"Biology, Molecules & Health",2010-2014,2015-2019,77,cooccurrence
+Graph Machine Learning@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Graph Machine Learning,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,385,cooccurrence
+Graph Machine Learning@2010-2014,Classical Statistical ML@2015-2019,Graph Machine Learning,Classical Statistical ML,2010-2014,2015-2019,1397,cooccurrence
+Graph Machine Learning@2010-2014,Computer Vision & 3D Perception@2015-2019,Graph Machine Learning,Computer Vision & 3D Perception,2010-2014,2015-2019,572,cooccurrence
+Graph Machine Learning@2010-2014,Federated & Distributed Learning@2015-2019,Graph Machine Learning,Federated & Distributed Learning,2010-2014,2015-2019,154,cooccurrence
+Graph Machine Learning@2010-2014,Games & Mechanism Design@2015-2019,Graph Machine Learning,Games & Mechanism Design,2010-2014,2015-2019,154,cooccurrence
+Graph Machine Learning@2010-2014,Generative Models & Diffusion@2015-2019,Graph Machine Learning,Generative Models & Diffusion,2010-2014,2015-2019,517,cooccurrence
+Graph Machine Learning@2010-2014,Language Models & NLP@2015-2019,Graph Machine Learning,Language Models & NLP,2010-2014,2015-2019,517,cooccurrence
+Graph Machine Learning@2010-2014,Multimodal & Vision-Language@2015-2019,Graph Machine Learning,Multimodal & Vision-Language,2010-2014,2015-2019,99,cooccurrence
+Graph Machine Learning@2010-2014,Optimization & Learning Theory@2015-2019,Graph Machine Learning,Optimization & Learning Theory,2010-2014,2015-2019,1782,cooccurrence
+Graph Machine Learning@2010-2014,Probabilistic Modeling@2015-2019,Graph Machine Learning,Probabilistic Modeling,2010-2014,2015-2019,1716,cooccurrence
+Graph Machine Learning@2010-2014,Reinforcement Learning & Bandits@2015-2019,Graph Machine Learning,Reinforcement Learning & Bandits,2010-2014,2015-2019,1045,cooccurrence
+Graph Machine Learning@2010-2014,Representation Learning@2015-2019,Graph Machine Learning,Representation Learning,2010-2014,2015-2019,979,cooccurrence
+Graph Machine Learning@2010-2014,"Robustness, Privacy & Safety@2015-2019",Graph Machine Learning,"Robustness, Privacy & Safety",2010-2014,2015-2019,682,cooccurrence
+Language Models & NLP@2010-2014,"Biology, Molecules & Health@2015-2019",Language Models & NLP,"Biology, Molecules & Health",2010-2014,2015-2019,35,cooccurrence
+Language Models & NLP@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Language Models & NLP,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,175,cooccurrence
+Language Models & NLP@2010-2014,Classical Statistical ML@2015-2019,Language Models & NLP,Classical Statistical ML,2010-2014,2015-2019,635,cooccurrence
+Language Models & NLP@2010-2014,Computer Vision & 3D Perception@2015-2019,Language Models & NLP,Computer Vision & 3D Perception,2010-2014,2015-2019,260,cooccurrence
+Language Models & NLP@2010-2014,Federated & Distributed Learning@2015-2019,Language Models & NLP,Federated & Distributed Learning,2010-2014,2015-2019,70,cooccurrence
+Language Models & NLP@2010-2014,Games & Mechanism Design@2015-2019,Language Models & NLP,Games & Mechanism Design,2010-2014,2015-2019,70,cooccurrence
+Language Models & NLP@2010-2014,Generative Models & Diffusion@2015-2019,Language Models & NLP,Generative Models & Diffusion,2010-2014,2015-2019,235,cooccurrence
+Language Models & NLP@2010-2014,Graph Machine Learning@2015-2019,Language Models & NLP,Graph Machine Learning,2010-2014,2015-2019,160,cooccurrence
+Language Models & NLP@2010-2014,Multimodal & Vision-Language@2015-2019,Language Models & NLP,Multimodal & Vision-Language,2010-2014,2015-2019,45,cooccurrence
+Language Models & NLP@2010-2014,Optimization & Learning Theory@2015-2019,Language Models & NLP,Optimization & Learning Theory,2010-2014,2015-2019,810,cooccurrence
+Language Models & NLP@2010-2014,Probabilistic Modeling@2015-2019,Language Models & NLP,Probabilistic Modeling,2010-2014,2015-2019,780,cooccurrence
+Language Models & NLP@2010-2014,Reinforcement Learning & Bandits@2015-2019,Language Models & NLP,Reinforcement Learning & Bandits,2010-2014,2015-2019,475,cooccurrence
+Language Models & NLP@2010-2014,Representation Learning@2015-2019,Language Models & NLP,Representation Learning,2010-2014,2015-2019,445,cooccurrence
+Language Models & NLP@2010-2014,"Robustness, Privacy & Safety@2015-2019",Language Models & NLP,"Robustness, Privacy & Safety",2010-2014,2015-2019,310,cooccurrence
+Optimization & Learning Theory@2010-2014,"Biology, Molecules & Health@2015-2019",Optimization & Learning Theory,"Biology, Molecules & Health",2010-2014,2015-2019,350,cooccurrence
+Optimization & Learning Theory@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Optimization & Learning Theory,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,1750,cooccurrence
+Optimization & Learning Theory@2010-2014,Classical Statistical ML@2015-2019,Optimization & Learning Theory,Classical Statistical ML,2010-2014,2015-2019,6350,cooccurrence
+Optimization & Learning Theory@2010-2014,Computer Vision & 3D Perception@2015-2019,Optimization & Learning Theory,Computer Vision & 3D Perception,2010-2014,2015-2019,2600,cooccurrence
+Optimization & Learning Theory@2010-2014,Federated & Distributed Learning@2015-2019,Optimization & Learning Theory,Federated & Distributed Learning,2010-2014,2015-2019,700,cooccurrence
+Optimization & Learning Theory@2010-2014,Games & Mechanism Design@2015-2019,Optimization & Learning Theory,Games & Mechanism Design,2010-2014,2015-2019,700,cooccurrence
+Optimization & Learning Theory@2010-2014,Generative Models & Diffusion@2015-2019,Optimization & Learning Theory,Generative Models & Diffusion,2010-2014,2015-2019,2350,cooccurrence
+Optimization & Learning Theory@2010-2014,Graph Machine Learning@2015-2019,Optimization & Learning Theory,Graph Machine Learning,2010-2014,2015-2019,1600,cooccurrence
+Optimization & Learning Theory@2010-2014,Language Models & NLP@2015-2019,Optimization & Learning Theory,Language Models & NLP,2010-2014,2015-2019,2350,cooccurrence
+Optimization & Learning Theory@2010-2014,Multimodal & Vision-Language@2015-2019,Optimization & Learning Theory,Multimodal & Vision-Language,2010-2014,2015-2019,450,cooccurrence
+Optimization & Learning Theory@2010-2014,Probabilistic Modeling@2015-2019,Optimization & Learning Theory,Probabilistic Modeling,2010-2014,2015-2019,7800,cooccurrence
+Optimization & Learning Theory@2010-2014,Reinforcement Learning & Bandits@2015-2019,Optimization & Learning Theory,Reinforcement Learning & Bandits,2010-2014,2015-2019,4750,cooccurrence
+Optimization & Learning Theory@2010-2014,Representation Learning@2015-2019,Optimization & Learning Theory,Representation Learning,2010-2014,2015-2019,4450,cooccurrence
+Optimization & Learning Theory@2010-2014,"Robustness, Privacy & Safety@2015-2019",Optimization & Learning Theory,"Robustness, Privacy & Safety",2010-2014,2015-2019,3100,cooccurrence
+Probabilistic Modeling@2010-2014,"Biology, Molecules & Health@2015-2019",Probabilistic Modeling,"Biology, Molecules & Health",2010-2014,2015-2019,588,cooccurrence
+Probabilistic Modeling@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Probabilistic Modeling,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,2940,cooccurrence
+Probabilistic Modeling@2010-2014,Classical Statistical ML@2015-2019,Probabilistic Modeling,Classical Statistical ML,2010-2014,2015-2019,10668,cooccurrence
+Probabilistic Modeling@2010-2014,Computer Vision & 3D Perception@2015-2019,Probabilistic Modeling,Computer Vision & 3D Perception,2010-2014,2015-2019,4368,cooccurrence
+Probabilistic Modeling@2010-2014,Federated & Distributed Learning@2015-2019,Probabilistic Modeling,Federated & Distributed Learning,2010-2014,2015-2019,1176,cooccurrence
+Probabilistic Modeling@2010-2014,Games & Mechanism Design@2015-2019,Probabilistic Modeling,Games & Mechanism Design,2010-2014,2015-2019,1176,cooccurrence
+Probabilistic Modeling@2010-2014,Generative Models & Diffusion@2015-2019,Probabilistic Modeling,Generative Models & Diffusion,2010-2014,2015-2019,3948,cooccurrence
+Probabilistic Modeling@2010-2014,Graph Machine Learning@2015-2019,Probabilistic Modeling,Graph Machine Learning,2010-2014,2015-2019,2688,cooccurrence
+Probabilistic Modeling@2010-2014,Language Models & NLP@2015-2019,Probabilistic Modeling,Language Models & NLP,2010-2014,2015-2019,3948,cooccurrence
+Probabilistic Modeling@2010-2014,Multimodal & Vision-Language@2015-2019,Probabilistic Modeling,Multimodal & Vision-Language,2010-2014,2015-2019,756,cooccurrence
+Probabilistic Modeling@2010-2014,Optimization & Learning Theory@2015-2019,Probabilistic Modeling,Optimization & Learning Theory,2010-2014,2015-2019,13608,cooccurrence
+Probabilistic Modeling@2010-2014,Reinforcement Learning & Bandits@2015-2019,Probabilistic Modeling,Reinforcement Learning & Bandits,2010-2014,2015-2019,7980,cooccurrence
+Probabilistic Modeling@2010-2014,Representation Learning@2015-2019,Probabilistic Modeling,Representation Learning,2010-2014,2015-2019,7476,cooccurrence
+Probabilistic Modeling@2010-2014,"Robustness, Privacy & Safety@2015-2019",Probabilistic Modeling,"Robustness, Privacy & Safety",2010-2014,2015-2019,5208,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,"Biology, Molecules & Health@2015-2019",Reinforcement Learning & Bandits,"Biology, Molecules & Health",2010-2014,2015-2019,175,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Reinforcement Learning & Bandits,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,875,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Classical Statistical ML@2015-2019,Reinforcement Learning & Bandits,Classical Statistical ML,2010-2014,2015-2019,3175,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Computer Vision & 3D Perception@2015-2019,Reinforcement Learning & Bandits,Computer Vision & 3D Perception,2010-2014,2015-2019,1300,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Federated & Distributed Learning@2015-2019,Reinforcement Learning & Bandits,Federated & Distributed Learning,2010-2014,2015-2019,350,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Games & Mechanism Design@2015-2019,Reinforcement Learning & Bandits,Games & Mechanism Design,2010-2014,2015-2019,350,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Generative Models & Diffusion@2015-2019,Reinforcement Learning & Bandits,Generative Models & Diffusion,2010-2014,2015-2019,1175,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Graph Machine Learning@2015-2019,Reinforcement Learning & Bandits,Graph Machine Learning,2010-2014,2015-2019,800,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Language Models & NLP@2015-2019,Reinforcement Learning & Bandits,Language Models & NLP,2010-2014,2015-2019,1175,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Multimodal & Vision-Language@2015-2019,Reinforcement Learning & Bandits,Multimodal & Vision-Language,2010-2014,2015-2019,225,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Optimization & Learning Theory@2015-2019,Reinforcement Learning & Bandits,Optimization & Learning Theory,2010-2014,2015-2019,4050,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Probabilistic Modeling@2015-2019,Reinforcement Learning & Bandits,Probabilistic Modeling,2010-2014,2015-2019,3900,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,Representation Learning@2015-2019,Reinforcement Learning & Bandits,Representation Learning,2010-2014,2015-2019,2225,cooccurrence
+Reinforcement Learning & Bandits@2010-2014,"Robustness, Privacy & Safety@2015-2019",Reinforcement Learning & Bandits,"Robustness, Privacy & Safety",2010-2014,2015-2019,1550,cooccurrence
+Representation Learning@2010-2014,"Biology, Molecules & Health@2015-2019",Representation Learning,"Biology, Molecules & Health",2010-2014,2015-2019,294,cooccurrence
+Representation Learning@2010-2014,"Causality, Dynamics & Scientific ML@2015-2019",Representation Learning,"Causality, Dynamics & Scientific ML",2010-2014,2015-2019,1470,cooccurrence
+Representation Learning@2010-2014,Classical Statistical ML@2015-2019,Representation Learning,Classical Statistical ML,2010-2014,2015-2019,5334,cooccurrence
+Representation Learning@2010-2014,Computer Vision & 3D Perception@2015-2019,Representation Learning,Computer Vision & 3D Perception,2010-2014,2015-2019,2184,cooccurrence
+Representation Learning@2010-2014,Federated & Distributed Learning@2015-2019,Representation Learning,Federated & Distributed Learning,2010-2014,2015-2019,588,cooccurrence
+Representation Learning@2010-2014,Games & Mechanism Design@2015-2019,Representation Learning,Games & Mechanism Design,2010-2014,2015-2019,588,cooccurrence
+Representation Learning@2010-2014,Generative Models & Diffusion@2015-2019,Representation Learning,Generative Models & Diffusion,2010-2014,2015-2019,1974,cooccurrence
+Representation Learning@2010-2014,Graph Machine Learning@2015-2019,Representation Learning,Graph Machine Learning,2010-2014,2015-2019,1344,cooccurrence
+Representation Learning@2010-2014,Language Models & NLP@2015-2019,Representation Learning,Language Models & NLP,2010-2014,2015-2019,1974,cooccurrence
+Representation Learning@2010-2014,Multimodal & Vision-Language@2015-2019,Representation Learning,Multimodal & Vision-Language,2010-2014,2015-2019,378,cooccurrence
+Representation Learning@2010-2014,Optimization & Learning Theory@2015-2019,Representation Learning,Optimization & Learning Theory,2010-2014,2015-2019,6804,cooccurrence
+Representation Learning@2010-2014,Probabilistic Modeling@2015-2019,Representation Learning,Probabilistic Modeling,2010-2014,2015-2019,6552,cooccurrence
+Representation Learning@2010-2014,Reinforcement Learning & Bandits@2015-2019,Representation Learning,Reinforcement Learning & Bandits,2010-2014,2015-2019,3990,cooccurrence
+Representation Learning@2010-2014,"Robustness, Privacy & Safety@2015-2019",Representation Learning,"Robustness, Privacy & Safety",2010-2014,2015-2019,2604,cooccurrence
+"Robustness, Privacy & Safety@2010-2014","Biology, Molecules & Health@2015-2019","Robustness, Privacy & Safety","Biology, Molecules & Health",2010-2014,2015-2019,98,cooccurrence
+"Robustness, Privacy & Safety@2010-2014","Causality, Dynamics & Scientific ML@2015-2019","Robustness, Privacy & Safety","Causality, Dynamics & Scientific ML",2010-2014,2015-2019,490,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Classical Statistical ML@2015-2019,"Robustness, Privacy & Safety",Classical Statistical ML,2010-2014,2015-2019,1778,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Computer Vision & 3D Perception@2015-2019,"Robustness, Privacy & Safety",Computer Vision & 3D Perception,2010-2014,2015-2019,728,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Federated & Distributed Learning@2015-2019,"Robustness, Privacy & Safety",Federated & Distributed Learning,2010-2014,2015-2019,196,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Games & Mechanism Design@2015-2019,"Robustness, Privacy & Safety",Games & Mechanism Design,2010-2014,2015-2019,196,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Generative Models & Diffusion@2015-2019,"Robustness, Privacy & Safety",Generative Models & Diffusion,2010-2014,2015-2019,658,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Graph Machine Learning@2015-2019,"Robustness, Privacy & Safety",Graph Machine Learning,2010-2014,2015-2019,448,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Language Models & NLP@2015-2019,"Robustness, Privacy & Safety",Language Models & NLP,2010-2014,2015-2019,658,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Multimodal & Vision-Language@2015-2019,"Robustness, Privacy & Safety",Multimodal & Vision-Language,2010-2014,2015-2019,126,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Optimization & Learning Theory@2015-2019,"Robustness, Privacy & Safety",Optimization & Learning Theory,2010-2014,2015-2019,2268,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Probabilistic Modeling@2015-2019,"Robustness, Privacy & Safety",Probabilistic Modeling,2010-2014,2015-2019,2184,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Reinforcement Learning & Bandits@2015-2019,"Robustness, Privacy & Safety",Reinforcement Learning & Bandits,2010-2014,2015-2019,1330,cooccurrence
+"Robustness, Privacy & Safety@2010-2014",Representation Learning@2015-2019,"Robustness, Privacy & Safety",Representation Learning,2010-2014,2015-2019,1246,cooccurrence
+"Biology, Molecules & Health@2015-2019","Biology, Molecules & Health@2020-2024","Biology, Molecules & Health","Biology, Molecules & Health",2015-2019,2020-2024,7,persistence
+"Causality, Dynamics & Scientific ML@2015-2019","Causality, Dynamics & Scientific ML@2020-2024","Causality, Dynamics & Scientific ML","Causality, Dynamics & Scientific ML",2015-2019,2020-2024,35,persistence
+Classical Statistical ML@2015-2019,Classical Statistical ML@2020-2024,Classical Statistical ML,Classical Statistical ML,2015-2019,2020-2024,127,persistence
+Computer Vision & 3D Perception@2015-2019,Computer Vision & 3D Perception@2020-2024,Computer Vision & 3D Perception,Computer Vision & 3D Perception,2015-2019,2020-2024,52,persistence
+Federated & Distributed Learning@2015-2019,Federated & Distributed Learning@2020-2024,Federated & Distributed Learning,Federated & Distributed Learning,2015-2019,2020-2024,14,persistence
+Games & Mechanism Design@2015-2019,Games & Mechanism Design@2020-2024,Games & Mechanism Design,Games & Mechanism Design,2015-2019,2020-2024,14,persistence
+Generative Models & Diffusion@2015-2019,Generative Models & Diffusion@2020-2024,Generative Models & Diffusion,Generative Models & Diffusion,2015-2019,2020-2024,47,persistence
+Graph Machine Learning@2015-2019,Graph Machine Learning@2020-2024,Graph Machine Learning,Graph Machine Learning,2015-2019,2020-2024,32,persistence
+Language Models & NLP@2015-2019,Language Models & NLP@2020-2024,Language Models & NLP,Language Models & NLP,2015-2019,2020-2024,47,persistence
+Multimodal & Vision-Language@2015-2019,Multimodal & Vision-Language@2020-2024,Multimodal & Vision-Language,Multimodal & Vision-Language,2015-2019,2020-2024,9,persistence
+Optimization & Learning Theory@2015-2019,Optimization & Learning Theory@2020-2024,Optimization & Learning Theory,Optimization & Learning Theory,2015-2019,2020-2024,162,persistence
+Probabilistic Modeling@2015-2019,Probabilistic Modeling@2020-2024,Probabilistic Modeling,Probabilistic Modeling,2015-2019,2020-2024,156,persistence
+Reinforcement Learning & Bandits@2015-2019,Reinforcement Learning & Bandits@2020-2024,Reinforcement Learning & Bandits,Reinforcement Learning & Bandits,2015-2019,2020-2024,95,persistence
+Representation Learning@2015-2019,Representation Learning@2020-2024,Representation Learning,Representation Learning,2015-2019,2020-2024,89,persistence
+"Robustness, Privacy & Safety@2015-2019","Robustness, Privacy & Safety@2020-2024","Robustness, Privacy & Safety","Robustness, Privacy & Safety",2015-2019,2020-2024,62,persistence
+"Biology, Molecules & Health@2015-2019","Causality, Dynamics & Scientific ML@2020-2024","Biology, Molecules & Health","Causality, Dynamics & Scientific ML",2015-2019,2020-2024,1169,cooccurrence
+"Biology, Molecules & Health@2015-2019",Classical Statistical ML@2020-2024,"Biology, Molecules & Health",Classical Statistical ML,2015-2019,2020-2024,2310,cooccurrence
+"Biology, Molecules & Health@2015-2019",Computer Vision & 3D Perception@2020-2024,"Biology, Molecules & Health",Computer Vision & 3D Perception,2015-2019,2020-2024,2359,cooccurrence
+"Biology, Molecules & Health@2015-2019",Federated & Distributed Learning@2020-2024,"Biology, Molecules & Health",Federated & Distributed Learning,2015-2019,2020-2024,427,cooccurrence
+"Biology, Molecules & Health@2015-2019",Games & Mechanism Design@2020-2024,"Biology, Molecules & Health",Games & Mechanism Design,2015-2019,2020-2024,280,cooccurrence
+"Biology, Molecules & Health@2015-2019",Generative Models & Diffusion@2020-2024,"Biology, Molecules & Health",Generative Models & Diffusion,2015-2019,2020-2024,1421,cooccurrence
+"Biology, Molecules & Health@2015-2019",Graph Machine Learning@2020-2024,"Biology, Molecules & Health",Graph Machine Learning,2015-2019,2020-2024,1260,cooccurrence
+"Biology, Molecules & Health@2015-2019",Language Models & NLP@2020-2024,"Biology, Molecules & Health",Language Models & NLP,2015-2019,2020-2024,2303,cooccurrence
+"Biology, Molecules & Health@2015-2019",Multimodal & Vision-Language@2020-2024,"Biology, Molecules & Health",Multimodal & Vision-Language,2015-2019,2020-2024,560,cooccurrence
+"Biology, Molecules & Health@2015-2019",Optimization & Learning Theory@2020-2024,"Biology, Molecules & Health",Optimization & Learning Theory,2015-2019,2020-2024,3430,cooccurrence
+"Biology, Molecules & Health@2015-2019",Probabilistic Modeling@2020-2024,"Biology, Molecules & Health",Probabilistic Modeling,2015-2019,2020-2024,2177,cooccurrence
+"Biology, Molecules & Health@2015-2019",Reinforcement Learning & Bandits@2020-2024,"Biology, Molecules & Health",Reinforcement Learning & Bandits,2015-2019,2020-2024,2541,cooccurrence
+"Biology, Molecules & Health@2015-2019",Representation Learning@2020-2024,"Biology, Molecules & Health",Representation Learning,2015-2019,2020-2024,2856,cooccurrence
+"Biology, Molecules & Health@2015-2019","Robustness, Privacy & Safety@2020-2024","Biology, Molecules & Health","Robustness, Privacy & Safety",2015-2019,2020-2024,1736,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019","Biology, Molecules & Health@2020-2024","Causality, Dynamics & Scientific ML","Biology, Molecules & Health",2015-2019,2020-2024,1925,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Classical Statistical ML@2020-2024,"Causality, Dynamics & Scientific ML",Classical Statistical ML,2015-2019,2020-2024,11550,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Computer Vision & 3D Perception@2020-2024,"Causality, Dynamics & Scientific ML",Computer Vision & 3D Perception,2015-2019,2020-2024,11795,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Federated & Distributed Learning@2020-2024,"Causality, Dynamics & Scientific ML",Federated & Distributed Learning,2015-2019,2020-2024,2135,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Games & Mechanism Design@2020-2024,"Causality, Dynamics & Scientific ML",Games & Mechanism Design,2015-2019,2020-2024,1400,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Generative Models & Diffusion@2020-2024,"Causality, Dynamics & Scientific ML",Generative Models & Diffusion,2015-2019,2020-2024,7105,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Graph Machine Learning@2020-2024,"Causality, Dynamics & Scientific ML",Graph Machine Learning,2015-2019,2020-2024,6300,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Language Models & NLP@2020-2024,"Causality, Dynamics & Scientific ML",Language Models & NLP,2015-2019,2020-2024,11515,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Multimodal & Vision-Language@2020-2024,"Causality, Dynamics & Scientific ML",Multimodal & Vision-Language,2015-2019,2020-2024,2800,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Optimization & Learning Theory@2020-2024,"Causality, Dynamics & Scientific ML",Optimization & Learning Theory,2015-2019,2020-2024,17150,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Probabilistic Modeling@2020-2024,"Causality, Dynamics & Scientific ML",Probabilistic Modeling,2015-2019,2020-2024,10885,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Reinforcement Learning & Bandits@2020-2024,"Causality, Dynamics & Scientific ML",Reinforcement Learning & Bandits,2015-2019,2020-2024,12705,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019",Representation Learning@2020-2024,"Causality, Dynamics & Scientific ML",Representation Learning,2015-2019,2020-2024,14280,cooccurrence
+"Causality, Dynamics & Scientific ML@2015-2019","Robustness, Privacy & Safety@2020-2024","Causality, Dynamics & Scientific ML","Robustness, Privacy & Safety",2015-2019,2020-2024,8680,cooccurrence
+Classical Statistical ML@2015-2019,"Biology, Molecules & Health@2020-2024",Classical Statistical ML,"Biology, Molecules & Health",2015-2019,2020-2024,6985,cooccurrence
+Classical Statistical ML@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Classical Statistical ML,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,21209,cooccurrence
+Classical Statistical ML@2015-2019,Computer Vision & 3D Perception@2020-2024,Classical Statistical ML,Computer Vision & 3D Perception,2015-2019,2020-2024,42799,cooccurrence
+Classical Statistical ML@2015-2019,Federated & Distributed Learning@2020-2024,Classical Statistical ML,Federated & Distributed Learning,2015-2019,2020-2024,7747,cooccurrence
+Classical Statistical ML@2015-2019,Games & Mechanism Design@2020-2024,Classical Statistical ML,Games & Mechanism Design,2015-2019,2020-2024,5080,cooccurrence
+Classical Statistical ML@2015-2019,Generative Models & Diffusion@2020-2024,Classical Statistical ML,Generative Models & Diffusion,2015-2019,2020-2024,25781,cooccurrence
+Classical Statistical ML@2015-2019,Graph Machine Learning@2020-2024,Classical Statistical ML,Graph Machine Learning,2015-2019,2020-2024,22860,cooccurrence
+Classical Statistical ML@2015-2019,Language Models & NLP@2020-2024,Classical Statistical ML,Language Models & NLP,2015-2019,2020-2024,41783,cooccurrence
+Classical Statistical ML@2015-2019,Multimodal & Vision-Language@2020-2024,Classical Statistical ML,Multimodal & Vision-Language,2015-2019,2020-2024,10160,cooccurrence
+Classical Statistical ML@2015-2019,Optimization & Learning Theory@2020-2024,Classical Statistical ML,Optimization & Learning Theory,2015-2019,2020-2024,62230,cooccurrence
+Classical Statistical ML@2015-2019,Probabilistic Modeling@2020-2024,Classical Statistical ML,Probabilistic Modeling,2015-2019,2020-2024,39497,cooccurrence
+Classical Statistical ML@2015-2019,Reinforcement Learning & Bandits@2020-2024,Classical Statistical ML,Reinforcement Learning & Bandits,2015-2019,2020-2024,46101,cooccurrence
+Classical Statistical ML@2015-2019,Representation Learning@2020-2024,Classical Statistical ML,Representation Learning,2015-2019,2020-2024,51816,cooccurrence
+Classical Statistical ML@2015-2019,"Robustness, Privacy & Safety@2020-2024",Classical Statistical ML,"Robustness, Privacy & Safety",2015-2019,2020-2024,31496,cooccurrence
+Computer Vision & 3D Perception@2015-2019,"Biology, Molecules & Health@2020-2024",Computer Vision & 3D Perception,"Biology, Molecules & Health",2015-2019,2020-2024,2860,cooccurrence
+Computer Vision & 3D Perception@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Computer Vision & 3D Perception,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,8684,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Classical Statistical ML@2020-2024,Computer Vision & 3D Perception,Classical Statistical ML,2015-2019,2020-2024,17160,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Federated & Distributed Learning@2020-2024,Computer Vision & 3D Perception,Federated & Distributed Learning,2015-2019,2020-2024,3172,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Games & Mechanism Design@2020-2024,Computer Vision & 3D Perception,Games & Mechanism Design,2015-2019,2020-2024,2080,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Generative Models & Diffusion@2020-2024,Computer Vision & 3D Perception,Generative Models & Diffusion,2015-2019,2020-2024,10556,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Graph Machine Learning@2020-2024,Computer Vision & 3D Perception,Graph Machine Learning,2015-2019,2020-2024,9360,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Language Models & NLP@2020-2024,Computer Vision & 3D Perception,Language Models & NLP,2015-2019,2020-2024,17108,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Multimodal & Vision-Language@2020-2024,Computer Vision & 3D Perception,Multimodal & Vision-Language,2015-2019,2020-2024,4160,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Optimization & Learning Theory@2020-2024,Computer Vision & 3D Perception,Optimization & Learning Theory,2015-2019,2020-2024,25480,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Probabilistic Modeling@2020-2024,Computer Vision & 3D Perception,Probabilistic Modeling,2015-2019,2020-2024,16172,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Reinforcement Learning & Bandits@2020-2024,Computer Vision & 3D Perception,Reinforcement Learning & Bandits,2015-2019,2020-2024,18876,cooccurrence
+Computer Vision & 3D Perception@2015-2019,Representation Learning@2020-2024,Computer Vision & 3D Perception,Representation Learning,2015-2019,2020-2024,21216,cooccurrence
+Computer Vision & 3D Perception@2015-2019,"Robustness, Privacy & Safety@2020-2024",Computer Vision & 3D Perception,"Robustness, Privacy & Safety",2015-2019,2020-2024,12896,cooccurrence
+Federated & Distributed Learning@2015-2019,"Biology, Molecules & Health@2020-2024",Federated & Distributed Learning,"Biology, Molecules & Health",2015-2019,2020-2024,770,cooccurrence
+Federated & Distributed Learning@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Federated & Distributed Learning,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,2338,cooccurrence
+Federated & Distributed Learning@2015-2019,Classical Statistical ML@2020-2024,Federated & Distributed Learning,Classical Statistical ML,2015-2019,2020-2024,4620,cooccurrence
+Federated & Distributed Learning@2015-2019,Computer Vision & 3D Perception@2020-2024,Federated & Distributed Learning,Computer Vision & 3D Perception,2015-2019,2020-2024,4718,cooccurrence
+Federated & Distributed Learning@2015-2019,Games & Mechanism Design@2020-2024,Federated & Distributed Learning,Games & Mechanism Design,2015-2019,2020-2024,560,cooccurrence
+Federated & Distributed Learning@2015-2019,Generative Models & Diffusion@2020-2024,Federated & Distributed Learning,Generative Models & Diffusion,2015-2019,2020-2024,2842,cooccurrence
+Federated & Distributed Learning@2015-2019,Graph Machine Learning@2020-2024,Federated & Distributed Learning,Graph Machine Learning,2015-2019,2020-2024,2520,cooccurrence
+Federated & Distributed Learning@2015-2019,Language Models & NLP@2020-2024,Federated & Distributed Learning,Language Models & NLP,2015-2019,2020-2024,4606,cooccurrence
+Federated & Distributed Learning@2015-2019,Multimodal & Vision-Language@2020-2024,Federated & Distributed Learning,Multimodal & Vision-Language,2015-2019,2020-2024,1120,cooccurrence
+Federated & Distributed Learning@2015-2019,Optimization & Learning Theory@2020-2024,Federated & Distributed Learning,Optimization & Learning Theory,2015-2019,2020-2024,6860,cooccurrence
+Federated & Distributed Learning@2015-2019,Probabilistic Modeling@2020-2024,Federated & Distributed Learning,Probabilistic Modeling,2015-2019,2020-2024,4354,cooccurrence
+Federated & Distributed Learning@2015-2019,Reinforcement Learning & Bandits@2020-2024,Federated & Distributed Learning,Reinforcement Learning & Bandits,2015-2019,2020-2024,5082,cooccurrence
+Federated & Distributed Learning@2015-2019,Representation Learning@2020-2024,Federated & Distributed Learning,Representation Learning,2015-2019,2020-2024,5712,cooccurrence
+Federated & Distributed Learning@2015-2019,"Robustness, Privacy & Safety@2020-2024",Federated & Distributed Learning,"Robustness, Privacy & Safety",2015-2019,2020-2024,3472,cooccurrence
+Games & Mechanism Design@2015-2019,"Biology, Molecules & Health@2020-2024",Games & Mechanism Design,"Biology, Molecules & Health",2015-2019,2020-2024,770,cooccurrence
+Games & Mechanism Design@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Games & Mechanism Design,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,2338,cooccurrence
+Games & Mechanism Design@2015-2019,Classical Statistical ML@2020-2024,Games & Mechanism Design,Classical Statistical ML,2015-2019,2020-2024,4620,cooccurrence
+Games & Mechanism Design@2015-2019,Computer Vision & 3D Perception@2020-2024,Games & Mechanism Design,Computer Vision & 3D Perception,2015-2019,2020-2024,4718,cooccurrence
+Games & Mechanism Design@2015-2019,Federated & Distributed Learning@2020-2024,Games & Mechanism Design,Federated & Distributed Learning,2015-2019,2020-2024,854,cooccurrence
+Games & Mechanism Design@2015-2019,Generative Models & Diffusion@2020-2024,Games & Mechanism Design,Generative Models & Diffusion,2015-2019,2020-2024,2842,cooccurrence
+Games & Mechanism Design@2015-2019,Graph Machine Learning@2020-2024,Games & Mechanism Design,Graph Machine Learning,2015-2019,2020-2024,2520,cooccurrence
+Games & Mechanism Design@2015-2019,Language Models & NLP@2020-2024,Games & Mechanism Design,Language Models & NLP,2015-2019,2020-2024,4606,cooccurrence
+Games & Mechanism Design@2015-2019,Multimodal & Vision-Language@2020-2024,Games & Mechanism Design,Multimodal & Vision-Language,2015-2019,2020-2024,1120,cooccurrence
+Games & Mechanism Design@2015-2019,Optimization & Learning Theory@2020-2024,Games & Mechanism Design,Optimization & Learning Theory,2015-2019,2020-2024,6860,cooccurrence
+Games & Mechanism Design@2015-2019,Probabilistic Modeling@2020-2024,Games & Mechanism Design,Probabilistic Modeling,2015-2019,2020-2024,4354,cooccurrence
+Games & Mechanism Design@2015-2019,Reinforcement Learning & Bandits@2020-2024,Games & Mechanism Design,Reinforcement Learning & Bandits,2015-2019,2020-2024,5082,cooccurrence
+Games & Mechanism Design@2015-2019,Representation Learning@2020-2024,Games & Mechanism Design,Representation Learning,2015-2019,2020-2024,5712,cooccurrence
+Games & Mechanism Design@2015-2019,"Robustness, Privacy & Safety@2020-2024",Games & Mechanism Design,"Robustness, Privacy & Safety",2015-2019,2020-2024,3472,cooccurrence
+Generative Models & Diffusion@2015-2019,"Biology, Molecules & Health@2020-2024",Generative Models & Diffusion,"Biology, Molecules & Health",2015-2019,2020-2024,2585,cooccurrence
+Generative Models & Diffusion@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Generative Models & Diffusion,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,7849,cooccurrence
+Generative Models & Diffusion@2015-2019,Classical Statistical ML@2020-2024,Generative Models & Diffusion,Classical Statistical ML,2015-2019,2020-2024,15510,cooccurrence
+Generative Models & Diffusion@2015-2019,Computer Vision & 3D Perception@2020-2024,Generative Models & Diffusion,Computer Vision & 3D Perception,2015-2019,2020-2024,15839,cooccurrence
+Generative Models & Diffusion@2015-2019,Federated & Distributed Learning@2020-2024,Generative Models & Diffusion,Federated & Distributed Learning,2015-2019,2020-2024,2867,cooccurrence
+Generative Models & Diffusion@2015-2019,Games & Mechanism Design@2020-2024,Generative Models & Diffusion,Games & Mechanism Design,2015-2019,2020-2024,1880,cooccurrence
+Generative Models & Diffusion@2015-2019,Graph Machine Learning@2020-2024,Generative Models & Diffusion,Graph Machine Learning,2015-2019,2020-2024,8460,cooccurrence
+Generative Models & Diffusion@2015-2019,Language Models & NLP@2020-2024,Generative Models & Diffusion,Language Models & NLP,2015-2019,2020-2024,15463,cooccurrence
+Generative Models & Diffusion@2015-2019,Multimodal & Vision-Language@2020-2024,Generative Models & Diffusion,Multimodal & Vision-Language,2015-2019,2020-2024,3760,cooccurrence
+Generative Models & Diffusion@2015-2019,Optimization & Learning Theory@2020-2024,Generative Models & Diffusion,Optimization & Learning Theory,2015-2019,2020-2024,23030,cooccurrence
+Generative Models & Diffusion@2015-2019,Probabilistic Modeling@2020-2024,Generative Models & Diffusion,Probabilistic Modeling,2015-2019,2020-2024,14617,cooccurrence
+Generative Models & Diffusion@2015-2019,Reinforcement Learning & Bandits@2020-2024,Generative Models & Diffusion,Reinforcement Learning & Bandits,2015-2019,2020-2024,17061,cooccurrence
+Generative Models & Diffusion@2015-2019,Representation Learning@2020-2024,Generative Models & Diffusion,Representation Learning,2015-2019,2020-2024,19176,cooccurrence
+Generative Models & Diffusion@2015-2019,"Robustness, Privacy & Safety@2020-2024",Generative Models & Diffusion,"Robustness, Privacy & Safety",2015-2019,2020-2024,11656,cooccurrence
+Graph Machine Learning@2015-2019,"Biology, Molecules & Health@2020-2024",Graph Machine Learning,"Biology, Molecules & Health",2015-2019,2020-2024,1760,cooccurrence
+Graph Machine Learning@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Graph Machine Learning,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,5344,cooccurrence
+Graph Machine Learning@2015-2019,Classical Statistical ML@2020-2024,Graph Machine Learning,Classical Statistical ML,2015-2019,2020-2024,10560,cooccurrence
+Graph Machine Learning@2015-2019,Computer Vision & 3D Perception@2020-2024,Graph Machine Learning,Computer Vision & 3D Perception,2015-2019,2020-2024,10784,cooccurrence
+Graph Machine Learning@2015-2019,Federated & Distributed Learning@2020-2024,Graph Machine Learning,Federated & Distributed Learning,2015-2019,2020-2024,1952,cooccurrence
+Graph Machine Learning@2015-2019,Games & Mechanism Design@2020-2024,Graph Machine Learning,Games & Mechanism Design,2015-2019,2020-2024,1280,cooccurrence
+Graph Machine Learning@2015-2019,Generative Models & Diffusion@2020-2024,Graph Machine Learning,Generative Models & Diffusion,2015-2019,2020-2024,6496,cooccurrence
+Graph Machine Learning@2015-2019,Language Models & NLP@2020-2024,Graph Machine Learning,Language Models & NLP,2015-2019,2020-2024,10528,cooccurrence
+Graph Machine Learning@2015-2019,Multimodal & Vision-Language@2020-2024,Graph Machine Learning,Multimodal & Vision-Language,2015-2019,2020-2024,2560,cooccurrence
+Graph Machine Learning@2015-2019,Optimization & Learning Theory@2020-2024,Graph Machine Learning,Optimization & Learning Theory,2015-2019,2020-2024,15680,cooccurrence
+Graph Machine Learning@2015-2019,Probabilistic Modeling@2020-2024,Graph Machine Learning,Probabilistic Modeling,2015-2019,2020-2024,9952,cooccurrence
+Graph Machine Learning@2015-2019,Reinforcement Learning & Bandits@2020-2024,Graph Machine Learning,Reinforcement Learning & Bandits,2015-2019,2020-2024,11616,cooccurrence
+Graph Machine Learning@2015-2019,Representation Learning@2020-2024,Graph Machine Learning,Representation Learning,2015-2019,2020-2024,13056,cooccurrence
+Graph Machine Learning@2015-2019,"Robustness, Privacy & Safety@2020-2024",Graph Machine Learning,"Robustness, Privacy & Safety",2015-2019,2020-2024,7936,cooccurrence
+Language Models & NLP@2015-2019,"Biology, Molecules & Health@2020-2024",Language Models & NLP,"Biology, Molecules & Health",2015-2019,2020-2024,2585,cooccurrence
+Language Models & NLP@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Language Models & NLP,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,7849,cooccurrence
+Language Models & NLP@2015-2019,Classical Statistical ML@2020-2024,Language Models & NLP,Classical Statistical ML,2015-2019,2020-2024,15510,cooccurrence
+Language Models & NLP@2015-2019,Computer Vision & 3D Perception@2020-2024,Language Models & NLP,Computer Vision & 3D Perception,2015-2019,2020-2024,15839,cooccurrence
+Language Models & NLP@2015-2019,Federated & Distributed Learning@2020-2024,Language Models & NLP,Federated & Distributed Learning,2015-2019,2020-2024,2867,cooccurrence
+Language Models & NLP@2015-2019,Games & Mechanism Design@2020-2024,Language Models & NLP,Games & Mechanism Design,2015-2019,2020-2024,1880,cooccurrence
+Language Models & NLP@2015-2019,Generative Models & Diffusion@2020-2024,Language Models & NLP,Generative Models & Diffusion,2015-2019,2020-2024,9541,cooccurrence
+Language Models & NLP@2015-2019,Graph Machine Learning@2020-2024,Language Models & NLP,Graph Machine Learning,2015-2019,2020-2024,8460,cooccurrence
+Language Models & NLP@2015-2019,Multimodal & Vision-Language@2020-2024,Language Models & NLP,Multimodal & Vision-Language,2015-2019,2020-2024,3760,cooccurrence
+Language Models & NLP@2015-2019,Optimization & Learning Theory@2020-2024,Language Models & NLP,Optimization & Learning Theory,2015-2019,2020-2024,23030,cooccurrence
+Language Models & NLP@2015-2019,Probabilistic Modeling@2020-2024,Language Models & NLP,Probabilistic Modeling,2015-2019,2020-2024,14617,cooccurrence
+Language Models & NLP@2015-2019,Reinforcement Learning & Bandits@2020-2024,Language Models & NLP,Reinforcement Learning & Bandits,2015-2019,2020-2024,17061,cooccurrence
+Language Models & NLP@2015-2019,Representation Learning@2020-2024,Language Models & NLP,Representation Learning,2015-2019,2020-2024,19176,cooccurrence
+Language Models & NLP@2015-2019,"Robustness, Privacy & Safety@2020-2024",Language Models & NLP,"Robustness, Privacy & Safety",2015-2019,2020-2024,11656,cooccurrence
+Multimodal & Vision-Language@2015-2019,"Biology, Molecules & Health@2020-2024",Multimodal & Vision-Language,"Biology, Molecules & Health",2015-2019,2020-2024,495,cooccurrence
+Multimodal & Vision-Language@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Multimodal & Vision-Language,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,1503,cooccurrence
+Multimodal & Vision-Language@2015-2019,Classical Statistical ML@2020-2024,Multimodal & Vision-Language,Classical Statistical ML,2015-2019,2020-2024,2970,cooccurrence
+Multimodal & Vision-Language@2015-2019,Computer Vision & 3D Perception@2020-2024,Multimodal & Vision-Language,Computer Vision & 3D Perception,2015-2019,2020-2024,3033,cooccurrence
+Multimodal & Vision-Language@2015-2019,Federated & Distributed Learning@2020-2024,Multimodal & Vision-Language,Federated & Distributed Learning,2015-2019,2020-2024,549,cooccurrence
+Multimodal & Vision-Language@2015-2019,Games & Mechanism Design@2020-2024,Multimodal & Vision-Language,Games & Mechanism Design,2015-2019,2020-2024,360,cooccurrence
+Multimodal & Vision-Language@2015-2019,Generative Models & Diffusion@2020-2024,Multimodal & Vision-Language,Generative Models & Diffusion,2015-2019,2020-2024,1827,cooccurrence
+Multimodal & Vision-Language@2015-2019,Graph Machine Learning@2020-2024,Multimodal & Vision-Language,Graph Machine Learning,2015-2019,2020-2024,1620,cooccurrence
+Multimodal & Vision-Language@2015-2019,Language Models & NLP@2020-2024,Multimodal & Vision-Language,Language Models & NLP,2015-2019,2020-2024,2961,cooccurrence
+Multimodal & Vision-Language@2015-2019,Optimization & Learning Theory@2020-2024,Multimodal & Vision-Language,Optimization & Learning Theory,2015-2019,2020-2024,4410,cooccurrence
+Multimodal & Vision-Language@2015-2019,Probabilistic Modeling@2020-2024,Multimodal & Vision-Language,Probabilistic Modeling,2015-2019,2020-2024,2799,cooccurrence
+Multimodal & Vision-Language@2015-2019,Reinforcement Learning & Bandits@2020-2024,Multimodal & Vision-Language,Reinforcement Learning & Bandits,2015-2019,2020-2024,3267,cooccurrence
+Multimodal & Vision-Language@2015-2019,Representation Learning@2020-2024,Multimodal & Vision-Language,Representation Learning,2015-2019,2020-2024,3672,cooccurrence
+Multimodal & Vision-Language@2015-2019,"Robustness, Privacy & Safety@2020-2024",Multimodal & Vision-Language,"Robustness, Privacy & Safety",2015-2019,2020-2024,2232,cooccurrence
+Optimization & Learning Theory@2015-2019,"Biology, Molecules & Health@2020-2024",Optimization & Learning Theory,"Biology, Molecules & Health",2015-2019,2020-2024,8910,cooccurrence
+Optimization & Learning Theory@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Optimization & Learning Theory,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,27054,cooccurrence
+Optimization & Learning Theory@2015-2019,Classical Statistical ML@2020-2024,Optimization & Learning Theory,Classical Statistical ML,2015-2019,2020-2024,53460,cooccurrence
+Optimization & Learning Theory@2015-2019,Computer Vision & 3D Perception@2020-2024,Optimization & Learning Theory,Computer Vision & 3D Perception,2015-2019,2020-2024,54594,cooccurrence
+Optimization & Learning Theory@2015-2019,Federated & Distributed Learning@2020-2024,Optimization & Learning Theory,Federated & Distributed Learning,2015-2019,2020-2024,9882,cooccurrence
+Optimization & Learning Theory@2015-2019,Games & Mechanism Design@2020-2024,Optimization & Learning Theory,Games & Mechanism Design,2015-2019,2020-2024,6480,cooccurrence
+Optimization & Learning Theory@2015-2019,Generative Models & Diffusion@2020-2024,Optimization & Learning Theory,Generative Models & Diffusion,2015-2019,2020-2024,32886,cooccurrence
+Optimization & Learning Theory@2015-2019,Graph Machine Learning@2020-2024,Optimization & Learning Theory,Graph Machine Learning,2015-2019,2020-2024,29160,cooccurrence
+Optimization & Learning Theory@2015-2019,Language Models & NLP@2020-2024,Optimization & Learning Theory,Language Models & NLP,2015-2019,2020-2024,53298,cooccurrence
+Optimization & Learning Theory@2015-2019,Multimodal & Vision-Language@2020-2024,Optimization & Learning Theory,Multimodal & Vision-Language,2015-2019,2020-2024,12960,cooccurrence
+Optimization & Learning Theory@2015-2019,Probabilistic Modeling@2020-2024,Optimization & Learning Theory,Probabilistic Modeling,2015-2019,2020-2024,50382,cooccurrence
+Optimization & Learning Theory@2015-2019,Reinforcement Learning & Bandits@2020-2024,Optimization & Learning Theory,Reinforcement Learning & Bandits,2015-2019,2020-2024,58806,cooccurrence
+Optimization & Learning Theory@2015-2019,Representation Learning@2020-2024,Optimization & Learning Theory,Representation Learning,2015-2019,2020-2024,66096,cooccurrence
+Optimization & Learning Theory@2015-2019,"Robustness, Privacy & Safety@2020-2024",Optimization & Learning Theory,"Robustness, Privacy & Safety",2015-2019,2020-2024,40176,cooccurrence
+Probabilistic Modeling@2015-2019,"Biology, Molecules & Health@2020-2024",Probabilistic Modeling,"Biology, Molecules & Health",2015-2019,2020-2024,8580,cooccurrence
+Probabilistic Modeling@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Probabilistic Modeling,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,26052,cooccurrence
+Probabilistic Modeling@2015-2019,Classical Statistical ML@2020-2024,Probabilistic Modeling,Classical Statistical ML,2015-2019,2020-2024,51480,cooccurrence
+Probabilistic Modeling@2015-2019,Computer Vision & 3D Perception@2020-2024,Probabilistic Modeling,Computer Vision & 3D Perception,2015-2019,2020-2024,52572,cooccurrence
+Probabilistic Modeling@2015-2019,Federated & Distributed Learning@2020-2024,Probabilistic Modeling,Federated & Distributed Learning,2015-2019,2020-2024,9516,cooccurrence
+Probabilistic Modeling@2015-2019,Games & Mechanism Design@2020-2024,Probabilistic Modeling,Games & Mechanism Design,2015-2019,2020-2024,6240,cooccurrence
+Probabilistic Modeling@2015-2019,Generative Models & Diffusion@2020-2024,Probabilistic Modeling,Generative Models & Diffusion,2015-2019,2020-2024,31668,cooccurrence
+Probabilistic Modeling@2015-2019,Graph Machine Learning@2020-2024,Probabilistic Modeling,Graph Machine Learning,2015-2019,2020-2024,28080,cooccurrence
+Probabilistic Modeling@2015-2019,Language Models & NLP@2020-2024,Probabilistic Modeling,Language Models & NLP,2015-2019,2020-2024,51324,cooccurrence
+Probabilistic Modeling@2015-2019,Multimodal & Vision-Language@2020-2024,Probabilistic Modeling,Multimodal & Vision-Language,2015-2019,2020-2024,12480,cooccurrence
+Probabilistic Modeling@2015-2019,Optimization & Learning Theory@2020-2024,Probabilistic Modeling,Optimization & Learning Theory,2015-2019,2020-2024,76440,cooccurrence
+Probabilistic Modeling@2015-2019,Reinforcement Learning & Bandits@2020-2024,Probabilistic Modeling,Reinforcement Learning & Bandits,2015-2019,2020-2024,56628,cooccurrence
+Probabilistic Modeling@2015-2019,Representation Learning@2020-2024,Probabilistic Modeling,Representation Learning,2015-2019,2020-2024,63648,cooccurrence
+Probabilistic Modeling@2015-2019,"Robustness, Privacy & Safety@2020-2024",Probabilistic Modeling,"Robustness, Privacy & Safety",2015-2019,2020-2024,38688,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,"Biology, Molecules & Health@2020-2024",Reinforcement Learning & Bandits,"Biology, Molecules & Health",2015-2019,2020-2024,5225,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Reinforcement Learning & Bandits,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,15865,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Classical Statistical ML@2020-2024,Reinforcement Learning & Bandits,Classical Statistical ML,2015-2019,2020-2024,31350,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Computer Vision & 3D Perception@2020-2024,Reinforcement Learning & Bandits,Computer Vision & 3D Perception,2015-2019,2020-2024,32015,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Federated & Distributed Learning@2020-2024,Reinforcement Learning & Bandits,Federated & Distributed Learning,2015-2019,2020-2024,5795,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Games & Mechanism Design@2020-2024,Reinforcement Learning & Bandits,Games & Mechanism Design,2015-2019,2020-2024,3800,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Generative Models & Diffusion@2020-2024,Reinforcement Learning & Bandits,Generative Models & Diffusion,2015-2019,2020-2024,19285,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Graph Machine Learning@2020-2024,Reinforcement Learning & Bandits,Graph Machine Learning,2015-2019,2020-2024,17100,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Language Models & NLP@2020-2024,Reinforcement Learning & Bandits,Language Models & NLP,2015-2019,2020-2024,31255,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Multimodal & Vision-Language@2020-2024,Reinforcement Learning & Bandits,Multimodal & Vision-Language,2015-2019,2020-2024,7600,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Optimization & Learning Theory@2020-2024,Reinforcement Learning & Bandits,Optimization & Learning Theory,2015-2019,2020-2024,46550,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Probabilistic Modeling@2020-2024,Reinforcement Learning & Bandits,Probabilistic Modeling,2015-2019,2020-2024,29545,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,Representation Learning@2020-2024,Reinforcement Learning & Bandits,Representation Learning,2015-2019,2020-2024,38760,cooccurrence
+Reinforcement Learning & Bandits@2015-2019,"Robustness, Privacy & Safety@2020-2024",Reinforcement Learning & Bandits,"Robustness, Privacy & Safety",2015-2019,2020-2024,23560,cooccurrence
+Representation Learning@2015-2019,"Biology, Molecules & Health@2020-2024",Representation Learning,"Biology, Molecules & Health",2015-2019,2020-2024,4895,cooccurrence
+Representation Learning@2015-2019,"Causality, Dynamics & Scientific ML@2020-2024",Representation Learning,"Causality, Dynamics & Scientific ML",2015-2019,2020-2024,14863,cooccurrence
+Representation Learning@2015-2019,Classical Statistical ML@2020-2024,Representation Learning,Classical Statistical ML,2015-2019,2020-2024,29370,cooccurrence
+Representation Learning@2015-2019,Computer Vision & 3D Perception@2020-2024,Representation Learning,Computer Vision & 3D Perception,2015-2019,2020-2024,29993,cooccurrence
+Representation Learning@2015-2019,Federated & Distributed Learning@2020-2024,Representation Learning,Federated & Distributed Learning,2015-2019,2020-2024,5429,cooccurrence
+Representation Learning@2015-2019,Games & Mechanism Design@2020-2024,Representation Learning,Games & Mechanism Design,2015-2019,2020-2024,3560,cooccurrence
+Representation Learning@2015-2019,Generative Models & Diffusion@2020-2024,Representation Learning,Generative Models & Diffusion,2015-2019,2020-2024,18067,cooccurrence
+Representation Learning@2015-2019,Graph Machine Learning@2020-2024,Representation Learning,Graph Machine Learning,2015-2019,2020-2024,16020,cooccurrence
+Representation Learning@2015-2019,Language Models & NLP@2020-2024,Representation Learning,Language Models & NLP,2015-2019,2020-2024,29281,cooccurrence
+Representation Learning@2015-2019,Multimodal & Vision-Language@2020-2024,Representation Learning,Multimodal & Vision-Language,2015-2019,2020-2024,7120,cooccurrence
+Representation Learning@2015-2019,Optimization & Learning Theory@2020-2024,Representation Learning,Optimization & Learning Theory,2015-2019,2020-2024,43610,cooccurrence
+Representation Learning@2015-2019,Probabilistic Modeling@2020-2024,Representation Learning,Probabilistic Modeling,2015-2019,2020-2024,27679,cooccurrence
+Representation Learning@2015-2019,Reinforcement Learning & Bandits@2020-2024,Representation Learning,Reinforcement Learning & Bandits,2015-2019,2020-2024,32307,cooccurrence
+Representation Learning@2015-2019,"Robustness, Privacy & Safety@2020-2024",Representation Learning,"Robustness, Privacy & Safety",2015-2019,2020-2024,22072,cooccurrence
+"Robustness, Privacy & Safety@2015-2019","Biology, Molecules & Health@2020-2024","Robustness, Privacy & Safety","Biology, Molecules & Health",2015-2019,2020-2024,3410,cooccurrence
+"Robustness, Privacy & Safety@2015-2019","Causality, Dynamics & Scientific ML@2020-2024","Robustness, Privacy & Safety","Causality, Dynamics & Scientific ML",2015-2019,2020-2024,10354,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Classical Statistical ML@2020-2024,"Robustness, Privacy & Safety",Classical Statistical ML,2015-2019,2020-2024,20460,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Computer Vision & 3D Perception@2020-2024,"Robustness, Privacy & Safety",Computer Vision & 3D Perception,2015-2019,2020-2024,20894,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Federated & Distributed Learning@2020-2024,"Robustness, Privacy & Safety",Federated & Distributed Learning,2015-2019,2020-2024,3782,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Games & Mechanism Design@2020-2024,"Robustness, Privacy & Safety",Games & Mechanism Design,2015-2019,2020-2024,2480,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Generative Models & Diffusion@2020-2024,"Robustness, Privacy & Safety",Generative Models & Diffusion,2015-2019,2020-2024,12586,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Graph Machine Learning@2020-2024,"Robustness, Privacy & Safety",Graph Machine Learning,2015-2019,2020-2024,11160,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Language Models & NLP@2020-2024,"Robustness, Privacy & Safety",Language Models & NLP,2015-2019,2020-2024,20398,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Multimodal & Vision-Language@2020-2024,"Robustness, Privacy & Safety",Multimodal & Vision-Language,2015-2019,2020-2024,4960,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Optimization & Learning Theory@2020-2024,"Robustness, Privacy & Safety",Optimization & Learning Theory,2015-2019,2020-2024,30380,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Probabilistic Modeling@2020-2024,"Robustness, Privacy & Safety",Probabilistic Modeling,2015-2019,2020-2024,19282,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Reinforcement Learning & Bandits@2020-2024,"Robustness, Privacy & Safety",Reinforcement Learning & Bandits,2015-2019,2020-2024,22506,cooccurrence
+"Robustness, Privacy & Safety@2015-2019",Representation Learning@2020-2024,"Robustness, Privacy & Safety",Representation Learning,2015-2019,2020-2024,25296,cooccurrence

@@ -1,0 +1,205 @@
+topic,category,year,count,total_papers,share
+"Biology, Molecules & Health",AI for Science,2010,1,64,0.015625
+"Causality, Dynamics & Scientific ML",Scientific ML,2010,3,64,0.046875
+Classical Statistical ML,Core ML,2010,15,64,0.234375
+Computer Vision & 3D Perception,Perception,2010,8,64,0.125
+Federated & Distributed Learning,Systems for ML,2010,1,64,0.015625
+Games & Mechanism Design,Decision Making,2010,2,64,0.03125
+Graph Machine Learning,Structured Learning,2010,2,64,0.03125
+Language Models & NLP,Generative AI,2010,2,64,0.03125
+Optimization & Learning Theory,Core ML,2010,7,64,0.109375
+Probabilistic Modeling,Core ML,2010,12,64,0.1875
+Reinforcement Learning & Bandits,Decision Making,2010,1,64,0.015625
+Representation Learning,Foundation Learning,2010,9,64,0.140625
+"Robustness, Privacy & Safety",Trustworthy AI,2010,1,64,0.015625
+"Biology, Molecules & Health",AI for Science,2011,1,60,0.016666666666666666
+"Causality, Dynamics & Scientific ML",Scientific ML,2011,1,60,0.016666666666666666
+Classical Statistical ML,Core ML,2011,11,60,0.18333333333333332
+Computer Vision & 3D Perception,Perception,2011,6,60,0.1
+Graph Machine Learning,Structured Learning,2011,3,60,0.05
+Optimization & Learning Theory,Core ML,2011,8,60,0.13333333333333333
+Probabilistic Modeling,Core ML,2011,13,60,0.21666666666666667
+Reinforcement Learning & Bandits,Decision Making,2011,4,60,0.06666666666666667
+Representation Learning,Foundation Learning,2011,11,60,0.18333333333333332
+"Robustness, Privacy & Safety",Trustworthy AI,2011,2,60,0.03333333333333333
+Classical Statistical ML,Core ML,2012,23,78,0.2948717948717949
+Computer Vision & 3D Perception,Perception,2012,6,78,0.07692307692307693
+Federated & Distributed Learning,Systems for ML,2012,2,78,0.02564102564102564
+Graph Machine Learning,Structured Learning,2012,1,78,0.01282051282051282
+Language Models & NLP,Generative AI,2012,2,78,0.02564102564102564
+Optimization & Learning Theory,Core ML,2012,12,78,0.15384615384615385
+Probabilistic Modeling,Core ML,2012,18,78,0.23076923076923078
+Reinforcement Learning & Bandits,Decision Making,2012,5,78,0.0641025641025641
+Representation Learning,Foundation Learning,2012,7,78,0.08974358974358974
+"Robustness, Privacy & Safety",Trustworthy AI,2012,2,78,0.02564102564102564
+"Causality, Dynamics & Scientific ML",Scientific ML,2013,5,74,0.06756756756756757
+Classical Statistical ML,Core ML,2013,10,74,0.13513513513513514
+Computer Vision & 3D Perception,Perception,2013,6,74,0.08108108108108109
+Federated & Distributed Learning,Systems for ML,2013,1,74,0.013513513513513514
+Games & Mechanism Design,Decision Making,2013,1,74,0.013513513513513514
+Generative Models & Diffusion,Generative AI,2013,1,74,0.013513513513513514
+Graph Machine Learning,Structured Learning,2013,2,74,0.02702702702702703
+Language Models & NLP,Generative AI,2013,1,74,0.013513513513513514
+Optimization & Learning Theory,Core ML,2013,12,74,0.16216216216216217
+Probabilistic Modeling,Core ML,2013,18,74,0.24324324324324326
+Reinforcement Learning & Bandits,Decision Making,2013,7,74,0.0945945945945946
+Representation Learning,Foundation Learning,2013,5,74,0.06756756756756757
+"Robustness, Privacy & Safety",Trustworthy AI,2013,5,74,0.06756756756756757
+"Causality, Dynamics & Scientific ML",Scientific ML,2014,2,88,0.022727272727272728
+Classical Statistical ML,Core ML,2014,18,88,0.20454545454545456
+Computer Vision & 3D Perception,Perception,2014,3,88,0.03409090909090909
+Federated & Distributed Learning,Systems for ML,2014,4,88,0.045454545454545456
+Generative Models & Diffusion,Generative AI,2014,2,88,0.022727272727272728
+Graph Machine Learning,Structured Learning,2014,3,88,0.03409090909090909
+Optimization & Learning Theory,Core ML,2014,11,88,0.125
+Probabilistic Modeling,Core ML,2014,23,88,0.26136363636363635
+Reinforcement Learning & Bandits,Decision Making,2014,8,88,0.09090909090909091
+Representation Learning,Foundation Learning,2014,10,88,0.11363636363636363
+"Robustness, Privacy & Safety",Trustworthy AI,2014,4,88,0.045454545454545456
+"Causality, Dynamics & Scientific ML",Scientific ML,2015,4,93,0.043010752688172046
+Classical Statistical ML,Core ML,2015,22,93,0.23655913978494625
+Computer Vision & 3D Perception,Perception,2015,5,93,0.053763440860215055
+Federated & Distributed Learning,Systems for ML,2015,1,93,0.010752688172043012
+Games & Mechanism Design,Decision Making,2015,1,93,0.010752688172043012
+Generative Models & Diffusion,Generative AI,2015,4,93,0.043010752688172046
+Graph Machine Learning,Structured Learning,2015,3,93,0.03225806451612903
+Language Models & NLP,Generative AI,2015,2,93,0.021505376344086023
+Multimodal & Vision-Language,Perception,2015,1,93,0.010752688172043012
+Optimization & Learning Theory,Core ML,2015,19,93,0.20430107526881722
+Probabilistic Modeling,Core ML,2015,17,93,0.1827956989247312
+Reinforcement Learning & Bandits,Decision Making,2015,4,93,0.043010752688172046
+Representation Learning,Foundation Learning,2015,8,93,0.08602150537634409
+"Robustness, Privacy & Safety",Trustworthy AI,2015,2,93,0.021505376344086023
+"Biology, Molecules & Health",AI for Science,2016,2,102,0.0196078431372549
+"Causality, Dynamics & Scientific ML",Scientific ML,2016,5,102,0.049019607843137254
+Classical Statistical ML,Core ML,2016,15,102,0.14705882352941177
+Computer Vision & 3D Perception,Perception,2016,3,102,0.029411764705882353
+Federated & Distributed Learning,Systems for ML,2016,2,102,0.0196078431372549
+Generative Models & Diffusion,Generative AI,2016,2,102,0.0196078431372549
+Graph Machine Learning,Structured Learning,2016,2,102,0.0196078431372549
+Language Models & NLP,Generative AI,2016,7,102,0.06862745098039216
+Optimization & Learning Theory,Core ML,2016,21,102,0.20588235294117646
+Probabilistic Modeling,Core ML,2016,25,102,0.24509803921568626
+Reinforcement Learning & Bandits,Decision Making,2016,8,102,0.0784313725490196
+Representation Learning,Foundation Learning,2016,7,102,0.06862745098039216
+"Robustness, Privacy & Safety",Trustworthy AI,2016,3,102,0.029411764705882353
+"Biology, Molecules & Health",AI for Science,2017,1,125,0.008
+"Causality, Dynamics & Scientific ML",Scientific ML,2017,3,125,0.024
+Classical Statistical ML,Core ML,2017,14,125,0.112
+Computer Vision & 3D Perception,Perception,2017,7,125,0.056
+Federated & Distributed Learning,Systems for ML,2017,3,125,0.024
+Games & Mechanism Design,Decision Making,2017,2,125,0.016
+Generative Models & Diffusion,Generative AI,2017,9,125,0.072
+Graph Machine Learning,Structured Learning,2017,6,125,0.048
+Language Models & NLP,Generative AI,2017,9,125,0.072
+Multimodal & Vision-Language,Perception,2017,2,125,0.016
+Optimization & Learning Theory,Core ML,2017,21,125,0.168
+Probabilistic Modeling,Core ML,2017,17,125,0.136
+Reinforcement Learning & Bandits,Decision Making,2017,11,125,0.088
+Representation Learning,Foundation Learning,2017,13,125,0.104
+"Robustness, Privacy & Safety",Trustworthy AI,2017,7,125,0.056
+"Biology, Molecules & Health",AI for Science,2018,2,248,0.008064516129032258
+"Causality, Dynamics & Scientific ML",Scientific ML,2018,11,248,0.04435483870967742
+Classical Statistical ML,Core ML,2018,34,248,0.13709677419354838
+Computer Vision & 3D Perception,Perception,2018,11,248,0.04435483870967742
+Federated & Distributed Learning,Systems for ML,2018,3,248,0.012096774193548387
+Games & Mechanism Design,Decision Making,2018,3,248,0.012096774193548387
+Generative Models & Diffusion,Generative AI,2018,12,248,0.04838709677419355
+Graph Machine Learning,Structured Learning,2018,8,248,0.03225806451612903
+Language Models & NLP,Generative AI,2018,11,248,0.04435483870967742
+Multimodal & Vision-Language,Perception,2018,2,248,0.008064516129032258
+Optimization & Learning Theory,Core ML,2018,43,248,0.17338709677419356
+Probabilistic Modeling,Core ML,2018,45,248,0.1814516129032258
+Reinforcement Learning & Bandits,Decision Making,2018,28,248,0.11290322580645161
+Representation Learning,Foundation Learning,2018,19,248,0.07661290322580645
+"Robustness, Privacy & Safety",Trustworthy AI,2018,16,248,0.06451612903225806
+"Biology, Molecules & Health",AI for Science,2019,2,380,0.005263157894736842
+"Causality, Dynamics & Scientific ML",Scientific ML,2019,12,380,0.031578947368421054
+Classical Statistical ML,Core ML,2019,42,380,0.11052631578947368
+Computer Vision & 3D Perception,Perception,2019,26,380,0.06842105263157895
+Federated & Distributed Learning,Systems for ML,2019,5,380,0.013157894736842105
+Games & Mechanism Design,Decision Making,2019,8,380,0.021052631578947368
+Generative Models & Diffusion,Generative AI,2019,20,380,0.05263157894736842
+Graph Machine Learning,Structured Learning,2019,13,380,0.034210526315789476
+Language Models & NLP,Generative AI,2019,18,380,0.04736842105263158
+Multimodal & Vision-Language,Perception,2019,4,380,0.010526315789473684
+Optimization & Learning Theory,Core ML,2019,58,380,0.15263157894736842
+Probabilistic Modeling,Core ML,2019,52,380,0.1368421052631579
+Reinforcement Learning & Bandits,Decision Making,2019,44,380,0.11578947368421053
+Representation Learning,Foundation Learning,2019,42,380,0.11052631578947368
+"Robustness, Privacy & Safety",Trustworthy AI,2019,34,380,0.08947368421052632
+"Biology, Molecules & Health",AI for Science,2020,1,456,0.0021929824561403508
+"Causality, Dynamics & Scientific ML",Scientific ML,2020,16,456,0.03508771929824561
+Classical Statistical ML,Core ML,2020,57,456,0.125
+Computer Vision & 3D Perception,Perception,2020,26,456,0.05701754385964912
+Federated & Distributed Learning,Systems for ML,2020,11,456,0.02412280701754386
+Games & Mechanism Design,Decision Making,2020,7,456,0.015350877192982455
+Generative Models & Diffusion,Generative AI,2020,19,456,0.041666666666666664
+Graph Machine Learning,Structured Learning,2020,23,456,0.05043859649122807
+Language Models & NLP,Generative AI,2020,11,456,0.02412280701754386
+Multimodal & Vision-Language,Perception,2020,3,456,0.006578947368421052
+Optimization & Learning Theory,Core ML,2020,83,456,0.18201754385964913
+Probabilistic Modeling,Core ML,2020,53,456,0.1162280701754386
+Reinforcement Learning & Bandits,Decision Making,2020,62,456,0.13596491228070176
+Representation Learning,Foundation Learning,2020,49,456,0.1074561403508772
+"Robustness, Privacy & Safety",Trustworthy AI,2020,35,456,0.07675438596491228
+"Biology, Molecules & Health",AI for Science,2021,7,580,0.01206896551724138
+"Causality, Dynamics & Scientific ML",Scientific ML,2021,24,580,0.041379310344827586
+Classical Statistical ML,Core ML,2021,59,580,0.10172413793103448
+Computer Vision & 3D Perception,Perception,2021,54,580,0.09310344827586207
+Federated & Distributed Learning,Systems for ML,2021,9,580,0.015517241379310345
+Games & Mechanism Design,Decision Making,2021,5,580,0.008620689655172414
+Generative Models & Diffusion,Generative AI,2021,22,580,0.03793103448275862
+Graph Machine Learning,Structured Learning,2021,25,580,0.04310344827586207
+Language Models & NLP,Generative AI,2021,47,580,0.08103448275862069
+Multimodal & Vision-Language,Perception,2021,4,580,0.006896551724137931
+Optimization & Learning Theory,Core ML,2021,80,580,0.13793103448275862
+Probabilistic Modeling,Core ML,2021,66,580,0.11379310344827587
+Reinforcement Learning & Bandits,Decision Making,2021,60,580,0.10344827586206896
+Representation Learning,Foundation Learning,2021,75,580,0.12931034482758622
+"Robustness, Privacy & Safety",Trustworthy AI,2021,43,580,0.07413793103448275
+"Biology, Molecules & Health",AI for Science,2022,9,688,0.01308139534883721
+"Causality, Dynamics & Scientific ML",Scientific ML,2022,30,688,0.0436046511627907
+Classical Statistical ML,Core ML,2022,75,688,0.10901162790697674
+Computer Vision & 3D Perception,Perception,2022,63,688,0.09156976744186046
+Federated & Distributed Learning,Systems for ML,2022,22,688,0.03197674418604651
+Games & Mechanism Design,Decision Making,2022,10,688,0.014534883720930232
+Generative Models & Diffusion,Generative AI,2022,26,688,0.0377906976744186
+Graph Machine Learning,Structured Learning,2022,40,688,0.05813953488372093
+Language Models & NLP,Generative AI,2022,41,688,0.059593023255813955
+Multimodal & Vision-Language,Perception,2022,6,688,0.00872093023255814
+Optimization & Learning Theory,Core ML,2022,104,688,0.1511627906976744
+Probabilistic Modeling,Core ML,2022,60,688,0.0872093023255814
+Reinforcement Learning & Bandits,Decision Making,2022,71,688,0.10319767441860465
+Representation Learning,Foundation Learning,2022,78,688,0.11337209302325581
+"Robustness, Privacy & Safety",Trustworthy AI,2022,53,688,0.07703488372093023
+"Biology, Molecules & Health",AI for Science,2023,19,829,0.022919179734620022
+"Causality, Dynamics & Scientific ML",Scientific ML,2023,35,829,0.04221954161640531
+Classical Statistical ML,Core ML,2023,72,829,0.08685162846803378
+Computer Vision & 3D Perception,Perception,2023,82,829,0.09891435464414958
+Federated & Distributed Learning,Systems for ML,2023,11,829,0.013268998793727383
+Games & Mechanism Design,Decision Making,2023,9,829,0.010856453558504222
+Generative Models & Diffusion,Generative AI,2023,52,829,0.06272617611580217
+Graph Machine Learning,Structured Learning,2023,46,829,0.05548854041013269
+Language Models & NLP,Generative AI,2023,70,829,0.08443908323281062
+Multimodal & Vision-Language,Perception,2023,22,829,0.026537997587454766
+Optimization & Learning Theory,Core ML,2023,113,829,0.13630880579010857
+Probabilistic Modeling,Core ML,2023,61,829,0.0735826296743064
+Reinforcement Learning & Bandits,Decision Making,2023,86,829,0.1037394451145959
+Representation Learning,Foundation Learning,2023,87,829,0.10494571773220748
+"Robustness, Privacy & Safety",Trustworthy AI,2023,64,829,0.07720144752714113
+"Biology, Molecules & Health",AI for Science,2024,19,1049,0.01811248808388942
+"Causality, Dynamics & Scientific ML",Scientific ML,2024,62,1049,0.05910390848427073
+Classical Statistical ML,Core ML,2024,67,1049,0.06387035271687322
+Computer Vision & 3D Perception,Perception,2024,112,1049,0.10676835081029552
+Federated & Distributed Learning,Systems for ML,2024,8,1049,0.0076263107721639654
+Games & Mechanism Design,Decision Making,2024,9,1049,0.008579599618684462
+Generative Models & Diffusion,Generative AI,2024,84,1049,0.08007626310772165
+Graph Machine Learning,Structured Learning,2024,46,1049,0.0438512869399428
+Language Models & NLP,Generative AI,2024,160,1049,0.15252621544327932
+Multimodal & Vision-Language,Perception,2024,45,1049,0.042897998093422304
+Optimization & Learning Theory,Core ML,2024,110,1049,0.10486177311725453
+Probabilistic Modeling,Core ML,2024,71,1049,0.06768350810295519
+Reinforcement Learning & Bandits,Decision Making,2024,84,1049,0.08007626310772165
+Representation Learning,Foundation Learning,2024,119,1049,0.11344137273593899
+"Robustness, Privacy & Safety",Trustworthy AI,2024,53,1049,0.05052430886558627

@@ -1,0 +1,16 @@
+Id,Label,Type,Category,Period,Count
+"Biology, Molecules & Health","Biology, Molecules & Health",Undirected,AI for Science,2020-2024,55
+"Causality, Dynamics & Scientific ML","Causality, Dynamics & Scientific ML",Undirected,Scientific ML,2020-2024,167
+Classical Statistical ML,Classical Statistical ML,Undirected,Core ML,2020-2024,330
+Computer Vision & 3D Perception,Computer Vision & 3D Perception,Undirected,Perception,2020-2024,337
+Federated & Distributed Learning,Federated & Distributed Learning,Undirected,Systems for ML,2020-2024,61
+Games & Mechanism Design,Games & Mechanism Design,Undirected,Decision Making,2020-2024,40
+Generative Models & Diffusion,Generative Models & Diffusion,Undirected,Generative AI,2020-2024,203
+Graph Machine Learning,Graph Machine Learning,Undirected,Structured Learning,2020-2024,180
+Language Models & NLP,Language Models & NLP,Undirected,Generative AI,2020-2024,329
+Multimodal & Vision-Language,Multimodal & Vision-Language,Undirected,Perception,2020-2024,80
+Optimization & Learning Theory,Optimization & Learning Theory,Undirected,Core ML,2020-2024,490
+Probabilistic Modeling,Probabilistic Modeling,Undirected,Core ML,2020-2024,311
+Reinforcement Learning & Bandits,Reinforcement Learning & Bandits,Undirected,Decision Making,2020-2024,363
+Representation Learning,Representation Learning,Undirected,Foundation Learning,2020-2024,408
+"Robustness, Privacy & Safety","Robustness, Privacy & Safety",Undirected,Trustworthy AI,2020-2024,248

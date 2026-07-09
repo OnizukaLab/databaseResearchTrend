@@ -1,0 +1,44 @@
+Source,Target,Type,Weight,Period
+"Biology, Molecules & Health",Classical Statistical ML,Undirected,1,2010-2014
+"Biology, Molecules & Health",Representation Learning,Undirected,1,2010-2014
+"Causality, Dynamics & Scientific ML",Classical Statistical ML,Undirected,2,2010-2014
+"Causality, Dynamics & Scientific ML",Computer Vision & 3D Perception,Undirected,1,2010-2014
+"Causality, Dynamics & Scientific ML",Optimization & Learning Theory,Undirected,1,2010-2014
+"Causality, Dynamics & Scientific ML",Probabilistic Modeling,Undirected,5,2010-2014
+Classical Statistical ML,Computer Vision & 3D Perception,Undirected,6,2010-2014
+Classical Statistical ML,Federated & Distributed Learning,Undirected,1,2010-2014
+Classical Statistical ML,Generative Models & Diffusion,Undirected,1,2010-2014
+Classical Statistical ML,Graph Machine Learning,Undirected,3,2010-2014
+Classical Statistical ML,Optimization & Learning Theory,Undirected,6,2010-2014
+Classical Statistical ML,Probabilistic Modeling,Undirected,11,2010-2014
+Classical Statistical ML,Reinforcement Learning & Bandits,Undirected,1,2010-2014
+Classical Statistical ML,Representation Learning,Undirected,14,2010-2014
+Classical Statistical ML,"Robustness, Privacy & Safety",Undirected,5,2010-2014
+Computer Vision & 3D Perception,Generative Models & Diffusion,Undirected,1,2010-2014
+Computer Vision & 3D Perception,Graph Machine Learning,Undirected,1,2010-2014
+Computer Vision & 3D Perception,Optimization & Learning Theory,Undirected,4,2010-2014
+Computer Vision & 3D Perception,Probabilistic Modeling,Undirected,4,2010-2014
+Computer Vision & 3D Perception,Representation Learning,Undirected,9,2010-2014
+Federated & Distributed Learning,Language Models & NLP,Undirected,1,2010-2014
+Federated & Distributed Learning,Optimization & Learning Theory,Undirected,1,2010-2014
+Federated & Distributed Learning,Probabilistic Modeling,Undirected,3,2010-2014
+Federated & Distributed Learning,Representation Learning,Undirected,2,2010-2014
+Games & Mechanism Design,Language Models & NLP,Undirected,1,2010-2014
+Games & Mechanism Design,Optimization & Learning Theory,Undirected,1,2010-2014
+Games & Mechanism Design,Probabilistic Modeling,Undirected,1,2010-2014
+Generative Models & Diffusion,Probabilistic Modeling,Undirected,1,2010-2014
+Generative Models & Diffusion,"Robustness, Privacy & Safety",Undirected,1,2010-2014
+Graph Machine Learning,Probabilistic Modeling,Undirected,1,2010-2014
+Graph Machine Learning,Representation Learning,Undirected,3,2010-2014
+Language Models & NLP,Optimization & Learning Theory,Undirected,1,2010-2014
+Language Models & NLP,Probabilistic Modeling,Undirected,1,2010-2014
+Language Models & NLP,Representation Learning,Undirected,1,2010-2014
+Optimization & Learning Theory,Probabilistic Modeling,Undirected,6,2010-2014
+Optimization & Learning Theory,Reinforcement Learning & Bandits,Undirected,3,2010-2014
+Optimization & Learning Theory,Representation Learning,Undirected,1,2010-2014
+Optimization & Learning Theory,"Robustness, Privacy & Safety",Undirected,3,2010-2014
+Probabilistic Modeling,Reinforcement Learning & Bandits,Undirected,8,2010-2014
+Probabilistic Modeling,Representation Learning,Undirected,3,2010-2014
+Probabilistic Modeling,"Robustness, Privacy & Safety",Undirected,4,2010-2014
+Reinforcement Learning & Bandits,Representation Learning,Undirected,1,2010-2014
+Reinforcement Learning & Bandits,"Robustness, Privacy & Safety",Undirected,2,2010-2014

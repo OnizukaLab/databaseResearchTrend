@@ -1,0 +1,613 @@
+source,target,source_topic,target_topic,source_period,target_period,weight,transition_type
+Cloud DB@2010-2014,Cloud DB@2015-2019,Cloud DB,Cloud DB,2010-2014,2015-2019,18,persistence
+Crowdsourcing@2010-2014,Crowdsourcing@2015-2019,Crowdsourcing,Crowdsourcing,2010-2014,2015-2019,9,persistence
+Data Analytics@2010-2014,Data Analytics@2015-2019,Data Analytics,Data Analytics,2010-2014,2015-2019,131,persistence
+Data Integration@2010-2014,Data Integration@2015-2019,Data Integration,Data Integration,2010-2014,2015-2019,29,persistence
+Distributed DB@2010-2014,Distributed DB@2015-2019,Distributed DB,Distributed DB,2010-2014,2015-2019,83,persistence
+Graph Data@2010-2014,Graph Data@2015-2019,Graph Data,Graph Data,2010-2014,2015-2019,94,persistence
+Indexing@2010-2014,Indexing@2015-2019,Indexing,Indexing,2010-2014,2015-2019,63,persistence
+Information Retrieval@2010-2014,Information Retrieval@2015-2019,Information Retrieval,Information Retrieval,2010-2014,2015-2019,81,persistence
+ML for DB@2010-2014,ML for DB@2015-2019,ML for DB,ML for DB,2010-2014,2015-2019,53,persistence
+Privacy / Security@2010-2014,Privacy / Security@2015-2019,Privacy / Security,Privacy / Security,2010-2014,2015-2019,17,persistence
+Query Optimization@2010-2014,Query Optimization@2015-2019,Query Optimization,Query Optimization,2010-2014,2015-2019,95,persistence
+RDF / Semantic Web@2010-2014,RDF / Semantic Web@2015-2019,RDF / Semantic Web,RDF / Semantic Web,2010-2014,2015-2019,16,persistence
+Spatial / Temporal@2010-2014,Spatial / Temporal@2015-2019,Spatial / Temporal,Spatial / Temporal,2010-2014,2015-2019,33,persistence
+Streaming@2010-2014,Streaming@2015-2019,Streaming,Streaming,2010-2014,2015-2019,36,persistence
+Transactions@2010-2014,Transactions@2015-2019,Transactions,Transactions,2010-2014,2015-2019,17,persistence
+Vector Search@2010-2014,Vector Search@2015-2019,Vector Search,Vector Search,2010-2014,2015-2019,10,persistence
+XML@2010-2014,XML@2015-2019,XML,XML,2010-2014,2015-2019,3,persistence
+Cloud DB@2010-2014,Crowdsourcing@2015-2019,Cloud DB,Crowdsourcing,2010-2014,2015-2019,480,cooccurrence
+Cloud DB@2010-2014,Data Analytics@2015-2019,Cloud DB,Data Analytics,2010-2014,2015-2019,3880,cooccurrence
+Cloud DB@2010-2014,Data Integration@2015-2019,Cloud DB,Data Integration,2010-2014,2015-2019,680,cooccurrence
+Cloud DB@2010-2014,Distributed DB@2015-2019,Cloud DB,Distributed DB,2010-2014,2015-2019,2280,cooccurrence
+Cloud DB@2010-2014,Graph Data@2015-2019,Cloud DB,Graph Data,2010-2014,2015-2019,2780,cooccurrence
+Cloud DB@2010-2014,Indexing@2015-2019,Cloud DB,Indexing,2010-2014,2015-2019,1260,cooccurrence
+Cloud DB@2010-2014,Information Retrieval@2015-2019,Cloud DB,Information Retrieval,2010-2014,2015-2019,1620,cooccurrence
+Cloud DB@2010-2014,ML for DB@2015-2019,Cloud DB,ML for DB,2010-2014,2015-2019,1960,cooccurrence
+Cloud DB@2010-2014,Privacy / Security@2015-2019,Cloud DB,Privacy / Security,2010-2014,2015-2019,440,cooccurrence
+Cloud DB@2010-2014,Query Optimization@2015-2019,Cloud DB,Query Optimization,2010-2014,2015-2019,2080,cooccurrence
+Cloud DB@2010-2014,RDF / Semantic Web@2015-2019,Cloud DB,RDF / Semantic Web,2010-2014,2015-2019,560,cooccurrence
+Cloud DB@2010-2014,Spatial / Temporal@2015-2019,Cloud DB,Spatial / Temporal,2010-2014,2015-2019,1120,cooccurrence
+Cloud DB@2010-2014,Streaming@2015-2019,Cloud DB,Streaming,2010-2014,2015-2019,900,cooccurrence
+Cloud DB@2010-2014,Text-to-SQL / NLIDB@2015-2019,Cloud DB,Text-to-SQL / NLIDB,2010-2014,2015-2019,40,cooccurrence
+Cloud DB@2010-2014,Transactions@2015-2019,Cloud DB,Transactions,2010-2014,2015-2019,420,cooccurrence
+Cloud DB@2010-2014,Vector Search@2015-2019,Cloud DB,Vector Search,2010-2014,2015-2019,200,cooccurrence
+Cloud DB@2010-2014,XML@2015-2019,Cloud DB,XML,2010-2014,2015-2019,60,cooccurrence
+Crowdsourcing@2010-2014,Cloud DB@2015-2019,Crowdsourcing,Cloud DB,2010-2014,2015-2019,162,cooccurrence
+Crowdsourcing@2010-2014,Data Analytics@2015-2019,Crowdsourcing,Data Analytics,2010-2014,2015-2019,1746,cooccurrence
+Crowdsourcing@2010-2014,Data Integration@2015-2019,Crowdsourcing,Data Integration,2010-2014,2015-2019,306,cooccurrence
+Crowdsourcing@2010-2014,Distributed DB@2015-2019,Crowdsourcing,Distributed DB,2010-2014,2015-2019,1026,cooccurrence
+Crowdsourcing@2010-2014,Graph Data@2015-2019,Crowdsourcing,Graph Data,2010-2014,2015-2019,1251,cooccurrence
+Crowdsourcing@2010-2014,Indexing@2015-2019,Crowdsourcing,Indexing,2010-2014,2015-2019,567,cooccurrence
+Crowdsourcing@2010-2014,Information Retrieval@2015-2019,Crowdsourcing,Information Retrieval,2010-2014,2015-2019,729,cooccurrence
+Crowdsourcing@2010-2014,ML for DB@2015-2019,Crowdsourcing,ML for DB,2010-2014,2015-2019,882,cooccurrence
+Crowdsourcing@2010-2014,Privacy / Security@2015-2019,Crowdsourcing,Privacy / Security,2010-2014,2015-2019,198,cooccurrence
+Crowdsourcing@2010-2014,Query Optimization@2015-2019,Crowdsourcing,Query Optimization,2010-2014,2015-2019,936,cooccurrence
+Crowdsourcing@2010-2014,RDF / Semantic Web@2015-2019,Crowdsourcing,RDF / Semantic Web,2010-2014,2015-2019,252,cooccurrence
+Crowdsourcing@2010-2014,Spatial / Temporal@2015-2019,Crowdsourcing,Spatial / Temporal,2010-2014,2015-2019,504,cooccurrence
+Crowdsourcing@2010-2014,Streaming@2015-2019,Crowdsourcing,Streaming,2010-2014,2015-2019,405,cooccurrence
+Crowdsourcing@2010-2014,Text-to-SQL / NLIDB@2015-2019,Crowdsourcing,Text-to-SQL / NLIDB,2010-2014,2015-2019,18,cooccurrence
+Crowdsourcing@2010-2014,Transactions@2015-2019,Crowdsourcing,Transactions,2010-2014,2015-2019,189,cooccurrence
+Crowdsourcing@2010-2014,Vector Search@2015-2019,Crowdsourcing,Vector Search,2010-2014,2015-2019,90,cooccurrence
+Crowdsourcing@2010-2014,XML@2015-2019,Crowdsourcing,XML,2010-2014,2015-2019,27,cooccurrence
+Data Analytics@2010-2014,Cloud DB@2015-2019,Data Analytics,Cloud DB,2010-2014,2015-2019,2358,cooccurrence
+Data Analytics@2010-2014,Crowdsourcing@2015-2019,Data Analytics,Crowdsourcing,2010-2014,2015-2019,3144,cooccurrence
+Data Analytics@2010-2014,Data Integration@2015-2019,Data Analytics,Data Integration,2010-2014,2015-2019,4454,cooccurrence
+Data Analytics@2010-2014,Distributed DB@2015-2019,Data Analytics,Distributed DB,2010-2014,2015-2019,14934,cooccurrence
+Data Analytics@2010-2014,Graph Data@2015-2019,Data Analytics,Graph Data,2010-2014,2015-2019,18209,cooccurrence
+Data Analytics@2010-2014,Indexing@2015-2019,Data Analytics,Indexing,2010-2014,2015-2019,8253,cooccurrence
+Data Analytics@2010-2014,Information Retrieval@2015-2019,Data Analytics,Information Retrieval,2010-2014,2015-2019,10611,cooccurrence
+Data Analytics@2010-2014,ML for DB@2015-2019,Data Analytics,ML for DB,2010-2014,2015-2019,12838,cooccurrence
+Data Analytics@2010-2014,Privacy / Security@2015-2019,Data Analytics,Privacy / Security,2010-2014,2015-2019,2882,cooccurrence
+Data Analytics@2010-2014,Query Optimization@2015-2019,Data Analytics,Query Optimization,2010-2014,2015-2019,13624,cooccurrence
+Data Analytics@2010-2014,RDF / Semantic Web@2015-2019,Data Analytics,RDF / Semantic Web,2010-2014,2015-2019,3668,cooccurrence
+Data Analytics@2010-2014,Spatial / Temporal@2015-2019,Data Analytics,Spatial / Temporal,2010-2014,2015-2019,7336,cooccurrence
+Data Analytics@2010-2014,Streaming@2015-2019,Data Analytics,Streaming,2010-2014,2015-2019,5895,cooccurrence
+Data Analytics@2010-2014,Text-to-SQL / NLIDB@2015-2019,Data Analytics,Text-to-SQL / NLIDB,2010-2014,2015-2019,262,cooccurrence
+Data Analytics@2010-2014,Transactions@2015-2019,Data Analytics,Transactions,2010-2014,2015-2019,2751,cooccurrence
+Data Analytics@2010-2014,Vector Search@2015-2019,Data Analytics,Vector Search,2010-2014,2015-2019,1310,cooccurrence
+Data Analytics@2010-2014,XML@2015-2019,Data Analytics,XML,2010-2014,2015-2019,393,cooccurrence
+Data Integration@2010-2014,Cloud DB@2015-2019,Data Integration,Cloud DB,2010-2014,2015-2019,522,cooccurrence
+Data Integration@2010-2014,Crowdsourcing@2015-2019,Data Integration,Crowdsourcing,2010-2014,2015-2019,696,cooccurrence
+Data Integration@2010-2014,Data Analytics@2015-2019,Data Integration,Data Analytics,2010-2014,2015-2019,5626,cooccurrence
+Data Integration@2010-2014,Distributed DB@2015-2019,Data Integration,Distributed DB,2010-2014,2015-2019,3306,cooccurrence
+Data Integration@2010-2014,Graph Data@2015-2019,Data Integration,Graph Data,2010-2014,2015-2019,4031,cooccurrence
+Data Integration@2010-2014,Indexing@2015-2019,Data Integration,Indexing,2010-2014,2015-2019,1827,cooccurrence
+Data Integration@2010-2014,Information Retrieval@2015-2019,Data Integration,Information Retrieval,2010-2014,2015-2019,2349,cooccurrence
+Data Integration@2010-2014,ML for DB@2015-2019,Data Integration,ML for DB,2010-2014,2015-2019,2842,cooccurrence
+Data Integration@2010-2014,Privacy / Security@2015-2019,Data Integration,Privacy / Security,2010-2014,2015-2019,638,cooccurrence
+Data Integration@2010-2014,Query Optimization@2015-2019,Data Integration,Query Optimization,2010-2014,2015-2019,3016,cooccurrence
+Data Integration@2010-2014,RDF / Semantic Web@2015-2019,Data Integration,RDF / Semantic Web,2010-2014,2015-2019,812,cooccurrence
+Data Integration@2010-2014,Spatial / Temporal@2015-2019,Data Integration,Spatial / Temporal,2010-2014,2015-2019,1624,cooccurrence
+Data Integration@2010-2014,Streaming@2015-2019,Data Integration,Streaming,2010-2014,2015-2019,1305,cooccurrence
+Data Integration@2010-2014,Text-to-SQL / NLIDB@2015-2019,Data Integration,Text-to-SQL / NLIDB,2010-2014,2015-2019,58,cooccurrence
+Data Integration@2010-2014,Transactions@2015-2019,Data Integration,Transactions,2010-2014,2015-2019,609,cooccurrence
+Data Integration@2010-2014,Vector Search@2015-2019,Data Integration,Vector Search,2010-2014,2015-2019,290,cooccurrence
+Data Integration@2010-2014,XML@2015-2019,Data Integration,XML,2010-2014,2015-2019,87,cooccurrence
+Distributed DB@2010-2014,Cloud DB@2015-2019,Distributed DB,Cloud DB,2010-2014,2015-2019,1494,cooccurrence
+Distributed DB@2010-2014,Crowdsourcing@2015-2019,Distributed DB,Crowdsourcing,2010-2014,2015-2019,1992,cooccurrence
+Distributed DB@2010-2014,Data Analytics@2015-2019,Distributed DB,Data Analytics,2010-2014,2015-2019,16102,cooccurrence
+Distributed DB@2010-2014,Data Integration@2015-2019,Distributed DB,Data Integration,2010-2014,2015-2019,2822,cooccurrence
+Distributed DB@2010-2014,Graph Data@2015-2019,Distributed DB,Graph Data,2010-2014,2015-2019,11537,cooccurrence
+Distributed DB@2010-2014,Indexing@2015-2019,Distributed DB,Indexing,2010-2014,2015-2019,5229,cooccurrence
+Distributed DB@2010-2014,Information Retrieval@2015-2019,Distributed DB,Information Retrieval,2010-2014,2015-2019,6723,cooccurrence
+Distributed DB@2010-2014,ML for DB@2015-2019,Distributed DB,ML for DB,2010-2014,2015-2019,8134,cooccurrence
+Distributed DB@2010-2014,Privacy / Security@2015-2019,Distributed DB,Privacy / Security,2010-2014,2015-2019,1826,cooccurrence
+Distributed DB@2010-2014,Query Optimization@2015-2019,Distributed DB,Query Optimization,2010-2014,2015-2019,8632,cooccurrence
+Distributed DB@2010-2014,RDF / Semantic Web@2015-2019,Distributed DB,RDF / Semantic Web,2010-2014,2015-2019,2324,cooccurrence
+Distributed DB@2010-2014,Spatial / Temporal@2015-2019,Distributed DB,Spatial / Temporal,2010-2014,2015-2019,4648,cooccurrence
+Distributed DB@2010-2014,Streaming@2015-2019,Distributed DB,Streaming,2010-2014,2015-2019,3735,cooccurrence
+Distributed DB@2010-2014,Text-to-SQL / NLIDB@2015-2019,Distributed DB,Text-to-SQL / NLIDB,2010-2014,2015-2019,166,cooccurrence
+Distributed DB@2010-2014,Transactions@2015-2019,Distributed DB,Transactions,2010-2014,2015-2019,1743,cooccurrence
+Distributed DB@2010-2014,Vector Search@2015-2019,Distributed DB,Vector Search,2010-2014,2015-2019,830,cooccurrence
+Distributed DB@2010-2014,XML@2015-2019,Distributed DB,XML,2010-2014,2015-2019,249,cooccurrence
+Graph Data@2010-2014,Cloud DB@2015-2019,Graph Data,Cloud DB,2010-2014,2015-2019,1692,cooccurrence
+Graph Data@2010-2014,Crowdsourcing@2015-2019,Graph Data,Crowdsourcing,2010-2014,2015-2019,2256,cooccurrence
+Graph Data@2010-2014,Data Analytics@2015-2019,Graph Data,Data Analytics,2010-2014,2015-2019,18236,cooccurrence
+Graph Data@2010-2014,Data Integration@2015-2019,Graph Data,Data Integration,2010-2014,2015-2019,3196,cooccurrence
+Graph Data@2010-2014,Distributed DB@2015-2019,Graph Data,Distributed DB,2010-2014,2015-2019,10716,cooccurrence
+Graph Data@2010-2014,Indexing@2015-2019,Graph Data,Indexing,2010-2014,2015-2019,5922,cooccurrence
+Graph Data@2010-2014,Information Retrieval@2015-2019,Graph Data,Information Retrieval,2010-2014,2015-2019,7614,cooccurrence
+Graph Data@2010-2014,ML for DB@2015-2019,Graph Data,ML for DB,2010-2014,2015-2019,9212,cooccurrence
+Graph Data@2010-2014,Privacy / Security@2015-2019,Graph Data,Privacy / Security,2010-2014,2015-2019,2068,cooccurrence
+Graph Data@2010-2014,Query Optimization@2015-2019,Graph Data,Query Optimization,2010-2014,2015-2019,9776,cooccurrence
+Graph Data@2010-2014,RDF / Semantic Web@2015-2019,Graph Data,RDF / Semantic Web,2010-2014,2015-2019,2632,cooccurrence
+Graph Data@2010-2014,Spatial / Temporal@2015-2019,Graph Data,Spatial / Temporal,2010-2014,2015-2019,5264,cooccurrence
+Graph Data@2010-2014,Streaming@2015-2019,Graph Data,Streaming,2010-2014,2015-2019,4230,cooccurrence
+Graph Data@2010-2014,Text-to-SQL / NLIDB@2015-2019,Graph Data,Text-to-SQL / NLIDB,2010-2014,2015-2019,188,cooccurrence
+Graph Data@2010-2014,Transactions@2015-2019,Graph Data,Transactions,2010-2014,2015-2019,1974,cooccurrence
+Graph Data@2010-2014,Vector Search@2015-2019,Graph Data,Vector Search,2010-2014,2015-2019,940,cooccurrence
+Graph Data@2010-2014,XML@2015-2019,Graph Data,XML,2010-2014,2015-2019,282,cooccurrence
+Indexing@2010-2014,Cloud DB@2015-2019,Indexing,Cloud DB,2010-2014,2015-2019,1134,cooccurrence
+Indexing@2010-2014,Crowdsourcing@2015-2019,Indexing,Crowdsourcing,2010-2014,2015-2019,1512,cooccurrence
+Indexing@2010-2014,Data Analytics@2015-2019,Indexing,Data Analytics,2010-2014,2015-2019,12222,cooccurrence
+Indexing@2010-2014,Data Integration@2015-2019,Indexing,Data Integration,2010-2014,2015-2019,2142,cooccurrence
+Indexing@2010-2014,Distributed DB@2015-2019,Indexing,Distributed DB,2010-2014,2015-2019,7182,cooccurrence
+Indexing@2010-2014,Graph Data@2015-2019,Indexing,Graph Data,2010-2014,2015-2019,8757,cooccurrence
+Indexing@2010-2014,Information Retrieval@2015-2019,Indexing,Information Retrieval,2010-2014,2015-2019,5103,cooccurrence
+Indexing@2010-2014,ML for DB@2015-2019,Indexing,ML for DB,2010-2014,2015-2019,6174,cooccurrence
+Indexing@2010-2014,Privacy / Security@2015-2019,Indexing,Privacy / Security,2010-2014,2015-2019,1386,cooccurrence
+Indexing@2010-2014,Query Optimization@2015-2019,Indexing,Query Optimization,2010-2014,2015-2019,6552,cooccurrence
+Indexing@2010-2014,RDF / Semantic Web@2015-2019,Indexing,RDF / Semantic Web,2010-2014,2015-2019,1764,cooccurrence
+Indexing@2010-2014,Spatial / Temporal@2015-2019,Indexing,Spatial / Temporal,2010-2014,2015-2019,3528,cooccurrence
+Indexing@2010-2014,Streaming@2015-2019,Indexing,Streaming,2010-2014,2015-2019,2835,cooccurrence
+Indexing@2010-2014,Text-to-SQL / NLIDB@2015-2019,Indexing,Text-to-SQL / NLIDB,2010-2014,2015-2019,126,cooccurrence
+Indexing@2010-2014,Transactions@2015-2019,Indexing,Transactions,2010-2014,2015-2019,1323,cooccurrence
+Indexing@2010-2014,Vector Search@2015-2019,Indexing,Vector Search,2010-2014,2015-2019,630,cooccurrence
+Indexing@2010-2014,XML@2015-2019,Indexing,XML,2010-2014,2015-2019,189,cooccurrence
+Information Retrieval@2010-2014,Cloud DB@2015-2019,Information Retrieval,Cloud DB,2010-2014,2015-2019,1908,cooccurrence
+Information Retrieval@2010-2014,Crowdsourcing@2015-2019,Information Retrieval,Crowdsourcing,2010-2014,2015-2019,2544,cooccurrence
+Information Retrieval@2010-2014,Data Analytics@2015-2019,Information Retrieval,Data Analytics,2010-2014,2015-2019,20564,cooccurrence
+Information Retrieval@2010-2014,Data Integration@2015-2019,Information Retrieval,Data Integration,2010-2014,2015-2019,3604,cooccurrence
+Information Retrieval@2010-2014,Distributed DB@2015-2019,Information Retrieval,Distributed DB,2010-2014,2015-2019,12084,cooccurrence
+Information Retrieval@2010-2014,Graph Data@2015-2019,Information Retrieval,Graph Data,2010-2014,2015-2019,14734,cooccurrence
+Information Retrieval@2010-2014,Indexing@2015-2019,Information Retrieval,Indexing,2010-2014,2015-2019,6678,cooccurrence
+Information Retrieval@2010-2014,ML for DB@2015-2019,Information Retrieval,ML for DB,2010-2014,2015-2019,10388,cooccurrence
+Information Retrieval@2010-2014,Privacy / Security@2015-2019,Information Retrieval,Privacy / Security,2010-2014,2015-2019,2332,cooccurrence
+Information Retrieval@2010-2014,Query Optimization@2015-2019,Information Retrieval,Query Optimization,2010-2014,2015-2019,11024,cooccurrence
+Information Retrieval@2010-2014,RDF / Semantic Web@2015-2019,Information Retrieval,RDF / Semantic Web,2010-2014,2015-2019,2968,cooccurrence
+Information Retrieval@2010-2014,Spatial / Temporal@2015-2019,Information Retrieval,Spatial / Temporal,2010-2014,2015-2019,5936,cooccurrence
+Information Retrieval@2010-2014,Streaming@2015-2019,Information Retrieval,Streaming,2010-2014,2015-2019,4770,cooccurrence
+Information Retrieval@2010-2014,Text-to-SQL / NLIDB@2015-2019,Information Retrieval,Text-to-SQL / NLIDB,2010-2014,2015-2019,212,cooccurrence
+Information Retrieval@2010-2014,Transactions@2015-2019,Information Retrieval,Transactions,2010-2014,2015-2019,2226,cooccurrence
+Information Retrieval@2010-2014,Vector Search@2015-2019,Information Retrieval,Vector Search,2010-2014,2015-2019,1060,cooccurrence
+Information Retrieval@2010-2014,XML@2015-2019,Information Retrieval,XML,2010-2014,2015-2019,318,cooccurrence
+ML for DB@2010-2014,Cloud DB@2015-2019,ML for DB,Cloud DB,2010-2014,2015-2019,954,cooccurrence
+ML for DB@2010-2014,Crowdsourcing@2015-2019,ML for DB,Crowdsourcing,2010-2014,2015-2019,1272,cooccurrence
+ML for DB@2010-2014,Data Analytics@2015-2019,ML for DB,Data Analytics,2010-2014,2015-2019,10282,cooccurrence
+ML for DB@2010-2014,Data Integration@2015-2019,ML for DB,Data Integration,2010-2014,2015-2019,1802,cooccurrence
+ML for DB@2010-2014,Distributed DB@2015-2019,ML for DB,Distributed DB,2010-2014,2015-2019,6042,cooccurrence
+ML for DB@2010-2014,Graph Data@2015-2019,ML for DB,Graph Data,2010-2014,2015-2019,7367,cooccurrence
+ML for DB@2010-2014,Indexing@2015-2019,ML for DB,Indexing,2010-2014,2015-2019,3339,cooccurrence
+ML for DB@2010-2014,Information Retrieval@2015-2019,ML for DB,Information Retrieval,2010-2014,2015-2019,4293,cooccurrence
+ML for DB@2010-2014,Privacy / Security@2015-2019,ML for DB,Privacy / Security,2010-2014,2015-2019,1166,cooccurrence
+ML for DB@2010-2014,Query Optimization@2015-2019,ML for DB,Query Optimization,2010-2014,2015-2019,5512,cooccurrence
+ML for DB@2010-2014,RDF / Semantic Web@2015-2019,ML for DB,RDF / Semantic Web,2010-2014,2015-2019,1484,cooccurrence
+ML for DB@2010-2014,Spatial / Temporal@2015-2019,ML for DB,Spatial / Temporal,2010-2014,2015-2019,2968,cooccurrence
+ML for DB@2010-2014,Streaming@2015-2019,ML for DB,Streaming,2010-2014,2015-2019,2385,cooccurrence
+ML for DB@2010-2014,Text-to-SQL / NLIDB@2015-2019,ML for DB,Text-to-SQL / NLIDB,2010-2014,2015-2019,106,cooccurrence
+ML for DB@2010-2014,Transactions@2015-2019,ML for DB,Transactions,2010-2014,2015-2019,1113,cooccurrence
+ML for DB@2010-2014,Vector Search@2015-2019,ML for DB,Vector Search,2010-2014,2015-2019,530,cooccurrence
+ML for DB@2010-2014,XML@2015-2019,ML for DB,XML,2010-2014,2015-2019,159,cooccurrence
+Privacy / Security@2010-2014,Cloud DB@2015-2019,Privacy / Security,Cloud DB,2010-2014,2015-2019,306,cooccurrence
+Privacy / Security@2010-2014,Crowdsourcing@2015-2019,Privacy / Security,Crowdsourcing,2010-2014,2015-2019,408,cooccurrence
+Privacy / Security@2010-2014,Data Analytics@2015-2019,Privacy / Security,Data Analytics,2010-2014,2015-2019,3298,cooccurrence
+Privacy / Security@2010-2014,Data Integration@2015-2019,Privacy / Security,Data Integration,2010-2014,2015-2019,578,cooccurrence
+Privacy / Security@2010-2014,Distributed DB@2015-2019,Privacy / Security,Distributed DB,2010-2014,2015-2019,1938,cooccurrence
+Privacy / Security@2010-2014,Graph Data@2015-2019,Privacy / Security,Graph Data,2010-2014,2015-2019,2363,cooccurrence
+Privacy / Security@2010-2014,Indexing@2015-2019,Privacy / Security,Indexing,2010-2014,2015-2019,1071,cooccurrence
+Privacy / Security@2010-2014,Information Retrieval@2015-2019,Privacy / Security,Information Retrieval,2010-2014,2015-2019,1377,cooccurrence
+Privacy / Security@2010-2014,ML for DB@2015-2019,Privacy / Security,ML for DB,2010-2014,2015-2019,1666,cooccurrence
+Privacy / Security@2010-2014,Query Optimization@2015-2019,Privacy / Security,Query Optimization,2010-2014,2015-2019,1768,cooccurrence
+Privacy / Security@2010-2014,RDF / Semantic Web@2015-2019,Privacy / Security,RDF / Semantic Web,2010-2014,2015-2019,476,cooccurrence
+Privacy / Security@2010-2014,Spatial / Temporal@2015-2019,Privacy / Security,Spatial / Temporal,2010-2014,2015-2019,952,cooccurrence
+Privacy / Security@2010-2014,Streaming@2015-2019,Privacy / Security,Streaming,2010-2014,2015-2019,765,cooccurrence
+Privacy / Security@2010-2014,Text-to-SQL / NLIDB@2015-2019,Privacy / Security,Text-to-SQL / NLIDB,2010-2014,2015-2019,34,cooccurrence
+Privacy / Security@2010-2014,Transactions@2015-2019,Privacy / Security,Transactions,2010-2014,2015-2019,357,cooccurrence
+Privacy / Security@2010-2014,Vector Search@2015-2019,Privacy / Security,Vector Search,2010-2014,2015-2019,170,cooccurrence
+Privacy / Security@2010-2014,XML@2015-2019,Privacy / Security,XML,2010-2014,2015-2019,51,cooccurrence
+Query Optimization@2010-2014,Cloud DB@2015-2019,Query Optimization,Cloud DB,2010-2014,2015-2019,1710,cooccurrence
+Query Optimization@2010-2014,Crowdsourcing@2015-2019,Query Optimization,Crowdsourcing,2010-2014,2015-2019,2280,cooccurrence
+Query Optimization@2010-2014,Data Analytics@2015-2019,Query Optimization,Data Analytics,2010-2014,2015-2019,18430,cooccurrence
+Query Optimization@2010-2014,Data Integration@2015-2019,Query Optimization,Data Integration,2010-2014,2015-2019,3230,cooccurrence
+Query Optimization@2010-2014,Distributed DB@2015-2019,Query Optimization,Distributed DB,2010-2014,2015-2019,10830,cooccurrence
+Query Optimization@2010-2014,Graph Data@2015-2019,Query Optimization,Graph Data,2010-2014,2015-2019,13205,cooccurrence
+Query Optimization@2010-2014,Indexing@2015-2019,Query Optimization,Indexing,2010-2014,2015-2019,5985,cooccurrence
+Query Optimization@2010-2014,Information Retrieval@2015-2019,Query Optimization,Information Retrieval,2010-2014,2015-2019,7695,cooccurrence
+Query Optimization@2010-2014,ML for DB@2015-2019,Query Optimization,ML for DB,2010-2014,2015-2019,9310,cooccurrence
+Query Optimization@2010-2014,Privacy / Security@2015-2019,Query Optimization,Privacy / Security,2010-2014,2015-2019,2090,cooccurrence
+Query Optimization@2010-2014,RDF / Semantic Web@2015-2019,Query Optimization,RDF / Semantic Web,2010-2014,2015-2019,2660,cooccurrence
+Query Optimization@2010-2014,Spatial / Temporal@2015-2019,Query Optimization,Spatial / Temporal,2010-2014,2015-2019,5320,cooccurrence
+Query Optimization@2010-2014,Streaming@2015-2019,Query Optimization,Streaming,2010-2014,2015-2019,4275,cooccurrence
+Query Optimization@2010-2014,Text-to-SQL / NLIDB@2015-2019,Query Optimization,Text-to-SQL / NLIDB,2010-2014,2015-2019,190,cooccurrence
+Query Optimization@2010-2014,Transactions@2015-2019,Query Optimization,Transactions,2010-2014,2015-2019,1995,cooccurrence
+Query Optimization@2010-2014,Vector Search@2015-2019,Query Optimization,Vector Search,2010-2014,2015-2019,950,cooccurrence
+Query Optimization@2010-2014,XML@2015-2019,Query Optimization,XML,2010-2014,2015-2019,285,cooccurrence
+RDF / Semantic Web@2010-2014,Cloud DB@2015-2019,RDF / Semantic Web,Cloud DB,2010-2014,2015-2019,288,cooccurrence
+RDF / Semantic Web@2010-2014,Crowdsourcing@2015-2019,RDF / Semantic Web,Crowdsourcing,2010-2014,2015-2019,384,cooccurrence
+RDF / Semantic Web@2010-2014,Data Analytics@2015-2019,RDF / Semantic Web,Data Analytics,2010-2014,2015-2019,3104,cooccurrence
+RDF / Semantic Web@2010-2014,Data Integration@2015-2019,RDF / Semantic Web,Data Integration,2010-2014,2015-2019,544,cooccurrence
+RDF / Semantic Web@2010-2014,Distributed DB@2015-2019,RDF / Semantic Web,Distributed DB,2010-2014,2015-2019,1824,cooccurrence
+RDF / Semantic Web@2010-2014,Graph Data@2015-2019,RDF / Semantic Web,Graph Data,2010-2014,2015-2019,2224,cooccurrence
+RDF / Semantic Web@2010-2014,Indexing@2015-2019,RDF / Semantic Web,Indexing,2010-2014,2015-2019,1008,cooccurrence
+RDF / Semantic Web@2010-2014,Information Retrieval@2015-2019,RDF / Semantic Web,Information Retrieval,2010-2014,2015-2019,1296,cooccurrence
+RDF / Semantic Web@2010-2014,ML for DB@2015-2019,RDF / Semantic Web,ML for DB,2010-2014,2015-2019,1568,cooccurrence
+RDF / Semantic Web@2010-2014,Privacy / Security@2015-2019,RDF / Semantic Web,Privacy / Security,2010-2014,2015-2019,352,cooccurrence
+RDF / Semantic Web@2010-2014,Query Optimization@2015-2019,RDF / Semantic Web,Query Optimization,2010-2014,2015-2019,1664,cooccurrence
+RDF / Semantic Web@2010-2014,Spatial / Temporal@2015-2019,RDF / Semantic Web,Spatial / Temporal,2010-2014,2015-2019,896,cooccurrence
+RDF / Semantic Web@2010-2014,Streaming@2015-2019,RDF / Semantic Web,Streaming,2010-2014,2015-2019,720,cooccurrence
+RDF / Semantic Web@2010-2014,Text-to-SQL / NLIDB@2015-2019,RDF / Semantic Web,Text-to-SQL / NLIDB,2010-2014,2015-2019,32,cooccurrence
+RDF / Semantic Web@2010-2014,Transactions@2015-2019,RDF / Semantic Web,Transactions,2010-2014,2015-2019,336,cooccurrence
+RDF / Semantic Web@2010-2014,Vector Search@2015-2019,RDF / Semantic Web,Vector Search,2010-2014,2015-2019,160,cooccurrence
+RDF / Semantic Web@2010-2014,XML@2015-2019,RDF / Semantic Web,XML,2010-2014,2015-2019,48,cooccurrence
+Spatial / Temporal@2010-2014,Cloud DB@2015-2019,Spatial / Temporal,Cloud DB,2010-2014,2015-2019,594,cooccurrence
+Spatial / Temporal@2010-2014,Crowdsourcing@2015-2019,Spatial / Temporal,Crowdsourcing,2010-2014,2015-2019,792,cooccurrence
+Spatial / Temporal@2010-2014,Data Analytics@2015-2019,Spatial / Temporal,Data Analytics,2010-2014,2015-2019,6402,cooccurrence
+Spatial / Temporal@2010-2014,Data Integration@2015-2019,Spatial / Temporal,Data Integration,2010-2014,2015-2019,1122,cooccurrence
+Spatial / Temporal@2010-2014,Distributed DB@2015-2019,Spatial / Temporal,Distributed DB,2010-2014,2015-2019,3762,cooccurrence
+Spatial / Temporal@2010-2014,Graph Data@2015-2019,Spatial / Temporal,Graph Data,2010-2014,2015-2019,4587,cooccurrence
+Spatial / Temporal@2010-2014,Indexing@2015-2019,Spatial / Temporal,Indexing,2010-2014,2015-2019,2079,cooccurrence
+Spatial / Temporal@2010-2014,Information Retrieval@2015-2019,Spatial / Temporal,Information Retrieval,2010-2014,2015-2019,2673,cooccurrence
+Spatial / Temporal@2010-2014,ML for DB@2015-2019,Spatial / Temporal,ML for DB,2010-2014,2015-2019,3234,cooccurrence
+Spatial / Temporal@2010-2014,Privacy / Security@2015-2019,Spatial / Temporal,Privacy / Security,2010-2014,2015-2019,726,cooccurrence
+Spatial / Temporal@2010-2014,Query Optimization@2015-2019,Spatial / Temporal,Query Optimization,2010-2014,2015-2019,3432,cooccurrence
+Spatial / Temporal@2010-2014,RDF / Semantic Web@2015-2019,Spatial / Temporal,RDF / Semantic Web,2010-2014,2015-2019,924,cooccurrence
+Spatial / Temporal@2010-2014,Streaming@2015-2019,Spatial / Temporal,Streaming,2010-2014,2015-2019,1485,cooccurrence
+Spatial / Temporal@2010-2014,Text-to-SQL / NLIDB@2015-2019,Spatial / Temporal,Text-to-SQL / NLIDB,2010-2014,2015-2019,66,cooccurrence
+Spatial / Temporal@2010-2014,Transactions@2015-2019,Spatial / Temporal,Transactions,2010-2014,2015-2019,693,cooccurrence
+Spatial / Temporal@2010-2014,Vector Search@2015-2019,Spatial / Temporal,Vector Search,2010-2014,2015-2019,330,cooccurrence
+Spatial / Temporal@2010-2014,XML@2015-2019,Spatial / Temporal,XML,2010-2014,2015-2019,99,cooccurrence
+Streaming@2010-2014,Cloud DB@2015-2019,Streaming,Cloud DB,2010-2014,2015-2019,648,cooccurrence
+Streaming@2010-2014,Crowdsourcing@2015-2019,Streaming,Crowdsourcing,2010-2014,2015-2019,864,cooccurrence
+Streaming@2010-2014,Data Analytics@2015-2019,Streaming,Data Analytics,2010-2014,2015-2019,6984,cooccurrence
+Streaming@2010-2014,Data Integration@2015-2019,Streaming,Data Integration,2010-2014,2015-2019,1224,cooccurrence
+Streaming@2010-2014,Distributed DB@2015-2019,Streaming,Distributed DB,2010-2014,2015-2019,4104,cooccurrence
+Streaming@2010-2014,Graph Data@2015-2019,Streaming,Graph Data,2010-2014,2015-2019,5004,cooccurrence
+Streaming@2010-2014,Indexing@2015-2019,Streaming,Indexing,2010-2014,2015-2019,2268,cooccurrence
+Streaming@2010-2014,Information Retrieval@2015-2019,Streaming,Information Retrieval,2010-2014,2015-2019,2916,cooccurrence
+Streaming@2010-2014,ML for DB@2015-2019,Streaming,ML for DB,2010-2014,2015-2019,3528,cooccurrence
+Streaming@2010-2014,Privacy / Security@2015-2019,Streaming,Privacy / Security,2010-2014,2015-2019,792,cooccurrence
+Streaming@2010-2014,Query Optimization@2015-2019,Streaming,Query Optimization,2010-2014,2015-2019,3744,cooccurrence
+Streaming@2010-2014,RDF / Semantic Web@2015-2019,Streaming,RDF / Semantic Web,2010-2014,2015-2019,1008,cooccurrence
+Streaming@2010-2014,Spatial / Temporal@2015-2019,Streaming,Spatial / Temporal,2010-2014,2015-2019,2016,cooccurrence
+Streaming@2010-2014,Text-to-SQL / NLIDB@2015-2019,Streaming,Text-to-SQL / NLIDB,2010-2014,2015-2019,72,cooccurrence
+Streaming@2010-2014,Transactions@2015-2019,Streaming,Transactions,2010-2014,2015-2019,756,cooccurrence
+Streaming@2010-2014,Vector Search@2015-2019,Streaming,Vector Search,2010-2014,2015-2019,360,cooccurrence
+Streaming@2010-2014,XML@2015-2019,Streaming,XML,2010-2014,2015-2019,108,cooccurrence
+Transactions@2010-2014,Cloud DB@2015-2019,Transactions,Cloud DB,2010-2014,2015-2019,306,cooccurrence
+Transactions@2010-2014,Crowdsourcing@2015-2019,Transactions,Crowdsourcing,2010-2014,2015-2019,408,cooccurrence
+Transactions@2010-2014,Data Analytics@2015-2019,Transactions,Data Analytics,2010-2014,2015-2019,3298,cooccurrence
+Transactions@2010-2014,Data Integration@2015-2019,Transactions,Data Integration,2010-2014,2015-2019,578,cooccurrence
+Transactions@2010-2014,Distributed DB@2015-2019,Transactions,Distributed DB,2010-2014,2015-2019,1938,cooccurrence
+Transactions@2010-2014,Graph Data@2015-2019,Transactions,Graph Data,2010-2014,2015-2019,2363,cooccurrence
+Transactions@2010-2014,Indexing@2015-2019,Transactions,Indexing,2010-2014,2015-2019,1071,cooccurrence
+Transactions@2010-2014,Information Retrieval@2015-2019,Transactions,Information Retrieval,2010-2014,2015-2019,1377,cooccurrence
+Transactions@2010-2014,ML for DB@2015-2019,Transactions,ML for DB,2010-2014,2015-2019,1666,cooccurrence
+Transactions@2010-2014,Privacy / Security@2015-2019,Transactions,Privacy / Security,2010-2014,2015-2019,374,cooccurrence
+Transactions@2010-2014,Query Optimization@2015-2019,Transactions,Query Optimization,2010-2014,2015-2019,1768,cooccurrence
+Transactions@2010-2014,RDF / Semantic Web@2015-2019,Transactions,RDF / Semantic Web,2010-2014,2015-2019,476,cooccurrence
+Transactions@2010-2014,Spatial / Temporal@2015-2019,Transactions,Spatial / Temporal,2010-2014,2015-2019,952,cooccurrence
+Transactions@2010-2014,Streaming@2015-2019,Transactions,Streaming,2010-2014,2015-2019,765,cooccurrence
+Transactions@2010-2014,Text-to-SQL / NLIDB@2015-2019,Transactions,Text-to-SQL / NLIDB,2010-2014,2015-2019,34,cooccurrence
+Transactions@2010-2014,Vector Search@2015-2019,Transactions,Vector Search,2010-2014,2015-2019,170,cooccurrence
+Transactions@2010-2014,XML@2015-2019,Transactions,XML,2010-2014,2015-2019,51,cooccurrence
+Vector Search@2010-2014,Cloud DB@2015-2019,Vector Search,Cloud DB,2010-2014,2015-2019,180,cooccurrence
+Vector Search@2010-2014,Crowdsourcing@2015-2019,Vector Search,Crowdsourcing,2010-2014,2015-2019,240,cooccurrence
+Vector Search@2010-2014,Data Analytics@2015-2019,Vector Search,Data Analytics,2010-2014,2015-2019,1940,cooccurrence
+Vector Search@2010-2014,Data Integration@2015-2019,Vector Search,Data Integration,2010-2014,2015-2019,340,cooccurrence
+Vector Search@2010-2014,Distributed DB@2015-2019,Vector Search,Distributed DB,2010-2014,2015-2019,1140,cooccurrence
+Vector Search@2010-2014,Graph Data@2015-2019,Vector Search,Graph Data,2010-2014,2015-2019,1390,cooccurrence
+Vector Search@2010-2014,Indexing@2015-2019,Vector Search,Indexing,2010-2014,2015-2019,630,cooccurrence
+Vector Search@2010-2014,Information Retrieval@2015-2019,Vector Search,Information Retrieval,2010-2014,2015-2019,810,cooccurrence
+Vector Search@2010-2014,ML for DB@2015-2019,Vector Search,ML for DB,2010-2014,2015-2019,980,cooccurrence
+Vector Search@2010-2014,Privacy / Security@2015-2019,Vector Search,Privacy / Security,2010-2014,2015-2019,220,cooccurrence
+Vector Search@2010-2014,Query Optimization@2015-2019,Vector Search,Query Optimization,2010-2014,2015-2019,1040,cooccurrence
+Vector Search@2010-2014,RDF / Semantic Web@2015-2019,Vector Search,RDF / Semantic Web,2010-2014,2015-2019,280,cooccurrence
+Vector Search@2010-2014,Spatial / Temporal@2015-2019,Vector Search,Spatial / Temporal,2010-2014,2015-2019,560,cooccurrence
+Vector Search@2010-2014,Streaming@2015-2019,Vector Search,Streaming,2010-2014,2015-2019,450,cooccurrence
+Vector Search@2010-2014,Text-to-SQL / NLIDB@2015-2019,Vector Search,Text-to-SQL / NLIDB,2010-2014,2015-2019,20,cooccurrence
+Vector Search@2010-2014,Transactions@2015-2019,Vector Search,Transactions,2010-2014,2015-2019,210,cooccurrence
+Vector Search@2010-2014,XML@2015-2019,Vector Search,XML,2010-2014,2015-2019,30,cooccurrence
+XML@2010-2014,Cloud DB@2015-2019,XML,Cloud DB,2010-2014,2015-2019,198,cooccurrence
+XML@2010-2014,Crowdsourcing@2015-2019,XML,Crowdsourcing,2010-2014,2015-2019,264,cooccurrence
+XML@2010-2014,Data Analytics@2015-2019,XML,Data Analytics,2010-2014,2015-2019,2134,cooccurrence
+XML@2010-2014,Data Integration@2015-2019,XML,Data Integration,2010-2014,2015-2019,374,cooccurrence
+XML@2010-2014,Distributed DB@2015-2019,XML,Distributed DB,2010-2014,2015-2019,1254,cooccurrence
+XML@2010-2014,Graph Data@2015-2019,XML,Graph Data,2010-2014,2015-2019,1529,cooccurrence
+XML@2010-2014,Indexing@2015-2019,XML,Indexing,2010-2014,2015-2019,693,cooccurrence
+XML@2010-2014,Information Retrieval@2015-2019,XML,Information Retrieval,2010-2014,2015-2019,891,cooccurrence
+XML@2010-2014,ML for DB@2015-2019,XML,ML for DB,2010-2014,2015-2019,1078,cooccurrence
+XML@2010-2014,Privacy / Security@2015-2019,XML,Privacy / Security,2010-2014,2015-2019,242,cooccurrence
+XML@2010-2014,Query Optimization@2015-2019,XML,Query Optimization,2010-2014,2015-2019,1144,cooccurrence
+XML@2010-2014,RDF / Semantic Web@2015-2019,XML,RDF / Semantic Web,2010-2014,2015-2019,308,cooccurrence
+XML@2010-2014,Spatial / Temporal@2015-2019,XML,Spatial / Temporal,2010-2014,2015-2019,616,cooccurrence
+XML@2010-2014,Streaming@2015-2019,XML,Streaming,2010-2014,2015-2019,495,cooccurrence
+XML@2010-2014,Text-to-SQL / NLIDB@2015-2019,XML,Text-to-SQL / NLIDB,2010-2014,2015-2019,22,cooccurrence
+XML@2010-2014,Transactions@2015-2019,XML,Transactions,2010-2014,2015-2019,231,cooccurrence
+XML@2010-2014,Vector Search@2015-2019,XML,Vector Search,2010-2014,2015-2019,110,cooccurrence
+Cloud DB@2015-2019,Cloud DB@2020-2024,Cloud DB,Cloud DB,2015-2019,2020-2024,18,persistence
+Crowdsourcing@2015-2019,Crowdsourcing@2020-2024,Crowdsourcing,Crowdsourcing,2015-2019,2020-2024,6,persistence
+Data Analytics@2015-2019,Data Analytics@2020-2024,Data Analytics,Data Analytics,2015-2019,2020-2024,194,persistence
+Data Integration@2015-2019,Data Integration@2020-2024,Data Integration,Data Integration,2015-2019,2020-2024,34,persistence
+Distributed DB@2015-2019,Distributed DB@2020-2024,Distributed DB,Distributed DB,2015-2019,2020-2024,114,persistence
+Graph Data@2015-2019,Graph Data@2020-2024,Graph Data,Graph Data,2015-2019,2020-2024,139,persistence
+Indexing@2015-2019,Indexing@2020-2024,Indexing,Indexing,2015-2019,2020-2024,63,persistence
+Information Retrieval@2015-2019,Information Retrieval@2020-2024,Information Retrieval,Information Retrieval,2015-2019,2020-2024,81,persistence
+ML for DB@2015-2019,ML for DB@2020-2024,ML for DB,ML for DB,2015-2019,2020-2024,98,persistence
+Privacy / Security@2015-2019,Privacy / Security@2020-2024,Privacy / Security,Privacy / Security,2015-2019,2020-2024,22,persistence
+Query Optimization@2015-2019,Query Optimization@2020-2024,Query Optimization,Query Optimization,2015-2019,2020-2024,104,persistence
+RDF / Semantic Web@2015-2019,RDF / Semantic Web@2020-2024,RDF / Semantic Web,RDF / Semantic Web,2015-2019,2020-2024,27,persistence
+Spatial / Temporal@2015-2019,Spatial / Temporal@2020-2024,Spatial / Temporal,Spatial / Temporal,2015-2019,2020-2024,56,persistence
+Streaming@2015-2019,Streaming@2020-2024,Streaming,Streaming,2015-2019,2020-2024,45,persistence
+Text-to-SQL / NLIDB@2015-2019,Text-to-SQL / NLIDB@2020-2024,Text-to-SQL / NLIDB,Text-to-SQL / NLIDB,2015-2019,2020-2024,2,persistence
+Transactions@2015-2019,Transactions@2020-2024,Transactions,Transactions,2015-2019,2020-2024,21,persistence
+Vector Search@2015-2019,Vector Search@2020-2024,Vector Search,Vector Search,2015-2019,2020-2024,10,persistence
+Cloud DB@2015-2019,Crowdsourcing@2020-2024,Cloud DB,Crowdsourcing,2015-2019,2020-2024,108,cooccurrence
+Cloud DB@2015-2019,Data Analytics@2020-2024,Cloud DB,Data Analytics,2015-2019,2020-2024,4770,cooccurrence
+Cloud DB@2015-2019,Data Integration@2020-2024,Cloud DB,Data Integration,2015-2019,2020-2024,900,cooccurrence
+Cloud DB@2015-2019,Distributed DB@2020-2024,Cloud DB,Distributed DB,2015-2019,2020-2024,2250,cooccurrence
+Cloud DB@2015-2019,Graph Data@2020-2024,Cloud DB,Graph Data,2015-2019,2020-2024,5004,cooccurrence
+Cloud DB@2015-2019,Indexing@2020-2024,Cloud DB,Indexing,2015-2019,2020-2024,2412,cooccurrence
+Cloud DB@2015-2019,Information Retrieval@2020-2024,Cloud DB,Information Retrieval,2015-2019,2020-2024,2142,cooccurrence
+Cloud DB@2015-2019,ML for DB@2020-2024,Cloud DB,ML for DB,2015-2019,2020-2024,6192,cooccurrence
+Cloud DB@2015-2019,Privacy / Security@2020-2024,Cloud DB,Privacy / Security,2015-2019,2020-2024,720,cooccurrence
+Cloud DB@2015-2019,Query Optimization@2020-2024,Cloud DB,Query Optimization,2015-2019,2020-2024,3834,cooccurrence
+Cloud DB@2015-2019,RDF / Semantic Web@2020-2024,Cloud DB,RDF / Semantic Web,2015-2019,2020-2024,486,cooccurrence
+Cloud DB@2015-2019,Spatial / Temporal@2020-2024,Cloud DB,Spatial / Temporal,2015-2019,2020-2024,2034,cooccurrence
+Cloud DB@2015-2019,Streaming@2020-2024,Cloud DB,Streaming,2015-2019,2020-2024,1206,cooccurrence
+Cloud DB@2015-2019,Text-to-SQL / NLIDB@2020-2024,Cloud DB,Text-to-SQL / NLIDB,2015-2019,2020-2024,108,cooccurrence
+Cloud DB@2015-2019,Transactions@2020-2024,Cloud DB,Transactions,2015-2019,2020-2024,630,cooccurrence
+Cloud DB@2015-2019,Vector Search@2020-2024,Cloud DB,Vector Search,2015-2019,2020-2024,414,cooccurrence
+Crowdsourcing@2015-2019,Cloud DB@2020-2024,Crowdsourcing,Cloud DB,2015-2019,2020-2024,1224,cooccurrence
+Crowdsourcing@2015-2019,Data Analytics@2020-2024,Crowdsourcing,Data Analytics,2015-2019,2020-2024,6360,cooccurrence
+Crowdsourcing@2015-2019,Data Integration@2020-2024,Crowdsourcing,Data Integration,2015-2019,2020-2024,1200,cooccurrence
+Crowdsourcing@2015-2019,Distributed DB@2020-2024,Crowdsourcing,Distributed DB,2015-2019,2020-2024,3000,cooccurrence
+Crowdsourcing@2015-2019,Graph Data@2020-2024,Crowdsourcing,Graph Data,2015-2019,2020-2024,6672,cooccurrence
+Crowdsourcing@2015-2019,Indexing@2020-2024,Crowdsourcing,Indexing,2015-2019,2020-2024,3216,cooccurrence
+Crowdsourcing@2015-2019,Information Retrieval@2020-2024,Crowdsourcing,Information Retrieval,2015-2019,2020-2024,2856,cooccurrence
+Crowdsourcing@2015-2019,ML for DB@2020-2024,Crowdsourcing,ML for DB,2015-2019,2020-2024,8256,cooccurrence
+Crowdsourcing@2015-2019,Privacy / Security@2020-2024,Crowdsourcing,Privacy / Security,2015-2019,2020-2024,960,cooccurrence
+Crowdsourcing@2015-2019,Query Optimization@2020-2024,Crowdsourcing,Query Optimization,2015-2019,2020-2024,5112,cooccurrence
+Crowdsourcing@2015-2019,RDF / Semantic Web@2020-2024,Crowdsourcing,RDF / Semantic Web,2015-2019,2020-2024,648,cooccurrence
+Crowdsourcing@2015-2019,Spatial / Temporal@2020-2024,Crowdsourcing,Spatial / Temporal,2015-2019,2020-2024,2712,cooccurrence
+Crowdsourcing@2015-2019,Streaming@2020-2024,Crowdsourcing,Streaming,2015-2019,2020-2024,1608,cooccurrence
+Crowdsourcing@2015-2019,Text-to-SQL / NLIDB@2020-2024,Crowdsourcing,Text-to-SQL / NLIDB,2015-2019,2020-2024,144,cooccurrence
+Crowdsourcing@2015-2019,Transactions@2020-2024,Crowdsourcing,Transactions,2015-2019,2020-2024,840,cooccurrence
+Crowdsourcing@2015-2019,Vector Search@2020-2024,Crowdsourcing,Vector Search,2015-2019,2020-2024,552,cooccurrence
+Data Analytics@2015-2019,Cloud DB@2020-2024,Data Analytics,Cloud DB,2015-2019,2020-2024,9894,cooccurrence
+Data Analytics@2015-2019,Crowdsourcing@2020-2024,Data Analytics,Crowdsourcing,2015-2019,2020-2024,1164,cooccurrence
+Data Analytics@2015-2019,Data Integration@2020-2024,Data Analytics,Data Integration,2015-2019,2020-2024,9700,cooccurrence
+Data Analytics@2015-2019,Distributed DB@2020-2024,Data Analytics,Distributed DB,2015-2019,2020-2024,24250,cooccurrence
+Data Analytics@2015-2019,Graph Data@2020-2024,Data Analytics,Graph Data,2015-2019,2020-2024,53932,cooccurrence
+Data Analytics@2015-2019,Indexing@2020-2024,Data Analytics,Indexing,2015-2019,2020-2024,25996,cooccurrence
+Data Analytics@2015-2019,Information Retrieval@2020-2024,Data Analytics,Information Retrieval,2015-2019,2020-2024,23086,cooccurrence
+Data Analytics@2015-2019,ML for DB@2020-2024,Data Analytics,ML for DB,2015-2019,2020-2024,66736,cooccurrence
+Data Analytics@2015-2019,Privacy / Security@2020-2024,Data Analytics,Privacy / Security,2015-2019,2020-2024,7760,cooccurrence
+Data Analytics@2015-2019,Query Optimization@2020-2024,Data Analytics,Query Optimization,2015-2019,2020-2024,41322,cooccurrence
+Data Analytics@2015-2019,RDF / Semantic Web@2020-2024,Data Analytics,RDF / Semantic Web,2015-2019,2020-2024,5238,cooccurrence
+Data Analytics@2015-2019,Spatial / Temporal@2020-2024,Data Analytics,Spatial / Temporal,2015-2019,2020-2024,21922,cooccurrence
+Data Analytics@2015-2019,Streaming@2020-2024,Data Analytics,Streaming,2015-2019,2020-2024,12998,cooccurrence
+Data Analytics@2015-2019,Text-to-SQL / NLIDB@2020-2024,Data Analytics,Text-to-SQL / NLIDB,2015-2019,2020-2024,1164,cooccurrence
+Data Analytics@2015-2019,Transactions@2020-2024,Data Analytics,Transactions,2015-2019,2020-2024,6790,cooccurrence
+Data Analytics@2015-2019,Vector Search@2020-2024,Data Analytics,Vector Search,2015-2019,2020-2024,4462,cooccurrence
+Data Integration@2015-2019,Cloud DB@2020-2024,Data Integration,Cloud DB,2015-2019,2020-2024,1734,cooccurrence
+Data Integration@2015-2019,Crowdsourcing@2020-2024,Data Integration,Crowdsourcing,2015-2019,2020-2024,204,cooccurrence
+Data Integration@2015-2019,Data Analytics@2020-2024,Data Integration,Data Analytics,2015-2019,2020-2024,9010,cooccurrence
+Data Integration@2015-2019,Distributed DB@2020-2024,Data Integration,Distributed DB,2015-2019,2020-2024,4250,cooccurrence
+Data Integration@2015-2019,Graph Data@2020-2024,Data Integration,Graph Data,2015-2019,2020-2024,9452,cooccurrence
+Data Integration@2015-2019,Indexing@2020-2024,Data Integration,Indexing,2015-2019,2020-2024,4556,cooccurrence
+Data Integration@2015-2019,Information Retrieval@2020-2024,Data Integration,Information Retrieval,2015-2019,2020-2024,4046,cooccurrence
+Data Integration@2015-2019,ML for DB@2020-2024,Data Integration,ML for DB,2015-2019,2020-2024,11696,cooccurrence
+Data Integration@2015-2019,Privacy / Security@2020-2024,Data Integration,Privacy / Security,2015-2019,2020-2024,1360,cooccurrence
+Data Integration@2015-2019,Query Optimization@2020-2024,Data Integration,Query Optimization,2015-2019,2020-2024,7242,cooccurrence
+Data Integration@2015-2019,RDF / Semantic Web@2020-2024,Data Integration,RDF / Semantic Web,2015-2019,2020-2024,918,cooccurrence
+Data Integration@2015-2019,Spatial / Temporal@2020-2024,Data Integration,Spatial / Temporal,2015-2019,2020-2024,3842,cooccurrence
+Data Integration@2015-2019,Streaming@2020-2024,Data Integration,Streaming,2015-2019,2020-2024,2278,cooccurrence
+Data Integration@2015-2019,Text-to-SQL / NLIDB@2020-2024,Data Integration,Text-to-SQL / NLIDB,2015-2019,2020-2024,204,cooccurrence
+Data Integration@2015-2019,Transactions@2020-2024,Data Integration,Transactions,2015-2019,2020-2024,1190,cooccurrence
+Data Integration@2015-2019,Vector Search@2020-2024,Data Integration,Vector Search,2015-2019,2020-2024,782,cooccurrence
+Distributed DB@2015-2019,Cloud DB@2020-2024,Distributed DB,Cloud DB,2015-2019,2020-2024,5814,cooccurrence
+Distributed DB@2015-2019,Crowdsourcing@2020-2024,Distributed DB,Crowdsourcing,2015-2019,2020-2024,684,cooccurrence
+Distributed DB@2015-2019,Data Analytics@2020-2024,Distributed DB,Data Analytics,2015-2019,2020-2024,30210,cooccurrence
+Distributed DB@2015-2019,Data Integration@2020-2024,Distributed DB,Data Integration,2015-2019,2020-2024,5700,cooccurrence
+Distributed DB@2015-2019,Graph Data@2020-2024,Distributed DB,Graph Data,2015-2019,2020-2024,31692,cooccurrence
+Distributed DB@2015-2019,Indexing@2020-2024,Distributed DB,Indexing,2015-2019,2020-2024,15276,cooccurrence
+Distributed DB@2015-2019,Information Retrieval@2020-2024,Distributed DB,Information Retrieval,2015-2019,2020-2024,13566,cooccurrence
+Distributed DB@2015-2019,ML for DB@2020-2024,Distributed DB,ML for DB,2015-2019,2020-2024,39216,cooccurrence
+Distributed DB@2015-2019,Privacy / Security@2020-2024,Distributed DB,Privacy / Security,2015-2019,2020-2024,4560,cooccurrence
+Distributed DB@2015-2019,Query Optimization@2020-2024,Distributed DB,Query Optimization,2015-2019,2020-2024,24282,cooccurrence
+Distributed DB@2015-2019,RDF / Semantic Web@2020-2024,Distributed DB,RDF / Semantic Web,2015-2019,2020-2024,3078,cooccurrence
+Distributed DB@2015-2019,Spatial / Temporal@2020-2024,Distributed DB,Spatial / Temporal,2015-2019,2020-2024,12882,cooccurrence
+Distributed DB@2015-2019,Streaming@2020-2024,Distributed DB,Streaming,2015-2019,2020-2024,7638,cooccurrence
+Distributed DB@2015-2019,Text-to-SQL / NLIDB@2020-2024,Distributed DB,Text-to-SQL / NLIDB,2015-2019,2020-2024,684,cooccurrence
+Distributed DB@2015-2019,Transactions@2020-2024,Distributed DB,Transactions,2015-2019,2020-2024,3990,cooccurrence
+Distributed DB@2015-2019,Vector Search@2020-2024,Distributed DB,Vector Search,2015-2019,2020-2024,2622,cooccurrence
+Graph Data@2015-2019,Cloud DB@2020-2024,Graph Data,Cloud DB,2015-2019,2020-2024,7089,cooccurrence
+Graph Data@2015-2019,Crowdsourcing@2020-2024,Graph Data,Crowdsourcing,2015-2019,2020-2024,834,cooccurrence
+Graph Data@2015-2019,Data Analytics@2020-2024,Graph Data,Data Analytics,2015-2019,2020-2024,36835,cooccurrence
+Graph Data@2015-2019,Data Integration@2020-2024,Graph Data,Data Integration,2015-2019,2020-2024,6950,cooccurrence
+Graph Data@2015-2019,Distributed DB@2020-2024,Graph Data,Distributed DB,2015-2019,2020-2024,17375,cooccurrence
+Graph Data@2015-2019,Indexing@2020-2024,Graph Data,Indexing,2015-2019,2020-2024,18626,cooccurrence
+Graph Data@2015-2019,Information Retrieval@2020-2024,Graph Data,Information Retrieval,2015-2019,2020-2024,16541,cooccurrence
+Graph Data@2015-2019,ML for DB@2020-2024,Graph Data,ML for DB,2015-2019,2020-2024,47816,cooccurrence
+Graph Data@2015-2019,Privacy / Security@2020-2024,Graph Data,Privacy / Security,2015-2019,2020-2024,5560,cooccurrence
+Graph Data@2015-2019,Query Optimization@2020-2024,Graph Data,Query Optimization,2015-2019,2020-2024,29607,cooccurrence
+Graph Data@2015-2019,RDF / Semantic Web@2020-2024,Graph Data,RDF / Semantic Web,2015-2019,2020-2024,3753,cooccurrence
+Graph Data@2015-2019,Spatial / Temporal@2020-2024,Graph Data,Spatial / Temporal,2015-2019,2020-2024,15707,cooccurrence
+Graph Data@2015-2019,Streaming@2020-2024,Graph Data,Streaming,2015-2019,2020-2024,9313,cooccurrence
+Graph Data@2015-2019,Text-to-SQL / NLIDB@2020-2024,Graph Data,Text-to-SQL / NLIDB,2015-2019,2020-2024,834,cooccurrence
+Graph Data@2015-2019,Transactions@2020-2024,Graph Data,Transactions,2015-2019,2020-2024,4865,cooccurrence
+Graph Data@2015-2019,Vector Search@2020-2024,Graph Data,Vector Search,2015-2019,2020-2024,3197,cooccurrence
+Indexing@2015-2019,Cloud DB@2020-2024,Indexing,Cloud DB,2015-2019,2020-2024,3213,cooccurrence
+Indexing@2015-2019,Crowdsourcing@2020-2024,Indexing,Crowdsourcing,2015-2019,2020-2024,378,cooccurrence
+Indexing@2015-2019,Data Analytics@2020-2024,Indexing,Data Analytics,2015-2019,2020-2024,16695,cooccurrence
+Indexing@2015-2019,Data Integration@2020-2024,Indexing,Data Integration,2015-2019,2020-2024,3150,cooccurrence
+Indexing@2015-2019,Distributed DB@2020-2024,Indexing,Distributed DB,2015-2019,2020-2024,7875,cooccurrence
+Indexing@2015-2019,Graph Data@2020-2024,Indexing,Graph Data,2015-2019,2020-2024,17514,cooccurrence
+Indexing@2015-2019,Information Retrieval@2020-2024,Indexing,Information Retrieval,2015-2019,2020-2024,7497,cooccurrence
+Indexing@2015-2019,ML for DB@2020-2024,Indexing,ML for DB,2015-2019,2020-2024,21672,cooccurrence
+Indexing@2015-2019,Privacy / Security@2020-2024,Indexing,Privacy / Security,2015-2019,2020-2024,2520,cooccurrence
+Indexing@2015-2019,Query Optimization@2020-2024,Indexing,Query Optimization,2015-2019,2020-2024,13419,cooccurrence
+Indexing@2015-2019,RDF / Semantic Web@2020-2024,Indexing,RDF / Semantic Web,2015-2019,2020-2024,1701,cooccurrence
+Indexing@2015-2019,Spatial / Temporal@2020-2024,Indexing,Spatial / Temporal,2015-2019,2020-2024,7119,cooccurrence
+Indexing@2015-2019,Streaming@2020-2024,Indexing,Streaming,2015-2019,2020-2024,4221,cooccurrence
+Indexing@2015-2019,Text-to-SQL / NLIDB@2020-2024,Indexing,Text-to-SQL / NLIDB,2015-2019,2020-2024,378,cooccurrence
+Indexing@2015-2019,Transactions@2020-2024,Indexing,Transactions,2015-2019,2020-2024,2205,cooccurrence
+Indexing@2015-2019,Vector Search@2020-2024,Indexing,Vector Search,2015-2019,2020-2024,1449,cooccurrence
+Information Retrieval@2015-2019,Cloud DB@2020-2024,Information Retrieval,Cloud DB,2015-2019,2020-2024,4131,cooccurrence
+Information Retrieval@2015-2019,Crowdsourcing@2020-2024,Information Retrieval,Crowdsourcing,2015-2019,2020-2024,486,cooccurrence
+Information Retrieval@2015-2019,Data Analytics@2020-2024,Information Retrieval,Data Analytics,2015-2019,2020-2024,21465,cooccurrence
+Information Retrieval@2015-2019,Data Integration@2020-2024,Information Retrieval,Data Integration,2015-2019,2020-2024,4050,cooccurrence
+Information Retrieval@2015-2019,Distributed DB@2020-2024,Information Retrieval,Distributed DB,2015-2019,2020-2024,10125,cooccurrence
+Information Retrieval@2015-2019,Graph Data@2020-2024,Information Retrieval,Graph Data,2015-2019,2020-2024,22518,cooccurrence
+Information Retrieval@2015-2019,Indexing@2020-2024,Information Retrieval,Indexing,2015-2019,2020-2024,10854,cooccurrence
+Information Retrieval@2015-2019,ML for DB@2020-2024,Information Retrieval,ML for DB,2015-2019,2020-2024,27864,cooccurrence
+Information Retrieval@2015-2019,Privacy / Security@2020-2024,Information Retrieval,Privacy / Security,2015-2019,2020-2024,3240,cooccurrence
+Information Retrieval@2015-2019,Query Optimization@2020-2024,Information Retrieval,Query Optimization,2015-2019,2020-2024,17253,cooccurrence
+Information Retrieval@2015-2019,RDF / Semantic Web@2020-2024,Information Retrieval,RDF / Semantic Web,2015-2019,2020-2024,2187,cooccurrence
+Information Retrieval@2015-2019,Spatial / Temporal@2020-2024,Information Retrieval,Spatial / Temporal,2015-2019,2020-2024,9153,cooccurrence
+Information Retrieval@2015-2019,Streaming@2020-2024,Information Retrieval,Streaming,2015-2019,2020-2024,5427,cooccurrence
+Information Retrieval@2015-2019,Text-to-SQL / NLIDB@2020-2024,Information Retrieval,Text-to-SQL / NLIDB,2015-2019,2020-2024,486,cooccurrence
+Information Retrieval@2015-2019,Transactions@2020-2024,Information Retrieval,Transactions,2015-2019,2020-2024,2835,cooccurrence
+Information Retrieval@2015-2019,Vector Search@2020-2024,Information Retrieval,Vector Search,2015-2019,2020-2024,1863,cooccurrence
+ML for DB@2015-2019,Cloud DB@2020-2024,ML for DB,Cloud DB,2015-2019,2020-2024,4998,cooccurrence
+ML for DB@2015-2019,Crowdsourcing@2020-2024,ML for DB,Crowdsourcing,2015-2019,2020-2024,588,cooccurrence
+ML for DB@2015-2019,Data Analytics@2020-2024,ML for DB,Data Analytics,2015-2019,2020-2024,25970,cooccurrence
+ML for DB@2015-2019,Data Integration@2020-2024,ML for DB,Data Integration,2015-2019,2020-2024,4900,cooccurrence
+ML for DB@2015-2019,Distributed DB@2020-2024,ML for DB,Distributed DB,2015-2019,2020-2024,12250,cooccurrence
+ML for DB@2015-2019,Graph Data@2020-2024,ML for DB,Graph Data,2015-2019,2020-2024,27244,cooccurrence
+ML for DB@2015-2019,Indexing@2020-2024,ML for DB,Indexing,2015-2019,2020-2024,13132,cooccurrence
+ML for DB@2015-2019,Information Retrieval@2020-2024,ML for DB,Information Retrieval,2015-2019,2020-2024,11662,cooccurrence
+ML for DB@2015-2019,Privacy / Security@2020-2024,ML for DB,Privacy / Security,2015-2019,2020-2024,3920,cooccurrence
+ML for DB@2015-2019,Query Optimization@2020-2024,ML for DB,Query Optimization,2015-2019,2020-2024,20874,cooccurrence
+ML for DB@2015-2019,RDF / Semantic Web@2020-2024,ML for DB,RDF / Semantic Web,2015-2019,2020-2024,2646,cooccurrence
+ML for DB@2015-2019,Spatial / Temporal@2020-2024,ML for DB,Spatial / Temporal,2015-2019,2020-2024,11074,cooccurrence
+ML for DB@2015-2019,Streaming@2020-2024,ML for DB,Streaming,2015-2019,2020-2024,6566,cooccurrence
+ML for DB@2015-2019,Text-to-SQL / NLIDB@2020-2024,ML for DB,Text-to-SQL / NLIDB,2015-2019,2020-2024,588,cooccurrence
+ML for DB@2015-2019,Transactions@2020-2024,ML for DB,Transactions,2015-2019,2020-2024,3430,cooccurrence
+ML for DB@2015-2019,Vector Search@2020-2024,ML for DB,Vector Search,2015-2019,2020-2024,2254,cooccurrence
+Privacy / Security@2015-2019,Cloud DB@2020-2024,Privacy / Security,Cloud DB,2015-2019,2020-2024,1122,cooccurrence
+Privacy / Security@2015-2019,Crowdsourcing@2020-2024,Privacy / Security,Crowdsourcing,2015-2019,2020-2024,132,cooccurrence
+Privacy / Security@2015-2019,Data Analytics@2020-2024,Privacy / Security,Data Analytics,2015-2019,2020-2024,5830,cooccurrence
+Privacy / Security@2015-2019,Data Integration@2020-2024,Privacy / Security,Data Integration,2015-2019,2020-2024,1100,cooccurrence
+Privacy / Security@2015-2019,Distributed DB@2020-2024,Privacy / Security,Distributed DB,2015-2019,2020-2024,2750,cooccurrence
+Privacy / Security@2015-2019,Graph Data@2020-2024,Privacy / Security,Graph Data,2015-2019,2020-2024,6116,cooccurrence
+Privacy / Security@2015-2019,Indexing@2020-2024,Privacy / Security,Indexing,2015-2019,2020-2024,2948,cooccurrence
+Privacy / Security@2015-2019,Information Retrieval@2020-2024,Privacy / Security,Information Retrieval,2015-2019,2020-2024,2618,cooccurrence
+Privacy / Security@2015-2019,ML for DB@2020-2024,Privacy / Security,ML for DB,2015-2019,2020-2024,7568,cooccurrence
+Privacy / Security@2015-2019,Query Optimization@2020-2024,Privacy / Security,Query Optimization,2015-2019,2020-2024,4686,cooccurrence
+Privacy / Security@2015-2019,RDF / Semantic Web@2020-2024,Privacy / Security,RDF / Semantic Web,2015-2019,2020-2024,594,cooccurrence
+Privacy / Security@2015-2019,Spatial / Temporal@2020-2024,Privacy / Security,Spatial / Temporal,2015-2019,2020-2024,2486,cooccurrence
+Privacy / Security@2015-2019,Streaming@2020-2024,Privacy / Security,Streaming,2015-2019,2020-2024,1474,cooccurrence
+Privacy / Security@2015-2019,Text-to-SQL / NLIDB@2020-2024,Privacy / Security,Text-to-SQL / NLIDB,2015-2019,2020-2024,132,cooccurrence
+Privacy / Security@2015-2019,Transactions@2020-2024,Privacy / Security,Transactions,2015-2019,2020-2024,770,cooccurrence
+Privacy / Security@2015-2019,Vector Search@2020-2024,Privacy / Security,Vector Search,2015-2019,2020-2024,506,cooccurrence
+Query Optimization@2015-2019,Cloud DB@2020-2024,Query Optimization,Cloud DB,2015-2019,2020-2024,5304,cooccurrence
+Query Optimization@2015-2019,Crowdsourcing@2020-2024,Query Optimization,Crowdsourcing,2015-2019,2020-2024,624,cooccurrence
+Query Optimization@2015-2019,Data Analytics@2020-2024,Query Optimization,Data Analytics,2015-2019,2020-2024,27560,cooccurrence
+Query Optimization@2015-2019,Data Integration@2020-2024,Query Optimization,Data Integration,2015-2019,2020-2024,5200,cooccurrence
+Query Optimization@2015-2019,Distributed DB@2020-2024,Query Optimization,Distributed DB,2015-2019,2020-2024,13000,cooccurrence
+Query Optimization@2015-2019,Graph Data@2020-2024,Query Optimization,Graph Data,2015-2019,2020-2024,28912,cooccurrence
+Query Optimization@2015-2019,Indexing@2020-2024,Query Optimization,Indexing,2015-2019,2020-2024,13936,cooccurrence
+Query Optimization@2015-2019,Information Retrieval@2020-2024,Query Optimization,Information Retrieval,2015-2019,2020-2024,12376,cooccurrence
+Query Optimization@2015-2019,ML for DB@2020-2024,Query Optimization,ML for DB,2015-2019,2020-2024,35776,cooccurrence
+Query Optimization@2015-2019,Privacy / Security@2020-2024,Query Optimization,Privacy / Security,2015-2019,2020-2024,4160,cooccurrence
+Query Optimization@2015-2019,RDF / Semantic Web@2020-2024,Query Optimization,RDF / Semantic Web,2015-2019,2020-2024,2808,cooccurrence
+Query Optimization@2015-2019,Spatial / Temporal@2020-2024,Query Optimization,Spatial / Temporal,2015-2019,2020-2024,11752,cooccurrence
+Query Optimization@2015-2019,Streaming@2020-2024,Query Optimization,Streaming,2015-2019,2020-2024,6968,cooccurrence
+Query Optimization@2015-2019,Text-to-SQL / NLIDB@2020-2024,Query Optimization,Text-to-SQL / NLIDB,2015-2019,2020-2024,624,cooccurrence
+Query Optimization@2015-2019,Transactions@2020-2024,Query Optimization,Transactions,2015-2019,2020-2024,3640,cooccurrence
+Query Optimization@2015-2019,Vector Search@2020-2024,Query Optimization,Vector Search,2015-2019,2020-2024,2392,cooccurrence
+RDF / Semantic Web@2015-2019,Cloud DB@2020-2024,RDF / Semantic Web,Cloud DB,2015-2019,2020-2024,1428,cooccurrence
+RDF / Semantic Web@2015-2019,Crowdsourcing@2020-2024,RDF / Semantic Web,Crowdsourcing,2015-2019,2020-2024,168,cooccurrence
+RDF / Semantic Web@2015-2019,Data Analytics@2020-2024,RDF / Semantic Web,Data Analytics,2015-2019,2020-2024,7420,cooccurrence
+RDF / Semantic Web@2015-2019,Data Integration@2020-2024,RDF / Semantic Web,Data Integration,2015-2019,2020-2024,1400,cooccurrence
+RDF / Semantic Web@2015-2019,Distributed DB@2020-2024,RDF / Semantic Web,Distributed DB,2015-2019,2020-2024,3500,cooccurrence
+RDF / Semantic Web@2015-2019,Graph Data@2020-2024,RDF / Semantic Web,Graph Data,2015-2019,2020-2024,7784,cooccurrence
+RDF / Semantic Web@2015-2019,Indexing@2020-2024,RDF / Semantic Web,Indexing,2015-2019,2020-2024,3752,cooccurrence
+RDF / Semantic Web@2015-2019,Information Retrieval@2020-2024,RDF / Semantic Web,Information Retrieval,2015-2019,2020-2024,3332,cooccurrence
+RDF / Semantic Web@2015-2019,ML for DB@2020-2024,RDF / Semantic Web,ML for DB,2015-2019,2020-2024,9632,cooccurrence
+RDF / Semantic Web@2015-2019,Privacy / Security@2020-2024,RDF / Semantic Web,Privacy / Security,2015-2019,2020-2024,1120,cooccurrence
+RDF / Semantic Web@2015-2019,Query Optimization@2020-2024,RDF / Semantic Web,Query Optimization,2015-2019,2020-2024,5964,cooccurrence
+RDF / Semantic Web@2015-2019,Spatial / Temporal@2020-2024,RDF / Semantic Web,Spatial / Temporal,2015-2019,2020-2024,3164,cooccurrence
+RDF / Semantic Web@2015-2019,Streaming@2020-2024,RDF / Semantic Web,Streaming,2015-2019,2020-2024,1876,cooccurrence
+RDF / Semantic Web@2015-2019,Text-to-SQL / NLIDB@2020-2024,RDF / Semantic Web,Text-to-SQL / NLIDB,2015-2019,2020-2024,168,cooccurrence
+RDF / Semantic Web@2015-2019,Transactions@2020-2024,RDF / Semantic Web,Transactions,2015-2019,2020-2024,980,cooccurrence
+RDF / Semantic Web@2015-2019,Vector Search@2020-2024,RDF / Semantic Web,Vector Search,2015-2019,2020-2024,644,cooccurrence
+Spatial / Temporal@2015-2019,Cloud DB@2020-2024,Spatial / Temporal,Cloud DB,2015-2019,2020-2024,2856,cooccurrence
+Spatial / Temporal@2015-2019,Crowdsourcing@2020-2024,Spatial / Temporal,Crowdsourcing,2015-2019,2020-2024,336,cooccurrence
+Spatial / Temporal@2015-2019,Data Analytics@2020-2024,Spatial / Temporal,Data Analytics,2015-2019,2020-2024,14840,cooccurrence
+Spatial / Temporal@2015-2019,Data Integration@2020-2024,Spatial / Temporal,Data Integration,2015-2019,2020-2024,2800,cooccurrence
+Spatial / Temporal@2015-2019,Distributed DB@2020-2024,Spatial / Temporal,Distributed DB,2015-2019,2020-2024,7000,cooccurrence
+Spatial / Temporal@2015-2019,Graph Data@2020-2024,Spatial / Temporal,Graph Data,2015-2019,2020-2024,15568,cooccurrence
+Spatial / Temporal@2015-2019,Indexing@2020-2024,Spatial / Temporal,Indexing,2015-2019,2020-2024,7504,cooccurrence
+Spatial / Temporal@2015-2019,Information Retrieval@2020-2024,Spatial / Temporal,Information Retrieval,2015-2019,2020-2024,6664,cooccurrence
+Spatial / Temporal@2015-2019,ML for DB@2020-2024,Spatial / Temporal,ML for DB,2015-2019,2020-2024,19264,cooccurrence
+Spatial / Temporal@2015-2019,Privacy / Security@2020-2024,Spatial / Temporal,Privacy / Security,2015-2019,2020-2024,2240,cooccurrence
+Spatial / Temporal@2015-2019,Query Optimization@2020-2024,Spatial / Temporal,Query Optimization,2015-2019,2020-2024,11928,cooccurrence
+Spatial / Temporal@2015-2019,RDF / Semantic Web@2020-2024,Spatial / Temporal,RDF / Semantic Web,2015-2019,2020-2024,1512,cooccurrence
+Spatial / Temporal@2015-2019,Streaming@2020-2024,Spatial / Temporal,Streaming,2015-2019,2020-2024,3752,cooccurrence
+Spatial / Temporal@2015-2019,Text-to-SQL / NLIDB@2020-2024,Spatial / Temporal,Text-to-SQL / NLIDB,2015-2019,2020-2024,336,cooccurrence
+Spatial / Temporal@2015-2019,Transactions@2020-2024,Spatial / Temporal,Transactions,2015-2019,2020-2024,1960,cooccurrence
+Spatial / Temporal@2015-2019,Vector Search@2020-2024,Spatial / Temporal,Vector Search,2015-2019,2020-2024,1288,cooccurrence
+Streaming@2015-2019,Cloud DB@2020-2024,Streaming,Cloud DB,2015-2019,2020-2024,2295,cooccurrence
+Streaming@2015-2019,Crowdsourcing@2020-2024,Streaming,Crowdsourcing,2015-2019,2020-2024,270,cooccurrence
+Streaming@2015-2019,Data Analytics@2020-2024,Streaming,Data Analytics,2015-2019,2020-2024,11925,cooccurrence
+Streaming@2015-2019,Data Integration@2020-2024,Streaming,Data Integration,2015-2019,2020-2024,2250,cooccurrence
+Streaming@2015-2019,Distributed DB@2020-2024,Streaming,Distributed DB,2015-2019,2020-2024,5625,cooccurrence
+Streaming@2015-2019,Graph Data@2020-2024,Streaming,Graph Data,2015-2019,2020-2024,12510,cooccurrence
+Streaming@2015-2019,Indexing@2020-2024,Streaming,Indexing,2015-2019,2020-2024,6030,cooccurrence
+Streaming@2015-2019,Information Retrieval@2020-2024,Streaming,Information Retrieval,2015-2019,2020-2024,5355,cooccurrence
+Streaming@2015-2019,ML for DB@2020-2024,Streaming,ML for DB,2015-2019,2020-2024,15480,cooccurrence
+Streaming@2015-2019,Privacy / Security@2020-2024,Streaming,Privacy / Security,2015-2019,2020-2024,1800,cooccurrence
+Streaming@2015-2019,Query Optimization@2020-2024,Streaming,Query Optimization,2015-2019,2020-2024,9585,cooccurrence
+Streaming@2015-2019,RDF / Semantic Web@2020-2024,Streaming,RDF / Semantic Web,2015-2019,2020-2024,1215,cooccurrence
+Streaming@2015-2019,Spatial / Temporal@2020-2024,Streaming,Spatial / Temporal,2015-2019,2020-2024,5085,cooccurrence
+Streaming@2015-2019,Text-to-SQL / NLIDB@2020-2024,Streaming,Text-to-SQL / NLIDB,2015-2019,2020-2024,270,cooccurrence
+Streaming@2015-2019,Transactions@2020-2024,Streaming,Transactions,2015-2019,2020-2024,1575,cooccurrence
+Streaming@2015-2019,Vector Search@2020-2024,Streaming,Vector Search,2015-2019,2020-2024,1035,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Cloud DB@2020-2024,Text-to-SQL / NLIDB,Cloud DB,2015-2019,2020-2024,102,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Crowdsourcing@2020-2024,Text-to-SQL / NLIDB,Crowdsourcing,2015-2019,2020-2024,12,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Data Analytics@2020-2024,Text-to-SQL / NLIDB,Data Analytics,2015-2019,2020-2024,530,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Data Integration@2020-2024,Text-to-SQL / NLIDB,Data Integration,2015-2019,2020-2024,100,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Distributed DB@2020-2024,Text-to-SQL / NLIDB,Distributed DB,2015-2019,2020-2024,250,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Graph Data@2020-2024,Text-to-SQL / NLIDB,Graph Data,2015-2019,2020-2024,556,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Indexing@2020-2024,Text-to-SQL / NLIDB,Indexing,2015-2019,2020-2024,268,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Information Retrieval@2020-2024,Text-to-SQL / NLIDB,Information Retrieval,2015-2019,2020-2024,238,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,ML for DB@2020-2024,Text-to-SQL / NLIDB,ML for DB,2015-2019,2020-2024,688,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Privacy / Security@2020-2024,Text-to-SQL / NLIDB,Privacy / Security,2015-2019,2020-2024,80,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Query Optimization@2020-2024,Text-to-SQL / NLIDB,Query Optimization,2015-2019,2020-2024,426,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,RDF / Semantic Web@2020-2024,Text-to-SQL / NLIDB,RDF / Semantic Web,2015-2019,2020-2024,54,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Spatial / Temporal@2020-2024,Text-to-SQL / NLIDB,Spatial / Temporal,2015-2019,2020-2024,226,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Streaming@2020-2024,Text-to-SQL / NLIDB,Streaming,2015-2019,2020-2024,134,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Transactions@2020-2024,Text-to-SQL / NLIDB,Transactions,2015-2019,2020-2024,70,cooccurrence
+Text-to-SQL / NLIDB@2015-2019,Vector Search@2020-2024,Text-to-SQL / NLIDB,Vector Search,2015-2019,2020-2024,46,cooccurrence
+Transactions@2015-2019,Cloud DB@2020-2024,Transactions,Cloud DB,2015-2019,2020-2024,1071,cooccurrence
+Transactions@2015-2019,Crowdsourcing@2020-2024,Transactions,Crowdsourcing,2015-2019,2020-2024,126,cooccurrence
+Transactions@2015-2019,Data Analytics@2020-2024,Transactions,Data Analytics,2015-2019,2020-2024,5565,cooccurrence
+Transactions@2015-2019,Data Integration@2020-2024,Transactions,Data Integration,2015-2019,2020-2024,1050,cooccurrence
+Transactions@2015-2019,Distributed DB@2020-2024,Transactions,Distributed DB,2015-2019,2020-2024,2625,cooccurrence
+Transactions@2015-2019,Graph Data@2020-2024,Transactions,Graph Data,2015-2019,2020-2024,5838,cooccurrence
+Transactions@2015-2019,Indexing@2020-2024,Transactions,Indexing,2015-2019,2020-2024,2814,cooccurrence
+Transactions@2015-2019,Information Retrieval@2020-2024,Transactions,Information Retrieval,2015-2019,2020-2024,2499,cooccurrence
+Transactions@2015-2019,ML for DB@2020-2024,Transactions,ML for DB,2015-2019,2020-2024,7224,cooccurrence
+Transactions@2015-2019,Privacy / Security@2020-2024,Transactions,Privacy / Security,2015-2019,2020-2024,840,cooccurrence
+Transactions@2015-2019,Query Optimization@2020-2024,Transactions,Query Optimization,2015-2019,2020-2024,4473,cooccurrence
+Transactions@2015-2019,RDF / Semantic Web@2020-2024,Transactions,RDF / Semantic Web,2015-2019,2020-2024,567,cooccurrence
+Transactions@2015-2019,Spatial / Temporal@2020-2024,Transactions,Spatial / Temporal,2015-2019,2020-2024,2373,cooccurrence
+Transactions@2015-2019,Streaming@2020-2024,Transactions,Streaming,2015-2019,2020-2024,1407,cooccurrence
+Transactions@2015-2019,Text-to-SQL / NLIDB@2020-2024,Transactions,Text-to-SQL / NLIDB,2015-2019,2020-2024,126,cooccurrence
+Transactions@2015-2019,Vector Search@2020-2024,Transactions,Vector Search,2015-2019,2020-2024,483,cooccurrence
+Vector Search@2015-2019,Cloud DB@2020-2024,Vector Search,Cloud DB,2015-2019,2020-2024,510,cooccurrence
+Vector Search@2015-2019,Crowdsourcing@2020-2024,Vector Search,Crowdsourcing,2015-2019,2020-2024,60,cooccurrence
+Vector Search@2015-2019,Data Analytics@2020-2024,Vector Search,Data Analytics,2015-2019,2020-2024,2650,cooccurrence
+Vector Search@2015-2019,Data Integration@2020-2024,Vector Search,Data Integration,2015-2019,2020-2024,500,cooccurrence
+Vector Search@2015-2019,Distributed DB@2020-2024,Vector Search,Distributed DB,2015-2019,2020-2024,1250,cooccurrence
+Vector Search@2015-2019,Graph Data@2020-2024,Vector Search,Graph Data,2015-2019,2020-2024,2780,cooccurrence
+Vector Search@2015-2019,Indexing@2020-2024,Vector Search,Indexing,2015-2019,2020-2024,1340,cooccurrence
+Vector Search@2015-2019,Information Retrieval@2020-2024,Vector Search,Information Retrieval,2015-2019,2020-2024,1190,cooccurrence
+Vector Search@2015-2019,ML for DB@2020-2024,Vector Search,ML for DB,2015-2019,2020-2024,3440,cooccurrence
+Vector Search@2015-2019,Privacy / Security@2020-2024,Vector Search,Privacy / Security,2015-2019,2020-2024,400,cooccurrence
+Vector Search@2015-2019,Query Optimization@2020-2024,Vector Search,Query Optimization,2015-2019,2020-2024,2130,cooccurrence
+Vector Search@2015-2019,RDF / Semantic Web@2020-2024,Vector Search,RDF / Semantic Web,2015-2019,2020-2024,270,cooccurrence
+Vector Search@2015-2019,Spatial / Temporal@2020-2024,Vector Search,Spatial / Temporal,2015-2019,2020-2024,1130,cooccurrence
+Vector Search@2015-2019,Streaming@2020-2024,Vector Search,Streaming,2015-2019,2020-2024,670,cooccurrence
+Vector Search@2015-2019,Text-to-SQL / NLIDB@2020-2024,Vector Search,Text-to-SQL / NLIDB,2015-2019,2020-2024,60,cooccurrence
+Vector Search@2015-2019,Transactions@2020-2024,Vector Search,Transactions,2015-2019,2020-2024,350,cooccurrence
+XML@2015-2019,Cloud DB@2020-2024,XML,Cloud DB,2015-2019,2020-2024,153,cooccurrence
+XML@2015-2019,Crowdsourcing@2020-2024,XML,Crowdsourcing,2015-2019,2020-2024,18,cooccurrence
+XML@2015-2019,Data Analytics@2020-2024,XML,Data Analytics,2015-2019,2020-2024,795,cooccurrence
+XML@2015-2019,Data Integration@2020-2024,XML,Data Integration,2015-2019,2020-2024,150,cooccurrence
+XML@2015-2019,Distributed DB@2020-2024,XML,Distributed DB,2015-2019,2020-2024,375,cooccurrence
+XML@2015-2019,Graph Data@2020-2024,XML,Graph Data,2015-2019,2020-2024,834,cooccurrence
+XML@2015-2019,Indexing@2020-2024,XML,Indexing,2015-2019,2020-2024,402,cooccurrence
+XML@2015-2019,Information Retrieval@2020-2024,XML,Information Retrieval,2015-2019,2020-2024,357,cooccurrence
+XML@2015-2019,ML for DB@2020-2024,XML,ML for DB,2015-2019,2020-2024,1032,cooccurrence
+XML@2015-2019,Privacy / Security@2020-2024,XML,Privacy / Security,2015-2019,2020-2024,120,cooccurrence
+XML@2015-2019,Query Optimization@2020-2024,XML,Query Optimization,2015-2019,2020-2024,639,cooccurrence
+XML@2015-2019,RDF / Semantic Web@2020-2024,XML,RDF / Semantic Web,2015-2019,2020-2024,81,cooccurrence
+XML@2015-2019,Spatial / Temporal@2020-2024,XML,Spatial / Temporal,2015-2019,2020-2024,339,cooccurrence
+XML@2015-2019,Streaming@2020-2024,XML,Streaming,2015-2019,2020-2024,201,cooccurrence
+XML@2015-2019,Text-to-SQL / NLIDB@2020-2024,XML,Text-to-SQL / NLIDB,2015-2019,2020-2024,18,cooccurrence
+XML@2015-2019,Transactions@2020-2024,XML,Transactions,2015-2019,2020-2024,105,cooccurrence
+XML@2015-2019,Vector Search@2020-2024,XML,Vector Search,2015-2019,2020-2024,69,cooccurrence

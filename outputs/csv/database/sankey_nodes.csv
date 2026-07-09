@@ -1,0 +1,53 @@
+node,topic,category,period,count
+Cloud DB@2010-2014,Cloud DB,Systems,2010-2014,20
+Crowdsourcing@2010-2014,Crowdsourcing,Applications,2010-2014,9
+Data Analytics@2010-2014,Data Analytics,Applications,2010-2014,131
+Data Integration@2010-2014,Data Integration,Data Processing,2010-2014,29
+Distributed DB@2010-2014,Distributed DB,Systems,2010-2014,83
+Graph Data@2010-2014,Graph Data,Data Models,2010-2014,94
+Indexing@2010-2014,Indexing,Storage & Access,2010-2014,63
+Information Retrieval@2010-2014,Information Retrieval,Applications,2010-2014,106
+ML for DB@2010-2014,ML for DB,AI for Data Systems,2010-2014,53
+Privacy / Security@2010-2014,Privacy / Security,Trust,2010-2014,17
+Query Optimization@2010-2014,Query Optimization,Query Processing,2010-2014,95
+RDF / Semantic Web@2010-2014,RDF / Semantic Web,Data Models,2010-2014,16
+Spatial / Temporal@2010-2014,Spatial / Temporal,Specialized Data,2010-2014,33
+Streaming@2010-2014,Streaming,Data Processing,2010-2014,36
+Transactions@2010-2014,Transactions,Systems,2010-2014,17
+Vector Search@2010-2014,Vector Search,AI for Data Systems,2010-2014,10
+XML@2010-2014,XML,Data Models,2010-2014,11
+Cloud DB@2015-2019,Cloud DB,Systems,2015-2019,18
+Crowdsourcing@2015-2019,Crowdsourcing,Applications,2015-2019,24
+Data Analytics@2015-2019,Data Analytics,Applications,2015-2019,194
+Data Integration@2015-2019,Data Integration,Data Processing,2015-2019,34
+Distributed DB@2015-2019,Distributed DB,Systems,2015-2019,114
+Graph Data@2015-2019,Graph Data,Data Models,2015-2019,139
+Indexing@2015-2019,Indexing,Storage & Access,2015-2019,63
+Information Retrieval@2015-2019,Information Retrieval,Applications,2015-2019,81
+ML for DB@2015-2019,ML for DB,AI for Data Systems,2015-2019,98
+Privacy / Security@2015-2019,Privacy / Security,Trust,2015-2019,22
+Query Optimization@2015-2019,Query Optimization,Query Processing,2015-2019,104
+RDF / Semantic Web@2015-2019,RDF / Semantic Web,Data Models,2015-2019,28
+Spatial / Temporal@2015-2019,Spatial / Temporal,Specialized Data,2015-2019,56
+Streaming@2015-2019,Streaming,Data Processing,2015-2019,45
+Text-to-SQL / NLIDB@2015-2019,Text-to-SQL / NLIDB,AI for Data Systems,2015-2019,2
+Transactions@2015-2019,Transactions,Systems,2015-2019,21
+Vector Search@2015-2019,Vector Search,AI for Data Systems,2015-2019,10
+XML@2015-2019,XML,Data Models,2015-2019,3
+Cloud DB@2020-2024,Cloud DB,Systems,2020-2024,51
+Crowdsourcing@2020-2024,Crowdsourcing,Applications,2020-2024,6
+Data Analytics@2020-2024,Data Analytics,Applications,2020-2024,265
+Data Integration@2020-2024,Data Integration,Data Processing,2020-2024,50
+Distributed DB@2020-2024,Distributed DB,Systems,2020-2024,125
+Graph Data@2020-2024,Graph Data,Data Models,2020-2024,278
+Indexing@2020-2024,Indexing,Storage & Access,2020-2024,134
+Information Retrieval@2020-2024,Information Retrieval,Applications,2020-2024,119
+ML for DB@2020-2024,ML for DB,AI for Data Systems,2020-2024,344
+Privacy / Security@2020-2024,Privacy / Security,Trust,2020-2024,40
+Query Optimization@2020-2024,Query Optimization,Query Processing,2020-2024,213
+RDF / Semantic Web@2020-2024,RDF / Semantic Web,Data Models,2020-2024,27
+Spatial / Temporal@2020-2024,Spatial / Temporal,Specialized Data,2020-2024,113
+Streaming@2020-2024,Streaming,Data Processing,2020-2024,67
+Text-to-SQL / NLIDB@2020-2024,Text-to-SQL / NLIDB,AI for Data Systems,2020-2024,6
+Transactions@2020-2024,Transactions,Systems,2020-2024,35
+Vector Search@2020-2024,Vector Search,AI for Data Systems,2020-2024,23

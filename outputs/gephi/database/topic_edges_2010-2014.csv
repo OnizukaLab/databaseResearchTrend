@@ -1,0 +1,73 @@
+Source,Target,Type,Weight,Period
+Cloud DB,Data Analytics,Undirected,4,2010-2014
+Cloud DB,Distributed DB,Undirected,4,2010-2014
+Cloud DB,Graph Data,Undirected,2,2010-2014
+Cloud DB,Indexing,Undirected,3,2010-2014
+Cloud DB,Transactions,Undirected,3,2010-2014
+Crowdsourcing,Data Analytics,Undirected,1,2010-2014
+Crowdsourcing,Data Integration,Undirected,1,2010-2014
+Crowdsourcing,Privacy / Security,Undirected,1,2010-2014
+Crowdsourcing,RDF / Semantic Web,Undirected,1,2010-2014
+Crowdsourcing,Spatial / Temporal,Undirected,1,2010-2014
+Data Analytics,Data Integration,Undirected,5,2010-2014
+Data Analytics,Distributed DB,Undirected,16,2010-2014
+Data Analytics,Graph Data,Undirected,14,2010-2014
+Data Analytics,Indexing,Undirected,5,2010-2014
+Data Analytics,Information Retrieval,Undirected,8,2010-2014
+Data Analytics,ML for DB,Undirected,6,2010-2014
+Data Analytics,Privacy / Security,Undirected,1,2010-2014
+Data Analytics,Query Optimization,Undirected,13,2010-2014
+Data Analytics,RDF / Semantic Web,Undirected,2,2010-2014
+Data Analytics,Spatial / Temporal,Undirected,6,2010-2014
+Data Analytics,Streaming,Undirected,5,2010-2014
+Data Analytics,Transactions,Undirected,1,2010-2014
+Data Integration,Graph Data,Undirected,3,2010-2014
+Data Integration,Information Retrieval,Undirected,1,2010-2014
+Data Integration,ML for DB,Undirected,3,2010-2014
+Data Integration,Privacy / Security,Undirected,1,2010-2014
+Data Integration,Query Optimization,Undirected,1,2010-2014
+Distributed DB,Graph Data,Undirected,12,2010-2014
+Distributed DB,Indexing,Undirected,8,2010-2014
+Distributed DB,Information Retrieval,Undirected,1,2010-2014
+Distributed DB,Query Optimization,Undirected,11,2010-2014
+Distributed DB,RDF / Semantic Web,Undirected,4,2010-2014
+Distributed DB,Spatial / Temporal,Undirected,2,2010-2014
+Distributed DB,Streaming,Undirected,5,2010-2014
+Distributed DB,Transactions,Undirected,4,2010-2014
+Graph Data,Indexing,Undirected,3,2010-2014
+Graph Data,Information Retrieval,Undirected,12,2010-2014
+Graph Data,ML for DB,Undirected,9,2010-2014
+Graph Data,Query Optimization,Undirected,7,2010-2014
+Graph Data,RDF / Semantic Web,Undirected,4,2010-2014
+Graph Data,Spatial / Temporal,Undirected,2,2010-2014
+Graph Data,Streaming,Undirected,5,2010-2014
+Graph Data,Transactions,Undirected,1,2010-2014
+Graph Data,Vector Search,Undirected,2,2010-2014
+Indexing,Information Retrieval,Undirected,3,2010-2014
+Indexing,ML for DB,Undirected,1,2010-2014
+Indexing,Privacy / Security,Undirected,1,2010-2014
+Indexing,Query Optimization,Undirected,8,2010-2014
+Indexing,RDF / Semantic Web,Undirected,1,2010-2014
+Indexing,Spatial / Temporal,Undirected,4,2010-2014
+Indexing,Transactions,Undirected,2,2010-2014
+Indexing,Vector Search,Undirected,1,2010-2014
+Information Retrieval,ML for DB,Undirected,8,2010-2014
+Information Retrieval,Query Optimization,Undirected,6,2010-2014
+Information Retrieval,RDF / Semantic Web,Undirected,1,2010-2014
+Information Retrieval,Spatial / Temporal,Undirected,6,2010-2014
+Information Retrieval,Streaming,Undirected,1,2010-2014
+Information Retrieval,Vector Search,Undirected,10,2010-2014
+Information Retrieval,XML,Undirected,3,2010-2014
+ML for DB,Query Optimization,Undirected,7,2010-2014
+ML for DB,Spatial / Temporal,Undirected,1,2010-2014
+ML for DB,Streaming,Undirected,5,2010-2014
+ML for DB,Vector Search,Undirected,1,2010-2014
+Privacy / Security,Query Optimization,Undirected,3,2010-2014
+Privacy / Security,Spatial / Temporal,Undirected,1,2010-2014
+Query Optimization,Spatial / Temporal,Undirected,6,2010-2014
+Query Optimization,Streaming,Undirected,1,2010-2014
+Query Optimization,Transactions,Undirected,1,2010-2014
+Query Optimization,XML,Undirected,2,2010-2014
+RDF / Semantic Web,Spatial / Temporal,Undirected,1,2010-2014
+Spatial / Temporal,Streaming,Undirected,1,2010-2014
+Spatial / Temporal,XML,Undirected,1,2010-2014

@@ -120,17 +120,22 @@ def save_graph_outputs(
     edges_by_period: dict[str, pd.DataFrame],
     csv_dir: Path,
     gephi_dir: Path,
+    output_prefix: str = "",
 ) -> None:
     csv_dir.mkdir(parents=True, exist_ok=True)
     gephi_dir.mkdir(parents=True, exist_ok=True)
 
-    trend_df.to_csv(csv_dir / "topic_trend.csv", index=False, encoding="utf-8")
-    burst_df.to_csv(csv_dir / "topic_burst.csv", index=False, encoding="utf-8")
+    trend_df.to_csv(csv_dir / f"{output_prefix}topic_trend.csv", index=False, encoding="utf-8")
+    burst_df.to_csv(csv_dir / f"{output_prefix}topic_burst.csv", index=False, encoding="utf-8")
 
     for period, nodes_df in nodes_by_period.items():
-        nodes_df.to_csv(gephi_dir / f"topic_nodes_{period}.csv", index=False, encoding="utf-8")
+        nodes_df.to_csv(
+            gephi_dir / f"{output_prefix}topic_nodes_{period}.csv",
+            index=False,
+            encoding="utf-8",
+        )
         edges_by_period[period].to_csv(
-            gephi_dir / f"topic_edges_{period}.csv",
+            gephi_dir / f"{output_prefix}topic_edges_{period}.csv",
             index=False,
             encoding="utf-8",
         )

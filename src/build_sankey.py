@@ -277,18 +277,6 @@ def render_sankey(nodes_df: pd.DataFrame, edges_df: pd.DataFrame, output_path: P
             )
         ]
     )
-    period_annotations = [
-        {
-            "xref": "paper",
-            "yref": "paper",
-            "x": 0.001 if len(period_order) == 1 else idx / max(len(period_order) - 1, 1),
-            "y": 1.08,
-            "text": period,
-            "showarrow": False,
-            "font": {"size": 13},
-        }
-        for period, idx in period_order.items()
-    ]
     axis_annotations, axis_shapes = _period_axis_artifacts(
         period_order=period_order,
         x_start=0.001 if len(period_order) == 1 else 0.0,
@@ -299,7 +287,7 @@ def render_sankey(nodes_df: pd.DataFrame, edges_df: pd.DataFrame, output_path: P
     fig.update_layout(
         title="Topic Transition Sankey",
         font={"size": 12},
-        annotations=period_annotations + axis_annotations,
+        annotations=axis_annotations,
         shapes=axis_shapes,
         height=max(900, 70 * max_nodes_in_period),
         margin={"t": 70, "l": 20, "r": 20, "b": 90},
@@ -460,19 +448,7 @@ def render_sankey_preview(
         margin={"t": 80, "l": 40, "r": 40, "b": 110},
         paper_bgcolor="white",
         plot_bgcolor="white",
-        annotations=[
-            {
-                "xref": "paper",
-                "yref": "paper",
-                "x": 0.02 if len(period_order) == 1 else 0.04 + 0.92 * idx / max(len(period_order) - 1, 1),
-                "y": 1.07,
-                "text": period,
-                "showarrow": False,
-                "font": {"size": 17, "color": "#0f172a"},
-            }
-            for period, idx in period_order.items()
-        ]
-        + _period_axis_artifacts(
+        annotations=_period_axis_artifacts(
             period_order=period_order,
             x_start=0.04,
             x_end=0.96,

@@ -1,0 +1,18 @@
+Id,Label,Type,Category,Period,Count
+Cloud DB,Cloud DB,Undirected,Systems,2010-2014,20
+Crowdsourcing,Crowdsourcing,Undirected,Applications,2010-2014,9
+Data Analytics,Data Analytics,Undirected,Applications,2010-2014,131
+Data Integration,Data Integration,Undirected,Data Processing,2010-2014,29
+Distributed DB,Distributed DB,Undirected,Systems,2010-2014,83
+Graph Data,Graph Data,Undirected,Data Models,2010-2014,94
+Indexing,Indexing,Undirected,Storage & Access,2010-2014,63
+Information Retrieval,Information Retrieval,Undirected,Applications,2010-2014,106
+ML for DB,ML for DB,Undirected,AI for Data Systems,2010-2014,53
+Privacy / Security,Privacy / Security,Undirected,Trust,2010-2014,17
+Query Optimization,Query Optimization,Undirected,Query Processing,2010-2014,95
+RDF / Semantic Web,RDF / Semantic Web,Undirected,Data Models,2010-2014,16
+Spatial / Temporal,Spatial / Temporal,Undirected,Specialized Data,2010-2014,33
+Streaming,Streaming,Undirected,Data Processing,2010-2014,36
+Transactions,Transactions,Undirected,Systems,2010-2014,17
+Vector Search,Vector Search,Undirected,AI for Data Systems,2010-2014,10
+XML,XML,Undirected,Data Models,2010-2014,11

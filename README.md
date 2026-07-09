@@ -1,175 +1,190 @@
-# VLDB/SIGMOD Topic Evolution Visualization
+# Database and NeurIPS Topic Evolution Visualization
 
-This subproject visualizes topic co-occurrence and topic transitions over time using paper titles from VLDB / SIGMOD / PVLDB / PACMMOD.
+This subproject visualizes topic evolution from paper titles.
 
-It generates two main kinds of visualizations:
+It currently supports two venue groups:
 
-- period-wise topic co-occurrence networks
-- topic transition Sankey diagrams across periods
+- `database`: VLDB / SIGMOD / PVLDB / PACMMOD
+- `neurips`: NIPS / NeurIPS
+
+The default analysis windows are:
+
+- `2010-2014`
+- `2015-2019`
+- `2020-2024`
+
+
+## Output Entry Points
+
+- [outputs/html/index.html](outputs/html/index.html)
+- [outputs/html/database/index.html](outputs/html/database/index.html)
+- [outputs/html/neurips/index.html](outputs/html/neurips/index.html)
 
 
 ## Sankey Preview
 
-The interactive Sankey diagram is stored as an HTML file in the repository.
+Interactive database Sankey:
 
-Interactive version:
+- [outputs/html/database/topic_transition_sankey.html](outputs/html/database/topic_transition_sankey.html)
 
-- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
+Static database preview:
 
-Static preview:
+![Database Topic Transition Sankey](outputs/html/database/topic_transition_sankey.png)
 
-![Topic Transition Sankey](outputs/html/topic_transition_sankey.png)
+Interactive NeurIPS Sankey:
+
+- [outputs/html/neurips/topic_transition_sankey.html](outputs/html/neurips/topic_transition_sankey.html)
+
+Static NeurIPS preview:
+
+![NeurIPS Topic Transition Sankey](outputs/html/neurips/topic_transition_sankey.png)
+
 
 ## Pipeline Overview
 
-The project builds the visualizations in the following stages.
+The pipeline has the following stages.
 
-### 1. Extract a Reduced CSV from DBLP XML
+### 1. Build a Reduced CSV
 
-Instead of using the full `dblp.xml` directly, the pipeline first extracts only the target venues and target years into a reduced CSV.
+Large DBLP XML is kept outside the repository. A reduced CSV is created first and then reused offline.
 
 Relevant script:
 
-- [extract_dblp_xml_subset.py](src/extract_dblp_xml_subset.py)
+- [src/extract_dblp_xml_subset.py](src/extract_dblp_xml_subset.py)
 
-What it does:
-
-- scans only `article` / `inproceedings` records
-- keeps only records whose `key` starts with:
-  - `conf/sigmod/`
-  - `conf/vldb/`
-  - `journals/pvldb/`
-  - `journals/pacmmod/`
-- extracts `title`, `year`, `author`, and `ee`
-- writes only papers in the year range `2010-2025`
-
-Output CSV columns:
+Output columns:
 
 ```csv
 title,year,venue,authors,dblp_url,doi
 ```
 
-### 2. Assign Topics from Paper Titles
+### 2. Assign Topics from Titles
 
-Next, paper titles are matched against a keyword dictionary to assign topics.
+Paper titles are matched against a venue-aware keyword dictionary.
 
 Relevant scripts:
 
-- [topic_dictionary.py](src/topic_dictionary.py)
-- [extract_topics.py](src/extract_topics.py)
+- [src/topic_dictionary.py](src/topic_dictionary.py)
+- [src/extract_topics.py](src/extract_topics.py)
 
-What it does:
+Notes:
 
-- lowercases the title and performs phrase matching
-- matches titles against the topic keyword dictionary
-- allows multiple topics per paper
-- writes untagged papers to `untagged_papers.csv`
+- database venues and NeurIPS use different topic dictionaries
+- multiple topics can be assigned to one paper
+- unmatched papers are stored separately
 
-Outputs:
+### 3. Build Trends, Graphs, and Sankey Data
 
-- `data/processed/paper_topics.csv`
-- `outputs/csv/untagged_papers.csv`
+Relevant scripts:
 
-### 3. Compute Topic Trend and Burst Statistics
+- [src/build_graphs.py](src/build_graphs.py)
+- [src/build_sankey.py](src/build_sankey.py)
+- [src/visualize_pyvis.py](src/visualize_pyvis.py)
+- [src/run_pipeline.py](src/run_pipeline.py)
 
-Topic trend and burst statistics are computed to capture how topics increase or decrease over time.
+Outputs are stored per venue group under dedicated directories.
 
-Relevant script:
 
-- [build_graphs.py](src/build_graphs.py)
+## Output Structure
 
-Outputs:
+```text
+data/
+  raw/
+    database/
+      papers.csv
+    neurips/
+      papers.csv
+  processed/
+    database/
+      papers.csv
+      paper_topics.csv
+    neurips/
+      papers.csv
+      paper_topics.csv
 
-- `outputs/csv/topic_trend.csv`
-- `outputs/csv/topic_burst.csv`
+outputs/
+  csv/
+    database/
+      topic_trend.csv
+      topic_burst.csv
+      sankey_nodes.csv
+      sankey_edges.csv
+      untagged_papers.csv
+    neurips/
+      topic_trend.csv
+      topic_burst.csv
+      sankey_nodes.csv
+      sankey_edges.csv
+      untagged_papers.csv
+  gephi/
+    database/
+      topic_nodes_*.csv
+      topic_edges_*.csv
+    neurips/
+      topic_nodes_*.csv
+      topic_edges_*.csv
+  html/
+    index.html
+    database/
+      index.html
+      topic_transition_sankey.html
+      topic_network_2010-2014.html
+      topic_network_2015-2019.html
+      topic_network_2020-2024.html
+    neurips/
+      index.html
+      topic_transition_sankey.html
+      topic_network_2010-2014.html
+      topic_network_2015-2019.html
+      topic_network_2020-2024.html
+```
 
-### 4. Build Period-wise Topic Co-occurrence Graphs
 
-Topics that appear together in the same paper are connected as edges, producing a co-occurrence network for each period.
+## Sankey Definition
 
-What it does:
+Each Sankey node is one `topic@period`.
 
-- node: topic
-- node size: frequency in the period
-- edge: topic co-occurrence within the same paper
-- edge weight: co-occurrence count
+- node label: topic name
+- node size: frequency of the topic inside that period
 
-Outputs:
-
-- `outputs/gephi/topic_nodes_*.csv`
-- `outputs/gephi/topic_edges_*.csv`
-
-### 5. Render Topic Networks with PyVis
-
-The period-wise co-occurrence graphs are exported to interactive HTML with PyVis.
-
-Relevant script:
-
-- [visualize_pyvis.py](src/visualize_pyvis.py)
-
-Outputs:
-
-- `outputs/html/topic_network_2010-2015.html`
-- `outputs/html/topic_network_2015-2020.html`
-- `outputs/html/topic_network_2020-2025.html`
-
-### 6. Build the Topic Transition Sankey Diagram
-
-Finally, topic continuity and topic connections across periods are visualized as a Sankey diagram.
-
-Relevant script:
-
-- [build_sankey.py](src/build_sankey.py)
-
-Sankey nodes:
-
-- internally represented as `topic@period`
-- displayed as topic labels only
-- period labels are shown separately at the top of the figure
-
-The Sankey uses two types of edges.
+Two edge types are used.
 
 1. `persistence`
 
-- created when the same topic appears in adjacent periods
-- weight is `min(count(topic, period_a), count(topic, period_b))`
+- same topic in adjacent periods
+- weight = `min(count(topic, period_a), count(topic, period_b))`
 
 2. `cooccurrence`
 
-- created from topic pairs appearing in paper sets from adjacent periods
-- represented as `X@period_a -> Y@period_b`
+- cross-period topic-to-topic connections between adjacent periods
+- built from topic sets observed in the left and right period
 
-### Node Size and Edge Construction
+The Sankey is therefore a title-based topic transition approximation, not a citation or author transition graph.
 
-For the Sankey diagram, node size is determined by topic frequency within each period.
 
-- each node corresponds to one `topic@period`
-- the node weight is the number of tagged paper-topic rows assigned to that topic in that period
-- in other words, a topic becomes visually larger when it appears more often in paper titles during that period
+## Current Cluster Coverage
 
-Edges are constructed in two different ways.
+Coverage is measured as:
 
-1. `persistence` edges
+- number of papers matched to at least one topic
+- divided by all papers in the target venue group and year range
 
-- created when the same topic appears in two adjacent periods
-- edge weight = `min(count(topic in period_a), count(topic in period_b))`
-- this encodes continuity of the same topic across time
+Current coverage for `2010-2024`:
 
-2. `cooccurrence` edges
+Database:
 
-- created between topics from adjacent periods
-- the implementation collects topic sets from papers in the left period and topic sets from papers in the right period
-- for every pair of topic sets across the two periods, it adds cross-period topic pairs
-- self-pairs are excluded here because they are already represented by `persistence`
-- the final edge weight is the accumulated count of those cross-period topic-pair occurrences
+- overall: `1411 / 3703 = 38.10%`
+- `2010-2014`: `282 / 862 = 32.71%`
+- `2015-2019`: `378 / 1026 = 36.84%`
+- `2020-2024`: `751 / 1815 = 41.38%`
 
-This means the Sankey does not represent author-level or citation-level transition. It represents a title-level topic transition approximation based on adjacent-period topic presence and co-occurrence structure.
+NeurIPS:
 
-Outputs:
+- overall: `2873 / 4654 = 61.73%`
+- `2010-2014`: `210 / 376 = 55.85%`
+- `2015-2019`: `532 / 940 = 56.60%`
+- `2020-2024`: `2131 / 3338 = 63.84%`
 
-- `outputs/csv/sankey_nodes.csv`
-- `outputs/csv/sankey_edges.csv`
-- `outputs/html/topic_transition_sankey.html`
 
 ## How To Run
 
@@ -179,80 +194,59 @@ Outputs:
 pip install -r requirements.txt
 ```
 
-### 2. Extract a Reduced CSV from DBLP XML
-
-The recommended workflow is to keep the large source XML outside the repository and generate a reduced CSV from it.
-
-Example:
+### 2. Extract a Reduced Database CSV from DBLP XML
 
 ```bash
 python src/extract_dblp_xml_subset.py ^
   --xml-path "$HOME/work/gnn/dblp.xml" ^
-  --output "$HOME/work/gnn/dblp_vldb_sigmod_2010_2025_full.csv" ^
+  --output "$HOME/work/gnn/dblp_vldb_sigmod_2010_2024.csv" ^
   --start-year 2010 ^
-  --end-year 2025 ^
+  --end-year 2024 ^
   --progress-every 1000
 ```
 
-### 3. Generate the Visualizations from the Reduced CSV
+### 3. Extract a Reduced NeurIPS CSV from DBLP XML
+
+```bash
+python src/extract_dblp_xml_subset.py ^
+  --xml-path "$HOME/work/gnn/dblp.xml" ^
+  --output "$HOME/work/gnn/dblp_neurips_2010_2024.csv" ^
+  --start-year 2010 ^
+  --end-year 2024 ^
+  --venue-key nips ^
+  --progress-every 1000
+```
+
+### 4. Generate Database Visualizations
 
 ```bash
 python src/run_pipeline.py ^
   --start-year 2010 ^
-  --end-year 2025 ^
-  --manual-raw-file "$HOME/work/gnn/dblp_vldb_sigmod_2010_2025_full.csv"
+  --end-year 2024 ^
+  --manual-raw-file "data/raw/papers.csv" ^
+  --period-start 2010 ^
+  --period-end 2024 ^
+  --period-size 5
 ```
 
-## Main Outputs
+### 5. Generate NeurIPS Visualizations
 
-- [outputs/html/index.html](outputs/html/index.html)
-- [outputs/html/topic_transition_sankey.html](outputs/html/topic_transition_sankey.html)
-- `outputs/html/topic_network_*.html`
-- `outputs/csv/topic_trend.csv`
-- `outputs/csv/topic_burst.csv`
-- `outputs/csv/sankey_nodes.csv`
-- `outputs/csv/sankey_edges.csv`
-
-## GitHub Pages
-
-If GitHub Pages is configured to publish from `main /docs`, the public entry point is:
-
-- `https://onizukalab.github.io/databaseResearchTrend/`
-
-The interactive HTML outputs are mirrored under:
-
-- `https://onizukalab.github.io/databaseResearchTrend/outputs/html/index.html`
-- `https://onizukalab.github.io/databaseResearchTrend/outputs/html/topic_transition_sankey.html`
-
-## Repository Structure
-
-```text
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── src/
-│   ├── extract_dblp_xml_subset.py
-│   ├── fetch_dblp.py
-│   ├── topic_dictionary.py
-│   ├── extract_topics.py
-│   ├── build_graphs.py
-│   ├── build_sankey.py
-│   ├── visualize_pyvis.py
-│   ├── periods.py
-│   └── run_pipeline.py
-├── data/
-│   ├── raw/
-│   └── processed/
-└── outputs/
-    ├── csv/
-    ├── gephi/
-    └── html/
+```bash
+python src/run_pipeline.py ^
+  --start-year 2010 ^
+  --end-year 2024 ^
+  --manual-raw-file "$HOME/work/gnn/dblp_neurips_2010_2024.csv" ^
+  --venue-key nips ^
+  --output-prefix neurips ^
+  --period-start 2010 ^
+  --period-end 2024 ^
+  --period-size 5
 ```
+
 
 ## Notes
 
-- Topic assignment is keyword-based and title-only
-- Abstracts, citation graphs, and embeddings are not used
-- Sankey `cooccurrence` edges are an approximation of topic transition
-- The repository is intended to store code and small artifacts, not the original large DBLP XML
+- topic assignment is keyword-based and title-only
+- raw DBLP XML should stay outside the repository
+- venue directories are now the primary organization unit for generated artifacts
+- older root-level output files may remain as legacy artifacts, but new runs write to venue-specific directories

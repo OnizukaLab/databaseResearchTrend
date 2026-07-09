@@ -30,7 +30,14 @@ VENUE_QUERIES = {
         "url_prefixes": ["https://dblp.org/rec/journals/pacmmod/"],
         "label": "PACMMOD",
     },
+    "nips": {
+        "query": "stream:conf/nips:",
+        "url_prefixes": ["https://dblp.org/rec/conf/nips/"],
+        "label": "NeurIPS",
+    },
 }
+
+DEFAULT_VENUE_KEYS = ["sigmod", "vldb", "pvldb", "pacmmod"]
 
 PAPERS_COLUMNS = ["paper_id", "title", "year", "venue", "authors", "dblp_url", "doi"]
 RAW_REQUIRED_COLUMNS = ["title", "year", "venue"]
@@ -260,11 +267,17 @@ def assign_paper_ids(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)[["paper_id", "title", "year", "venue", "authors", "dblp_url", "doi"]]
 
 
-def fetch_all(start_year: int, end_year: int, cache_dir: Path | None = None) -> pd.DataFrame:
+def fetch_all(
+    start_year: int,
+    end_year: int,
+    cache_dir: Path | None = None,
+    venue_keys: list[str] | None = None,
+) -> pd.DataFrame:
     cache_dir = cache_dir or Path("data/raw/dblp_cache")
+    venue_keys = venue_keys or DEFAULT_VENUE_KEYS
     collected: list[dict[str, object]] = []
     with requests.Session() as session:
-        for venue_key in tqdm(VENUE_QUERIES, desc="Fetching DBLP venues"):
+        for venue_key in tqdm(venue_keys, desc="Fetching DBLP venues"):
             collected.extend(collect_venue_papers(session, venue_key, start_year, end_year, cache_dir))
 
     df = pd.DataFrame(collected).drop_duplicates(subset=["title", "year", "venue"])
@@ -278,10 +291,21 @@ def main() -> None:
     parser.add_argument("--start-year", type=int, required=True)
     parser.add_argument("--end-year", type=int, required=True)
     parser.add_argument("--output", required=True)
+    parser.add_argument(
+        "--venue-key",
+        action="append",
+        choices=sorted(VENUE_QUERIES),
+        default=None,
+    )
     args = parser.parse_args()
 
     output_path = Path(args.output)
-    df = fetch_all(args.start_year, args.end_year, output_path.parent.parent / "raw" / "dblp_cache")
+    df = fetch_all(
+        args.start_year,
+        args.end_year,
+        output_path.parent.parent / "raw" / "dblp_cache",
+        venue_keys=args.venue_key or DEFAULT_VENUE_KEYS.copy(),
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False, encoding="utf-8")
 

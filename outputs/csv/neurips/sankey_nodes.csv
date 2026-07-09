@@ -1,0 +1,45 @@
+node,topic,category,period,count
+"Biology, Molecules & Health@2010-2014","Biology, Molecules & Health",AI for Science,2010-2014,2
+"Causality, Dynamics & Scientific ML@2010-2014","Causality, Dynamics & Scientific ML",Scientific ML,2010-2014,11
+Classical Statistical ML@2010-2014,Classical Statistical ML,Core ML,2010-2014,77
+Computer Vision & 3D Perception@2010-2014,Computer Vision & 3D Perception,Perception,2010-2014,29
+Federated & Distributed Learning@2010-2014,Federated & Distributed Learning,Systems for ML,2010-2014,8
+Games & Mechanism Design@2010-2014,Games & Mechanism Design,Decision Making,2010-2014,3
+Generative Models & Diffusion@2010-2014,Generative Models & Diffusion,Generative AI,2010-2014,3
+Graph Machine Learning@2010-2014,Graph Machine Learning,Structured Learning,2010-2014,11
+Language Models & NLP@2010-2014,Language Models & NLP,Generative AI,2010-2014,5
+Optimization & Learning Theory@2010-2014,Optimization & Learning Theory,Core ML,2010-2014,50
+Probabilistic Modeling@2010-2014,Probabilistic Modeling,Core ML,2010-2014,84
+Reinforcement Learning & Bandits@2010-2014,Reinforcement Learning & Bandits,Decision Making,2010-2014,25
+Representation Learning@2010-2014,Representation Learning,Foundation Learning,2010-2014,42
+"Robustness, Privacy & Safety@2010-2014","Robustness, Privacy & Safety",Trustworthy AI,2010-2014,14
+"Biology, Molecules & Health@2015-2019","Biology, Molecules & Health",AI for Science,2015-2019,7
+"Causality, Dynamics & Scientific ML@2015-2019","Causality, Dynamics & Scientific ML",Scientific ML,2015-2019,35
+Classical Statistical ML@2015-2019,Classical Statistical ML,Core ML,2015-2019,127
+Computer Vision & 3D Perception@2015-2019,Computer Vision & 3D Perception,Perception,2015-2019,52
+Federated & Distributed Learning@2015-2019,Federated & Distributed Learning,Systems for ML,2015-2019,14
+Games & Mechanism Design@2015-2019,Games & Mechanism Design,Decision Making,2015-2019,14
+Generative Models & Diffusion@2015-2019,Generative Models & Diffusion,Generative AI,2015-2019,47
+Graph Machine Learning@2015-2019,Graph Machine Learning,Structured Learning,2015-2019,32
+Language Models & NLP@2015-2019,Language Models & NLP,Generative AI,2015-2019,47
+Multimodal & Vision-Language@2015-2019,Multimodal & Vision-Language,Perception,2015-2019,9
+Optimization & Learning Theory@2015-2019,Optimization & Learning Theory,Core ML,2015-2019,162
+Probabilistic Modeling@2015-2019,Probabilistic Modeling,Core ML,2015-2019,156
+Reinforcement Learning & Bandits@2015-2019,Reinforcement Learning & Bandits,Decision Making,2015-2019,95
+Representation Learning@2015-2019,Representation Learning,Foundation Learning,2015-2019,89
+"Robustness, Privacy & Safety@2015-2019","Robustness, Privacy & Safety",Trustworthy AI,2015-2019,62
+"Biology, Molecules & Health@2020-2024","Biology, Molecules & Health",AI for Science,2020-2024,55
+"Causality, Dynamics & Scientific ML@2020-2024","Causality, Dynamics & Scientific ML",Scientific ML,2020-2024,167
+Classical Statistical ML@2020-2024,Classical Statistical ML,Core ML,2020-2024,330
+Computer Vision & 3D Perception@2020-2024,Computer Vision & 3D Perception,Perception,2020-2024,337
+Federated & Distributed Learning@2020-2024,Federated & Distributed Learning,Systems for ML,2020-2024,61
+Games & Mechanism Design@2020-2024,Games & Mechanism Design,Decision Making,2020-2024,40
+Generative Models & Diffusion@2020-2024,Generative Models & Diffusion,Generative AI,2020-2024,203
+Graph Machine Learning@2020-2024,Graph Machine Learning,Structured Learning,2020-2024,180
+Language Models & NLP@2020-2024,Language Models & NLP,Generative AI,2020-2024,329
+Multimodal & Vision-Language@2020-2024,Multimodal & Vision-Language,Perception,2020-2024,80
+Optimization & Learning Theory@2020-2024,Optimization & Learning Theory,Core ML,2020-2024,490
+Probabilistic Modeling@2020-2024,Probabilistic Modeling,Core ML,2020-2024,311
+Reinforcement Learning & Bandits@2020-2024,Reinforcement Learning & Bandits,Decision Making,2020-2024,363
+Representation Learning@2020-2024,Representation Learning,Foundation Learning,2020-2024,408
+"Robustness, Privacy & Safety@2020-2024","Robustness, Privacy & Safety",Trustworthy AI,2020-2024,248

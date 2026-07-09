@@ -1,0 +1,248 @@
+topic,category,year,count,total_papers,share
+Cloud DB,Systems,2010,2,126,0.015873015873015872
+Data Analytics,Applications,2010,13,126,0.10317460317460317
+Data Integration,Data Processing,2010,8,126,0.06349206349206349
+Distributed DB,Systems,2010,10,126,0.07936507936507936
+Graph Data,Data Models,2010,14,126,0.1111111111111111
+Indexing,Storage & Access,2010,9,126,0.07142857142857142
+Information Retrieval,Applications,2010,19,126,0.15079365079365079
+ML for DB,AI for Data Systems,2010,12,126,0.09523809523809523
+Privacy / Security,Trust,2010,3,126,0.023809523809523808
+Query Optimization,Query Processing,2010,13,126,0.10317460317460317
+Spatial / Temporal,Specialized Data,2010,8,126,0.06349206349206349
+Streaming,Data Processing,2010,10,126,0.07936507936507936
+Transactions,Systems,2010,1,126,0.007936507936507936
+Vector Search,AI for Data Systems,2010,1,126,0.007936507936507936
+XML,Data Models,2010,3,126,0.023809523809523808
+Cloud DB,Systems,2011,3,146,0.02054794520547945
+Crowdsourcing,Applications,2011,1,146,0.00684931506849315
+Data Analytics,Applications,2011,18,146,0.1232876712328767
+Data Integration,Data Processing,2011,3,146,0.02054794520547945
+Distributed DB,Systems,2011,13,146,0.08904109589041095
+Graph Data,Data Models,2011,11,146,0.07534246575342465
+Indexing,Storage & Access,2011,14,146,0.0958904109589041
+Information Retrieval,Applications,2011,26,146,0.1780821917808219
+ML for DB,AI for Data Systems,2011,12,146,0.0821917808219178
+Privacy / Security,Trust,2011,4,146,0.0273972602739726
+Query Optimization,Query Processing,2011,19,146,0.13013698630136986
+RDF / Semantic Web,Data Models,2011,3,146,0.02054794520547945
+Spatial / Temporal,Specialized Data,2011,2,146,0.0136986301369863
+Streaming,Data Processing,2011,7,146,0.04794520547945205
+Transactions,Systems,2011,5,146,0.03424657534246575
+Vector Search,AI for Data Systems,2011,2,146,0.0136986301369863
+XML,Data Models,2011,3,146,0.02054794520547945
+Cloud DB,Systems,2012,3,132,0.022727272727272728
+Crowdsourcing,Applications,2012,5,132,0.03787878787878788
+Data Analytics,Applications,2012,19,132,0.14393939393939395
+Data Integration,Data Processing,2012,8,132,0.06060606060606061
+Distributed DB,Systems,2012,12,132,0.09090909090909091
+Graph Data,Data Models,2012,17,132,0.12878787878787878
+Indexing,Storage & Access,2012,9,132,0.06818181818181818
+Information Retrieval,Applications,2012,21,132,0.1590909090909091
+ML for DB,AI for Data Systems,2012,6,132,0.045454545454545456
+Privacy / Security,Trust,2012,2,132,0.015151515151515152
+Query Optimization,Query Processing,2012,11,132,0.08333333333333333
+RDF / Semantic Web,Data Models,2012,4,132,0.030303030303030304
+Spatial / Temporal,Specialized Data,2012,4,132,0.030303030303030304
+Streaming,Data Processing,2012,4,132,0.030303030303030304
+Transactions,Systems,2012,3,132,0.022727272727272728
+Vector Search,AI for Data Systems,2012,2,132,0.015151515151515152
+XML,Data Models,2012,2,132,0.015151515151515152
+Cloud DB,Systems,2013,5,200,0.025
+Data Analytics,Applications,2013,40,200,0.2
+Data Integration,Data Processing,2013,7,200,0.035
+Distributed DB,Systems,2013,26,200,0.13
+Graph Data,Data Models,2013,24,200,0.12
+Indexing,Storage & Access,2013,13,200,0.065
+Information Retrieval,Applications,2013,23,200,0.115
+ML for DB,AI for Data Systems,2013,9,200,0.045
+Privacy / Security,Trust,2013,5,200,0.025
+Query Optimization,Query Processing,2013,22,200,0.11
+RDF / Semantic Web,Data Models,2013,2,200,0.01
+Spatial / Temporal,Specialized Data,2013,8,200,0.04
+Streaming,Data Processing,2013,9,200,0.045
+Transactions,Systems,2013,4,200,0.02
+XML,Data Models,2013,3,200,0.015
+Cloud DB,Systems,2014,7,219,0.0319634703196347
+Crowdsourcing,Applications,2014,3,219,0.0136986301369863
+Data Analytics,Applications,2014,41,219,0.1872146118721461
+Data Integration,Data Processing,2014,3,219,0.0136986301369863
+Distributed DB,Systems,2014,22,219,0.1004566210045662
+Graph Data,Data Models,2014,28,219,0.1278538812785388
+Indexing,Storage & Access,2014,18,219,0.0821917808219178
+Information Retrieval,Applications,2014,17,219,0.0776255707762557
+ML for DB,AI for Data Systems,2014,14,219,0.0639269406392694
+Privacy / Security,Trust,2014,3,219,0.0136986301369863
+Query Optimization,Query Processing,2014,30,219,0.136986301369863
+RDF / Semantic Web,Data Models,2014,7,219,0.0319634703196347
+Spatial / Temporal,Specialized Data,2014,11,219,0.0502283105022831
+Streaming,Data Processing,2014,6,219,0.0273972602739726
+Transactions,Systems,2014,4,219,0.0182648401826484
+Vector Search,AI for Data Systems,2014,5,219,0.0228310502283105
+Cloud DB,Systems,2015,3,197,0.015228426395939087
+Crowdsourcing,Applications,2015,6,197,0.030456852791878174
+Data Analytics,Applications,2015,37,197,0.18781725888324874
+Data Integration,Data Processing,2015,6,197,0.030456852791878174
+Distributed DB,Systems,2015,30,197,0.15228426395939088
+Graph Data,Data Models,2015,27,197,0.13705583756345177
+Indexing,Storage & Access,2015,13,197,0.06598984771573604
+Information Retrieval,Applications,2015,17,197,0.08629441624365482
+ML for DB,AI for Data Systems,2015,13,197,0.06598984771573604
+Privacy / Security,Trust,2015,4,197,0.02030456852791878
+Query Optimization,Query Processing,2015,17,197,0.08629441624365482
+RDF / Semantic Web,Data Models,2015,5,197,0.025380710659898477
+Spatial / Temporal,Specialized Data,2015,7,197,0.03553299492385787
+Streaming,Data Processing,2015,7,197,0.03553299492385787
+Text-to-SQL / NLIDB,AI for Data Systems,2015,1,197,0.005076142131979695
+Transactions,Systems,2015,1,197,0.005076142131979695
+Vector Search,AI for Data Systems,2015,1,197,0.005076142131979695
+XML,Data Models,2015,2,197,0.01015228426395939
+Cloud DB,Systems,2016,1,209,0.004784688995215311
+Crowdsourcing,Applications,2016,3,209,0.014354066985645933
+Data Analytics,Applications,2016,37,209,0.17703349282296652
+Data Integration,Data Processing,2016,6,209,0.028708133971291867
+Distributed DB,Systems,2016,26,209,0.12440191387559808
+Graph Data,Data Models,2016,28,209,0.1339712918660287
+Indexing,Storage & Access,2016,16,209,0.07655502392344497
+Information Retrieval,Applications,2016,16,209,0.07655502392344497
+ML for DB,AI for Data Systems,2016,19,209,0.09090909090909091
+Privacy / Security,Trust,2016,4,209,0.019138755980861243
+Query Optimization,Query Processing,2016,23,209,0.11004784688995216
+RDF / Semantic Web,Data Models,2016,5,209,0.023923444976076555
+Spatial / Temporal,Specialized Data,2016,12,209,0.05741626794258373
+Streaming,Data Processing,2016,8,209,0.03827751196172249
+Transactions,Systems,2016,3,209,0.014354066985645933
+Vector Search,AI for Data Systems,2016,2,209,0.009569377990430622
+Cloud DB,Systems,2017,1,200,0.005
+Crowdsourcing,Applications,2017,5,200,0.025
+Data Analytics,Applications,2017,31,200,0.155
+Data Integration,Data Processing,2017,6,200,0.03
+Distributed DB,Systems,2017,20,200,0.1
+Graph Data,Data Models,2017,28,200,0.14
+Indexing,Storage & Access,2017,8,200,0.04
+Information Retrieval,Applications,2017,19,200,0.095
+ML for DB,AI for Data Systems,2017,17,200,0.085
+Privacy / Security,Trust,2017,3,200,0.015
+Query Optimization,Query Processing,2017,24,200,0.12
+RDF / Semantic Web,Data Models,2017,5,200,0.025
+Spatial / Temporal,Specialized Data,2017,14,200,0.07
+Streaming,Data Processing,2017,12,200,0.06
+Transactions,Systems,2017,6,200,0.03
+Vector Search,AI for Data Systems,2017,1,200,0.005
+Cloud DB,Systems,2018,6,226,0.02654867256637168
+Crowdsourcing,Applications,2018,5,226,0.022123893805309734
+Data Analytics,Applications,2018,51,226,0.22566371681415928
+Data Integration,Data Processing,2018,5,226,0.022123893805309734
+Distributed DB,Systems,2018,20,226,0.08849557522123894
+Graph Data,Data Models,2018,23,226,0.10176991150442478
+Indexing,Storage & Access,2018,13,226,0.05752212389380531
+Information Retrieval,Applications,2018,15,226,0.06637168141592921
+ML for DB,AI for Data Systems,2018,22,226,0.09734513274336283
+Privacy / Security,Trust,2018,5,226,0.022123893805309734
+Query Optimization,Query Processing,2018,17,226,0.0752212389380531
+RDF / Semantic Web,Data Models,2018,7,226,0.030973451327433628
+Spatial / Temporal,Specialized Data,2018,19,226,0.084070796460177
+Streaming,Data Processing,2018,10,226,0.04424778761061947
+Transactions,Systems,2018,4,226,0.017699115044247787
+Vector Search,AI for Data Systems,2018,3,226,0.01327433628318584
+XML,Data Models,2018,1,226,0.004424778761061947
+Cloud DB,Systems,2019,7,224,0.03125
+Crowdsourcing,Applications,2019,5,224,0.022321428571428572
+Data Analytics,Applications,2019,38,224,0.16964285714285715
+Data Integration,Data Processing,2019,11,224,0.049107142857142856
+Distributed DB,Systems,2019,18,224,0.08035714285714286
+Graph Data,Data Models,2019,33,224,0.14732142857142858
+Indexing,Storage & Access,2019,13,224,0.05803571428571429
+Information Retrieval,Applications,2019,14,224,0.0625
+ML for DB,AI for Data Systems,2019,27,224,0.12053571428571429
+Privacy / Security,Trust,2019,6,224,0.026785714285714284
+Query Optimization,Query Processing,2019,23,224,0.10267857142857142
+RDF / Semantic Web,Data Models,2019,6,224,0.026785714285714284
+Spatial / Temporal,Specialized Data,2019,4,224,0.017857142857142856
+Streaming,Data Processing,2019,8,224,0.03571428571428571
+Text-to-SQL / NLIDB,AI for Data Systems,2019,1,224,0.004464285714285714
+Transactions,Systems,2019,7,224,0.03125
+Vector Search,AI for Data Systems,2019,3,224,0.013392857142857142
+Cloud DB,Systems,2020,7,321,0.021806853582554516
+Crowdsourcing,Applications,2020,1,321,0.003115264797507788
+Data Analytics,Applications,2020,55,321,0.17133956386292834
+Data Integration,Data Processing,2020,15,321,0.04672897196261682
+Distributed DB,Systems,2020,25,321,0.0778816199376947
+Graph Data,Data Models,2020,41,321,0.1277258566978193
+Indexing,Storage & Access,2020,23,321,0.07165109034267912
+Information Retrieval,Applications,2020,21,321,0.06542056074766354
+ML for DB,AI for Data Systems,2020,46,321,0.14330218068535824
+Privacy / Security,Trust,2020,9,321,0.028037383177570093
+Query Optimization,Query Processing,2020,38,321,0.11838006230529595
+RDF / Semantic Web,Data Models,2020,3,321,0.009345794392523364
+Spatial / Temporal,Specialized Data,2020,12,321,0.037383177570093455
+Streaming,Data Processing,2020,14,321,0.04361370716510903
+Text-to-SQL / NLIDB,AI for Data Systems,2020,1,321,0.003115264797507788
+Transactions,Systems,2020,5,321,0.01557632398753894
+Vector Search,AI for Data Systems,2020,5,321,0.01557632398753894
+Cloud DB,Systems,2021,7,302,0.023178807947019868
+Crowdsourcing,Applications,2021,1,302,0.0033112582781456954
+Data Analytics,Applications,2021,39,302,0.1291390728476821
+Data Integration,Data Processing,2021,9,302,0.029801324503311258
+Distributed DB,Systems,2021,26,302,0.08609271523178808
+Graph Data,Data Models,2021,39,302,0.1291390728476821
+Indexing,Storage & Access,2021,21,302,0.0695364238410596
+Information Retrieval,Applications,2021,20,302,0.06622516556291391
+ML for DB,AI for Data Systems,2021,63,302,0.20860927152317882
+Privacy / Security,Trust,2021,5,302,0.016556291390728478
+Query Optimization,Query Processing,2021,28,302,0.09271523178807947
+RDF / Semantic Web,Data Models,2021,7,302,0.023178807947019868
+Spatial / Temporal,Specialized Data,2021,12,302,0.039735099337748346
+Streaming,Data Processing,2021,14,302,0.046357615894039736
+Text-to-SQL / NLIDB,AI for Data Systems,2021,2,302,0.006622516556291391
+Transactions,Systems,2021,7,302,0.023178807947019868
+Vector Search,AI for Data Systems,2021,2,302,0.006622516556291391
+Cloud DB,Systems,2022,10,267,0.03745318352059925
+Crowdsourcing,Applications,2022,2,267,0.00749063670411985
+Data Analytics,Applications,2022,43,267,0.16104868913857678
+Data Integration,Data Processing,2022,4,267,0.0149812734082397
+Distributed DB,Systems,2022,11,267,0.04119850187265917
+Graph Data,Data Models,2022,40,267,0.149812734082397
+Indexing,Storage & Access,2022,20,267,0.0749063670411985
+Information Retrieval,Applications,2022,16,267,0.0599250936329588
+ML for DB,AI for Data Systems,2022,47,267,0.1760299625468165
+Privacy / Security,Trust,2022,8,267,0.0299625468164794
+Query Optimization,Query Processing,2022,31,267,0.11610486891385768
+RDF / Semantic Web,Data Models,2022,1,267,0.003745318352059925
+Spatial / Temporal,Specialized Data,2022,14,267,0.052434456928838954
+Streaming,Data Processing,2022,7,267,0.026217228464419477
+Transactions,Systems,2022,10,267,0.03745318352059925
+Vector Search,AI for Data Systems,2022,3,267,0.011235955056179775
+Cloud DB,Systems,2023,10,485,0.020618556701030927
+Data Analytics,Applications,2023,58,485,0.11958762886597939
+Data Integration,Data Processing,2023,8,485,0.016494845360824743
+Distributed DB,Systems,2023,31,485,0.06391752577319587
+Graph Data,Data Models,2023,74,485,0.15257731958762888
+Indexing,Storage & Access,2023,34,485,0.07010309278350516
+Information Retrieval,Applications,2023,32,485,0.06597938144329897
+ML for DB,AI for Data Systems,2023,93,485,0.19175257731958764
+Privacy / Security,Trust,2023,8,485,0.016494845360824743
+Query Optimization,Query Processing,2023,60,485,0.12371134020618557
+RDF / Semantic Web,Data Models,2023,8,485,0.016494845360824743
+Spatial / Temporal,Specialized Data,2023,40,485,0.08247422680412371
+Streaming,Data Processing,2023,18,485,0.03711340206185567
+Text-to-SQL / NLIDB,AI for Data Systems,2023,1,485,0.002061855670103093
+Transactions,Systems,2023,4,485,0.008247422680412371
+Vector Search,AI for Data Systems,2023,6,485,0.012371134020618556
+Cloud DB,Systems,2024,17,521,0.03262955854126679
+Crowdsourcing,Applications,2024,2,521,0.003838771593090211
+Data Analytics,Applications,2024,70,521,0.1343570057581574
+Data Integration,Data Processing,2024,14,521,0.026871401151631478
+Distributed DB,Systems,2024,32,521,0.061420345489443376
+Graph Data,Data Models,2024,84,521,0.16122840690978887
+Indexing,Storage & Access,2024,36,521,0.0690978886756238
+Information Retrieval,Applications,2024,30,521,0.05758157389635317
+ML for DB,AI for Data Systems,2024,95,521,0.18234165067178504
+Privacy / Security,Trust,2024,10,521,0.019193857965451054
+Query Optimization,Query Processing,2024,56,521,0.10748560460652591
+RDF / Semantic Web,Data Models,2024,8,521,0.015355086372360844
+Spatial / Temporal,Specialized Data,2024,35,521,0.0671785028790787
+Streaming,Data Processing,2024,14,521,0.026871401151631478
+Text-to-SQL / NLIDB,AI for Data Systems,2024,2,521,0.003838771593090211
+Transactions,Systems,2024,9,521,0.01727447216890595
+Vector Search,AI for Data Systems,2024,7,521,0.013435700575815739

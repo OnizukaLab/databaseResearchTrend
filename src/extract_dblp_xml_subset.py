@@ -13,6 +13,15 @@ VENUE_BY_KEY_PREFIX = {
     "conf/vldb/": "VLDB",
     "journals/pvldb/": "PVLDB",
     "journals/pacmmod/": "PACMMOD",
+    "conf/nips/": "NeurIPS",
+}
+
+VENUE_KEY_PREFIXES = {
+    "sigmod": "conf/sigmod/",
+    "vldb": "conf/vldb/",
+    "pvldb": "journals/pvldb/",
+    "pacmmod": "journals/pacmmod/",
+    "nips": "conf/nips/",
 }
 
 OUTPUT_COLUMNS = ["title", "year", "venue", "authors", "dblp_url", "doi"]
@@ -21,8 +30,10 @@ END_RE = re.compile(r"</(article|inproceedings)>")
 DOI_RE = re.compile(r"(10\.\d{4,9}/\S+)")
 
 
-def venue_from_key(key: str) -> str | None:
+def venue_from_key(key: str, allowed_prefixes: set[str] | None = None) -> str | None:
     for prefix, venue in VENUE_BY_KEY_PREFIX.items():
+        if allowed_prefixes is not None and prefix not in allowed_prefixes:
+            continue
         if key.startswith(prefix):
             return venue
     return None
@@ -89,6 +100,7 @@ def extract_subset(
     output_csv: Path,
     start_year: int,
     end_year: int,
+    venue_keys: list[str] | None = None,
     max_records: int | None = None,
     progress_every: int = 0,
 ) -> int:
@@ -99,6 +111,10 @@ def extract_subset(
     target_key = ""
     target_venue = ""
     block_lines: list[str] = []
+
+    allowed_prefixes = None
+    if venue_keys:
+        allowed_prefixes = {VENUE_KEY_PREFIXES[key] for key in venue_keys}
 
     with xml_path.open("r", encoding="utf-8", errors="ignore") as source, output_csv.open(
         "w",
@@ -115,7 +131,7 @@ def extract_subset(
                     continue
 
                 tag_name, key = match.group(1), match.group(2)
-                venue = venue_from_key(key)
+                venue = venue_from_key(key, allowed_prefixes=allowed_prefixes)
                 if venue is None:
                     continue
 
@@ -175,6 +191,12 @@ def main() -> None:
     parser.add_argument("--output", required=True)
     parser.add_argument("--start-year", type=int, required=True)
     parser.add_argument("--end-year", type=int, required=True)
+    parser.add_argument(
+        "--venue-key",
+        action="append",
+        choices=sorted(VENUE_KEY_PREFIXES),
+        default=None,
+    )
     parser.add_argument("--max-records", type=int)
     parser.add_argument("--progress-every", type=int, default=0)
     args = parser.parse_args()
@@ -184,6 +206,7 @@ def main() -> None:
         output_csv=Path(args.output),
         start_year=args.start_year,
         end_year=args.end_year,
+        venue_keys=args.venue_key or ["sigmod", "vldb", "pvldb", "pacmmod"],
         max_records=args.max_records,
         progress_every=args.progress_every,
     )

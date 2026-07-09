@@ -2,13 +2,13 @@ from __future__ import annotations
 
 
 DEFAULT_PERIOD_START = 2010
-DEFAULT_PERIOD_END = 2025
+DEFAULT_PERIOD_END = 2024
 DEFAULT_PERIOD_SIZE = 5
 
 DEFAULT_PERIOD_WINDOWS = [
-    ("2010-2015", 2010, 2014),
-    ("2015-2020", 2015, 2019),
-    ("2020-2025", 2020, 2025),
+    ("2010-2014", 2010, 2014),
+    ("2015-2019", 2015, 2019),
+    ("2020-2024", 2020, 2024),
 ]
 
 
@@ -27,7 +27,7 @@ def build_periods(
     labels: list[str] = []
     current = start_year
     while current <= end_year:
-        labels.append(f"{current}-{min(current + period_size, end_year)}")
+        labels.append(f"{current}-{min(current + period_size - 1, end_year)}")
         current += period_size
     return labels
 

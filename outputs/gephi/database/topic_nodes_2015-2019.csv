@@ -1,0 +1,19 @@
+Id,Label,Type,Category,Period,Count
+Cloud DB,Cloud DB,Undirected,Systems,2015-2019,18
+Crowdsourcing,Crowdsourcing,Undirected,Applications,2015-2019,24
+Data Analytics,Data Analytics,Undirected,Applications,2015-2019,194
+Data Integration,Data Integration,Undirected,Data Processing,2015-2019,34
+Distributed DB,Distributed DB,Undirected,Systems,2015-2019,114
+Graph Data,Graph Data,Undirected,Data Models,2015-2019,139
+Indexing,Indexing,Undirected,Storage & Access,2015-2019,63
+Information Retrieval,Information Retrieval,Undirected,Applications,2015-2019,81
+ML for DB,ML for DB,Undirected,AI for Data Systems,2015-2019,98
+Privacy / Security,Privacy / Security,Undirected,Trust,2015-2019,22
+Query Optimization,Query Optimization,Undirected,Query Processing,2015-2019,104
+RDF / Semantic Web,RDF / Semantic Web,Undirected,Data Models,2015-2019,28
+Spatial / Temporal,Spatial / Temporal,Undirected,Specialized Data,2015-2019,56
+Streaming,Streaming,Undirected,Data Processing,2015-2019,45
+Text-to-SQL / NLIDB,Text-to-SQL / NLIDB,Undirected,AI for Data Systems,2015-2019,2
+Transactions,Transactions,Undirected,Systems,2015-2019,21
+Vector Search,Vector Search,Undirected,AI for Data Systems,2015-2019,10
+XML,XML,Undirected,Data Models,2015-2019,3

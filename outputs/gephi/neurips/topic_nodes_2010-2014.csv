@@ -1,0 +1,15 @@
+Id,Label,Type,Category,Period,Count
+"Biology, Molecules & Health","Biology, Molecules & Health",Undirected,AI for Science,2010-2014,2
+"Causality, Dynamics & Scientific ML","Causality, Dynamics & Scientific ML",Undirected,Scientific ML,2010-2014,11
+Classical Statistical ML,Classical Statistical ML,Undirected,Core ML,2010-2014,77
+Computer Vision & 3D Perception,Computer Vision & 3D Perception,Undirected,Perception,2010-2014,29
+Federated & Distributed Learning,Federated & Distributed Learning,Undirected,Systems for ML,2010-2014,8
+Games & Mechanism Design,Games & Mechanism Design,Undirected,Decision Making,2010-2014,3
+Generative Models & Diffusion,Generative Models & Diffusion,Undirected,Generative AI,2010-2014,3
+Graph Machine Learning,Graph Machine Learning,Undirected,Structured Learning,2010-2014,11
+Language Models & NLP,Language Models & NLP,Undirected,Generative AI,2010-2014,5
+Optimization & Learning Theory,Optimization & Learning Theory,Undirected,Core ML,2010-2014,50
+Probabilistic Modeling,Probabilistic Modeling,Undirected,Core ML,2010-2014,84
+Reinforcement Learning & Bandits,Reinforcement Learning & Bandits,Undirected,Decision Making,2010-2014,25
+Representation Learning,Representation Learning,Undirected,Foundation Learning,2010-2014,42
+"Robustness, Privacy & Safety","Robustness, Privacy & Safety",Undirected,Trustworthy AI,2010-2014,14

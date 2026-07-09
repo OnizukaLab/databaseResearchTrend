@@ -1,0 +1,93 @@
+Source,Target,Type,Weight,Period
+"Biology, Molecules & Health","Causality, Dynamics & Scientific ML",Undirected,1,2020-2024
+"Biology, Molecules & Health",Classical Statistical ML,Undirected,3,2020-2024
+"Biology, Molecules & Health",Computer Vision & 3D Perception,Undirected,3,2020-2024
+"Biology, Molecules & Health",Generative Models & Diffusion,Undirected,7,2020-2024
+"Biology, Molecules & Health",Graph Machine Learning,Undirected,6,2020-2024
+"Biology, Molecules & Health",Language Models & NLP,Undirected,9,2020-2024
+"Biology, Molecules & Health",Multimodal & Vision-Language,Undirected,5,2020-2024
+"Biology, Molecules & Health",Optimization & Learning Theory,Undirected,2,2020-2024
+"Biology, Molecules & Health",Probabilistic Modeling,Undirected,1,2020-2024
+"Biology, Molecules & Health",Representation Learning,Undirected,9,2020-2024
+"Causality, Dynamics & Scientific ML",Classical Statistical ML,Undirected,17,2020-2024
+"Causality, Dynamics & Scientific ML",Computer Vision & 3D Perception,Undirected,15,2020-2024
+"Causality, Dynamics & Scientific ML",Generative Models & Diffusion,Undirected,9,2020-2024
+"Causality, Dynamics & Scientific ML",Graph Machine Learning,Undirected,7,2020-2024
+"Causality, Dynamics & Scientific ML",Language Models & NLP,Undirected,10,2020-2024
+"Causality, Dynamics & Scientific ML",Multimodal & Vision-Language,Undirected,2,2020-2024
+"Causality, Dynamics & Scientific ML",Optimization & Learning Theory,Undirected,14,2020-2024
+"Causality, Dynamics & Scientific ML",Probabilistic Modeling,Undirected,28,2020-2024
+"Causality, Dynamics & Scientific ML",Reinforcement Learning & Bandits,Undirected,20,2020-2024
+"Causality, Dynamics & Scientific ML",Representation Learning,Undirected,26,2020-2024
+"Causality, Dynamics & Scientific ML","Robustness, Privacy & Safety",Undirected,9,2020-2024
+Classical Statistical ML,Computer Vision & 3D Perception,Undirected,33,2020-2024
+Classical Statistical ML,Federated & Distributed Learning,Undirected,6,2020-2024
+Classical Statistical ML,Generative Models & Diffusion,Undirected,6,2020-2024
+Classical Statistical ML,Graph Machine Learning,Undirected,19,2020-2024
+Classical Statistical ML,Language Models & NLP,Undirected,12,2020-2024
+Classical Statistical ML,Multimodal & Vision-Language,Undirected,1,2020-2024
+Classical Statistical ML,Optimization & Learning Theory,Undirected,44,2020-2024
+Classical Statistical ML,Probabilistic Modeling,Undirected,24,2020-2024
+Classical Statistical ML,Reinforcement Learning & Bandits,Undirected,15,2020-2024
+Classical Statistical ML,Representation Learning,Undirected,45,2020-2024
+Classical Statistical ML,"Robustness, Privacy & Safety",Undirected,25,2020-2024
+Computer Vision & 3D Perception,Federated & Distributed Learning,Undirected,2,2020-2024
+Computer Vision & 3D Perception,Games & Mechanism Design,Undirected,1,2020-2024
+Computer Vision & 3D Perception,Generative Models & Diffusion,Undirected,32,2020-2024
+Computer Vision & 3D Perception,Graph Machine Learning,Undirected,11,2020-2024
+Computer Vision & 3D Perception,Language Models & NLP,Undirected,46,2020-2024
+Computer Vision & 3D Perception,Multimodal & Vision-Language,Undirected,11,2020-2024
+Computer Vision & 3D Perception,Optimization & Learning Theory,Undirected,17,2020-2024
+Computer Vision & 3D Perception,Probabilistic Modeling,Undirected,16,2020-2024
+Computer Vision & 3D Perception,Reinforcement Learning & Bandits,Undirected,9,2020-2024
+Computer Vision & 3D Perception,Representation Learning,Undirected,56,2020-2024
+Computer Vision & 3D Perception,"Robustness, Privacy & Safety",Undirected,16,2020-2024
+Federated & Distributed Learning,Games & Mechanism Design,Undirected,2,2020-2024
+Federated & Distributed Learning,Generative Models & Diffusion,Undirected,1,2020-2024
+Federated & Distributed Learning,Language Models & NLP,Undirected,12,2020-2024
+Federated & Distributed Learning,Optimization & Learning Theory,Undirected,16,2020-2024
+Federated & Distributed Learning,Probabilistic Modeling,Undirected,7,2020-2024
+Federated & Distributed Learning,Reinforcement Learning & Bandits,Undirected,4,2020-2024
+Federated & Distributed Learning,Representation Learning,Undirected,1,2020-2024
+Federated & Distributed Learning,"Robustness, Privacy & Safety",Undirected,7,2020-2024
+Games & Mechanism Design,Language Models & NLP,Undirected,2,2020-2024
+Games & Mechanism Design,Optimization & Learning Theory,Undirected,11,2020-2024
+Games & Mechanism Design,Probabilistic Modeling,Undirected,3,2020-2024
+Games & Mechanism Design,Reinforcement Learning & Bandits,Undirected,5,2020-2024
+Games & Mechanism Design,"Robustness, Privacy & Safety",Undirected,2,2020-2024
+Generative Models & Diffusion,Graph Machine Learning,Undirected,8,2020-2024
+Generative Models & Diffusion,Language Models & NLP,Undirected,13,2020-2024
+Generative Models & Diffusion,Multimodal & Vision-Language,Undirected,13,2020-2024
+Generative Models & Diffusion,Optimization & Learning Theory,Undirected,12,2020-2024
+Generative Models & Diffusion,Probabilistic Modeling,Undirected,18,2020-2024
+Generative Models & Diffusion,Reinforcement Learning & Bandits,Undirected,12,2020-2024
+Generative Models & Diffusion,Representation Learning,Undirected,17,2020-2024
+Generative Models & Diffusion,"Robustness, Privacy & Safety",Undirected,15,2020-2024
+Graph Machine Learning,Language Models & NLP,Undirected,11,2020-2024
+Graph Machine Learning,Multimodal & Vision-Language,Undirected,1,2020-2024
+Graph Machine Learning,Optimization & Learning Theory,Undirected,9,2020-2024
+Graph Machine Learning,Probabilistic Modeling,Undirected,13,2020-2024
+Graph Machine Learning,Reinforcement Learning & Bandits,Undirected,5,2020-2024
+Graph Machine Learning,Representation Learning,Undirected,29,2020-2024
+Graph Machine Learning,"Robustness, Privacy & Safety",Undirected,6,2020-2024
+Language Models & NLP,Multimodal & Vision-Language,Undirected,29,2020-2024
+Language Models & NLP,Optimization & Learning Theory,Undirected,21,2020-2024
+Language Models & NLP,Probabilistic Modeling,Undirected,17,2020-2024
+Language Models & NLP,Reinforcement Learning & Bandits,Undirected,11,2020-2024
+Language Models & NLP,Representation Learning,Undirected,28,2020-2024
+Language Models & NLP,"Robustness, Privacy & Safety",Undirected,10,2020-2024
+Multimodal & Vision-Language,Optimization & Learning Theory,Undirected,2,2020-2024
+Multimodal & Vision-Language,Probabilistic Modeling,Undirected,2,2020-2024
+Multimodal & Vision-Language,Reinforcement Learning & Bandits,Undirected,3,2020-2024
+Multimodal & Vision-Language,Representation Learning,Undirected,9,2020-2024
+Multimodal & Vision-Language,"Robustness, Privacy & Safety",Undirected,2,2020-2024
+Optimization & Learning Theory,Probabilistic Modeling,Undirected,50,2020-2024
+Optimization & Learning Theory,Reinforcement Learning & Bandits,Undirected,76,2020-2024
+Optimization & Learning Theory,Representation Learning,Undirected,24,2020-2024
+Optimization & Learning Theory,"Robustness, Privacy & Safety",Undirected,43,2020-2024
+Probabilistic Modeling,Reinforcement Learning & Bandits,Undirected,37,2020-2024
+Probabilistic Modeling,Representation Learning,Undirected,24,2020-2024
+Probabilistic Modeling,"Robustness, Privacy & Safety",Undirected,20,2020-2024
+Reinforcement Learning & Bandits,Representation Learning,Undirected,22,2020-2024
+Reinforcement Learning & Bandits,"Robustness, Privacy & Safety",Undirected,26,2020-2024
+Representation Learning,"Robustness, Privacy & Safety",Undirected,17,2020-2024

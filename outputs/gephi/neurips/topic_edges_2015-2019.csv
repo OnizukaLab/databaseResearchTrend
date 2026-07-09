@@ -1,0 +1,70 @@
+Source,Target,Type,Weight,Period
+"Biology, Molecules & Health",Classical Statistical ML,Undirected,1,2015-2019
+"Biology, Molecules & Health",Graph Machine Learning,Undirected,1,2015-2019
+"Biology, Molecules & Health",Reinforcement Learning & Bandits,Undirected,1,2015-2019
+"Biology, Molecules & Health",Representation Learning,Undirected,1,2015-2019
+"Causality, Dynamics & Scientific ML",Classical Statistical ML,Undirected,2,2015-2019
+"Causality, Dynamics & Scientific ML",Computer Vision & 3D Perception,Undirected,1,2015-2019
+"Causality, Dynamics & Scientific ML",Graph Machine Learning,Undirected,1,2015-2019
+"Causality, Dynamics & Scientific ML",Language Models & NLP,Undirected,2,2015-2019
+"Causality, Dynamics & Scientific ML",Probabilistic Modeling,Undirected,10,2015-2019
+"Causality, Dynamics & Scientific ML",Reinforcement Learning & Bandits,Undirected,3,2015-2019
+"Causality, Dynamics & Scientific ML",Representation Learning,Undirected,3,2015-2019
+"Causality, Dynamics & Scientific ML","Robustness, Privacy & Safety",Undirected,1,2015-2019
+Classical Statistical ML,Computer Vision & 3D Perception,Undirected,7,2015-2019
+Classical Statistical ML,Federated & Distributed Learning,Undirected,2,2015-2019
+Classical Statistical ML,Generative Models & Diffusion,Undirected,3,2015-2019
+Classical Statistical ML,Graph Machine Learning,Undirected,7,2015-2019
+Classical Statistical ML,Optimization & Learning Theory,Undirected,22,2015-2019
+Classical Statistical ML,Probabilistic Modeling,Undirected,16,2015-2019
+Classical Statistical ML,Reinforcement Learning & Bandits,Undirected,2,2015-2019
+Classical Statistical ML,Representation Learning,Undirected,18,2015-2019
+Classical Statistical ML,"Robustness, Privacy & Safety",Undirected,8,2015-2019
+Computer Vision & 3D Perception,Games & Mechanism Design,Undirected,1,2015-2019
+Computer Vision & 3D Perception,Generative Models & Diffusion,Undirected,3,2015-2019
+Computer Vision & 3D Perception,Graph Machine Learning,Undirected,1,2015-2019
+Computer Vision & 3D Perception,Language Models & NLP,Undirected,11,2015-2019
+Computer Vision & 3D Perception,Multimodal & Vision-Language,Undirected,5,2015-2019
+Computer Vision & 3D Perception,Optimization & Learning Theory,Undirected,3,2015-2019
+Computer Vision & 3D Perception,Probabilistic Modeling,Undirected,4,2015-2019
+Computer Vision & 3D Perception,Representation Learning,Undirected,10,2015-2019
+Computer Vision & 3D Perception,"Robustness, Privacy & Safety",Undirected,3,2015-2019
+Federated & Distributed Learning,Language Models & NLP,Undirected,1,2015-2019
+Federated & Distributed Learning,Optimization & Learning Theory,Undirected,4,2015-2019
+Federated & Distributed Learning,Probabilistic Modeling,Undirected,3,2015-2019
+Federated & Distributed Learning,Reinforcement Learning & Bandits,Undirected,2,2015-2019
+Games & Mechanism Design,Generative Models & Diffusion,Undirected,1,2015-2019
+Games & Mechanism Design,Probabilistic Modeling,Undirected,1,2015-2019
+Games & Mechanism Design,Reinforcement Learning & Bandits,Undirected,2,2015-2019
+Generative Models & Diffusion,Graph Machine Learning,Undirected,1,2015-2019
+Generative Models & Diffusion,Language Models & NLP,Undirected,1,2015-2019
+Generative Models & Diffusion,Multimodal & Vision-Language,Undirected,2,2015-2019
+Generative Models & Diffusion,Optimization & Learning Theory,Undirected,4,2015-2019
+Generative Models & Diffusion,Probabilistic Modeling,Undirected,7,2015-2019
+Generative Models & Diffusion,Reinforcement Learning & Bandits,Undirected,1,2015-2019
+Generative Models & Diffusion,Representation Learning,Undirected,5,2015-2019
+Generative Models & Diffusion,"Robustness, Privacy & Safety",Undirected,10,2015-2019
+Graph Machine Learning,Language Models & NLP,Undirected,3,2015-2019
+Graph Machine Learning,Multimodal & Vision-Language,Undirected,1,2015-2019
+Graph Machine Learning,Optimization & Learning Theory,Undirected,2,2015-2019
+Graph Machine Learning,Probabilistic Modeling,Undirected,3,2015-2019
+Graph Machine Learning,Reinforcement Learning & Bandits,Undirected,1,2015-2019
+Graph Machine Learning,Representation Learning,Undirected,7,2015-2019
+Graph Machine Learning,"Robustness, Privacy & Safety",Undirected,1,2015-2019
+Language Models & NLP,Multimodal & Vision-Language,Undirected,6,2015-2019
+Language Models & NLP,Optimization & Learning Theory,Undirected,1,2015-2019
+Language Models & NLP,Probabilistic Modeling,Undirected,1,2015-2019
+Language Models & NLP,Reinforcement Learning & Bandits,Undirected,2,2015-2019
+Language Models & NLP,Representation Learning,Undirected,2,2015-2019
+Language Models & NLP,"Robustness, Privacy & Safety",Undirected,1,2015-2019
+Multimodal & Vision-Language,Representation Learning,Undirected,1,2015-2019
+Optimization & Learning Theory,Probabilistic Modeling,Undirected,27,2015-2019
+Optimization & Learning Theory,Reinforcement Learning & Bandits,Undirected,16,2015-2019
+Optimization & Learning Theory,Representation Learning,Undirected,3,2015-2019
+Optimization & Learning Theory,"Robustness, Privacy & Safety",Undirected,9,2015-2019
+Probabilistic Modeling,Reinforcement Learning & Bandits,Undirected,14,2015-2019
+Probabilistic Modeling,Representation Learning,Undirected,7,2015-2019
+Probabilistic Modeling,"Robustness, Privacy & Safety",Undirected,7,2015-2019
+Reinforcement Learning & Bandits,Representation Learning,Undirected,3,2015-2019
+Reinforcement Learning & Bandits,"Robustness, Privacy & Safety",Undirected,3,2015-2019
+Representation Learning,"Robustness, Privacy & Safety",Undirected,4,2015-2019

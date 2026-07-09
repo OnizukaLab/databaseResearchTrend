@@ -1,0 +1,79 @@
+Source,Target,Type,Weight,Period
+Cloud DB,Data Analytics,Undirected,4,2015-2019
+Cloud DB,Indexing,Undirected,2,2015-2019
+Cloud DB,ML for DB,Undirected,3,2015-2019
+Cloud DB,Query Optimization,Undirected,1,2015-2019
+Cloud DB,Spatial / Temporal,Undirected,1,2015-2019
+Crowdsourcing,Data Analytics,Undirected,3,2015-2019
+Crowdsourcing,Data Integration,Undirected,3,2015-2019
+Crowdsourcing,Graph Data,Undirected,2,2015-2019
+Crowdsourcing,Information Retrieval,Undirected,2,2015-2019
+Crowdsourcing,ML for DB,Undirected,2,2015-2019
+Crowdsourcing,Query Optimization,Undirected,1,2015-2019
+Crowdsourcing,RDF / Semantic Web,Undirected,1,2015-2019
+Crowdsourcing,Spatial / Temporal,Undirected,2,2015-2019
+Crowdsourcing,Text-to-SQL / NLIDB,Undirected,1,2015-2019
+Data Analytics,Data Integration,Undirected,4,2015-2019
+Data Analytics,Distributed DB,Undirected,25,2015-2019
+Data Analytics,Graph Data,Undirected,21,2015-2019
+Data Analytics,Indexing,Undirected,13,2015-2019
+Data Analytics,Information Retrieval,Undirected,9,2015-2019
+Data Analytics,ML for DB,Undirected,12,2015-2019
+Data Analytics,Privacy / Security,Undirected,2,2015-2019
+Data Analytics,Query Optimization,Undirected,12,2015-2019
+Data Analytics,RDF / Semantic Web,Undirected,5,2015-2019
+Data Analytics,Spatial / Temporal,Undirected,14,2015-2019
+Data Analytics,Streaming,Undirected,5,2015-2019
+Data Analytics,Transactions,Undirected,6,2015-2019
+Data Analytics,Vector Search,Undirected,2,2015-2019
+Data Integration,Graph Data,Undirected,2,2015-2019
+Data Integration,Information Retrieval,Undirected,2,2015-2019
+Data Integration,ML for DB,Undirected,5,2015-2019
+Data Integration,Privacy / Security,Undirected,1,2015-2019
+Data Integration,Spatial / Temporal,Undirected,3,2015-2019
+Distributed DB,Graph Data,Undirected,19,2015-2019
+Distributed DB,Indexing,Undirected,3,2015-2019
+Distributed DB,Information Retrieval,Undirected,1,2015-2019
+Distributed DB,ML for DB,Undirected,9,2015-2019
+Distributed DB,Query Optimization,Undirected,18,2015-2019
+Distributed DB,RDF / Semantic Web,Undirected,4,2015-2019
+Distributed DB,Spatial / Temporal,Undirected,7,2015-2019
+Distributed DB,Streaming,Undirected,11,2015-2019
+Distributed DB,Transactions,Undirected,6,2015-2019
+Distributed DB,XML,Undirected,1,2015-2019
+Graph Data,Indexing,Undirected,4,2015-2019
+Graph Data,Information Retrieval,Undirected,14,2015-2019
+Graph Data,ML for DB,Undirected,15,2015-2019
+Graph Data,Privacy / Security,Undirected,1,2015-2019
+Graph Data,Query Optimization,Undirected,7,2015-2019
+Graph Data,RDF / Semantic Web,Undirected,12,2015-2019
+Graph Data,Spatial / Temporal,Undirected,4,2015-2019
+Graph Data,Streaming,Undirected,4,2015-2019
+Graph Data,Vector Search,Undirected,2,2015-2019
+Indexing,Information Retrieval,Undirected,3,2015-2019
+Indexing,ML for DB,Undirected,1,2015-2019
+Indexing,Query Optimization,Undirected,7,2015-2019
+Indexing,RDF / Semantic Web,Undirected,2,2015-2019
+Indexing,Spatial / Temporal,Undirected,5,2015-2019
+Indexing,Transactions,Undirected,4,2015-2019
+Information Retrieval,Privacy / Security,Undirected,1,2015-2019
+Information Retrieval,Query Optimization,Undirected,6,2015-2019
+Information Retrieval,RDF / Semantic Web,Undirected,5,2015-2019
+Information Retrieval,Spatial / Temporal,Undirected,4,2015-2019
+Information Retrieval,Text-to-SQL / NLIDB,Undirected,2,2015-2019
+Information Retrieval,Vector Search,Undirected,10,2015-2019
+ML for DB,Query Optimization,Undirected,7,2015-2019
+ML for DB,Spatial / Temporal,Undirected,4,2015-2019
+ML for DB,Streaming,Undirected,7,2015-2019
+Privacy / Security,Query Optimization,Undirected,2,2015-2019
+Privacy / Security,RDF / Semantic Web,Undirected,1,2015-2019
+Privacy / Security,Spatial / Temporal,Undirected,1,2015-2019
+Query Optimization,RDF / Semantic Web,Undirected,1,2015-2019
+Query Optimization,Spatial / Temporal,Undirected,3,2015-2019
+Query Optimization,Streaming,Undirected,3,2015-2019
+Query Optimization,Transactions,Undirected,2,2015-2019
+Query Optimization,XML,Undirected,1,2015-2019
+RDF / Semantic Web,Spatial / Temporal,Undirected,1,2015-2019
+RDF / Semantic Web,Streaming,Undirected,2,2015-2019
+RDF / Semantic Web,Vector Search,Undirected,1,2015-2019
+Streaming,XML,Undirected,1,2015-2019

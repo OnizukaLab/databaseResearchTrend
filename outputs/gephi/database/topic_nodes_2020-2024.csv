@@ -1,0 +1,18 @@
+Id,Label,Type,Category,Period,Count
+Cloud DB,Cloud DB,Undirected,Systems,2020-2024,51
+Crowdsourcing,Crowdsourcing,Undirected,Applications,2020-2024,6
+Data Analytics,Data Analytics,Undirected,Applications,2020-2024,265
+Data Integration,Data Integration,Undirected,Data Processing,2020-2024,50
+Distributed DB,Distributed DB,Undirected,Systems,2020-2024,125
+Graph Data,Graph Data,Undirected,Data Models,2020-2024,278
+Indexing,Indexing,Undirected,Storage & Access,2020-2024,134
+Information Retrieval,Information Retrieval,Undirected,Applications,2020-2024,119
+ML for DB,ML for DB,Undirected,AI for Data Systems,2020-2024,344
+Privacy / Security,Privacy / Security,Undirected,Trust,2020-2024,40
+Query Optimization,Query Optimization,Undirected,Query Processing,2020-2024,213
+RDF / Semantic Web,RDF / Semantic Web,Undirected,Data Models,2020-2024,27
+Spatial / Temporal,Spatial / Temporal,Undirected,Specialized Data,2020-2024,113
+Streaming,Streaming,Undirected,Data Processing,2020-2024,67
+Text-to-SQL / NLIDB,Text-to-SQL / NLIDB,Undirected,AI for Data Systems,2020-2024,6
+Transactions,Transactions,Undirected,Systems,2020-2024,35
+Vector Search,Vector Search,Undirected,AI for Data Systems,2020-2024,23
