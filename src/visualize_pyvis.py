@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -12,24 +13,34 @@ from pyvis.network import Network
 CATEGORY_COLORS = {
     "AI for Data Systems": "#e76f51",
     "Applications": "#f4a261",
+    "AI for Science": "#90be6d",
+    "Core ML": "#277da1",
     "Data Models": "#2a9d8f",
     "Data Processing": "#457b9d",
+    "Decision Making": "#f94144",
+    "Foundation Learning": "#43aa8b",
+    "Generative AI": "#f3722c",
+    "Perception": "#577590",
     "Query Processing": "#264653",
+    "Scientific ML": "#4d908e",
     "Specialized Data": "#8ab17d",
     "Storage & Access": "#6d597a",
+    "Structured Learning": "#7b2cbf",
     "Systems": "#1d3557",
+    "Systems for ML": "#577590",
     "Trust": "#b56576",
+    "Trustworthy AI": "#bc4749",
 }
 
 
 def build_network(nodes_df: pd.DataFrame, edges_df: pd.DataFrame) -> Network:
-    net = Network(height="1900px", width="100%", bgcolor="#ffffff", font_color="#222222")
+    net = Network(height="720px", width="100%", bgcolor="#ffffff", font_color="#222222")
     net.force_atlas_2based(
         gravity=-320,
-        central_gravity=0.001,
-        spring_length=520,
-        spring_strength=0.004,
-        damping=0.97,
+        central_gravity=0.006,
+        spring_length=280,
+        spring_strength=0.006,
+        damping=0.92,
         overlap=1.5,
     )
 
@@ -58,14 +69,71 @@ def build_network(nodes_df: pd.DataFrame, edges_df: pd.DataFrame) -> Network:
     options = {
         "interaction": {"hover": True, "navigationButtons": True},
         "physics": {
-            "stabilization": {"iterations": 1000},
-            "minVelocity": 0.25,
+            "stabilization": {"iterations": 1200},
+            "minVelocity": 0.15,
             "solver": "forceAtlas2Based",
         },
         "edges": {"smooth": {"type": "dynamic"}, "scaling": {"min": 1, "max": 5}},
     }
     net.set_options(json.dumps(options))
     return net
+
+
+def expand_network_view(output_path: Path) -> None:
+    html = output_path.read_text(encoding="utf-8")
+    html = re.sub(
+        r"<link\s+href=\"https://cdn\.jsdelivr\.net/npm/bootstrap@5\.0\.0-beta3/dist/css/bootstrap\.min\.css\"[\s\S]*?crossorigin=\"anonymous\"\s*/>\s*"
+        r"<script\s+src=\"https://cdn\.jsdelivr\.net/npm/bootstrap@5\.0\.0-beta3/dist/js/bootstrap\.bundle\.min\.js\"[\s\S]*?</script>",
+        "",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r"<center>\s*<h1></h1>\s*</center>",
+        "",
+        html,
+    )
+    html = re.sub(
+        r"<style type=\"text/css\">[\s\S]*?</style>",
+        """<style type="text/css">
+             html, body {
+                 width: 100%;
+                 height: 100%;
+                 margin: 0;
+                 padding: 0;
+                 overflow: hidden;
+                 background-color: #ffffff;
+             }
+
+             #mynetwork {
+                 width: 100vw;
+                 height: 720px;
+                 margin: 0;
+                 padding: 0;
+                 background-color: #ffffff;
+                 border: none;
+                 position: relative;
+                 display: block;
+             }
+        </style>""",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r"<body>\s*<div class=\"card\" style=\"width: 100%\">[\s\S]*?<div id=\"mynetwork\" class=\"card-body\"></div>[\s\S]*?</div>",
+        "<body>\n        <div id=\"mynetwork\"></div>",
+        html,
+        count=1,
+    )
+    fit_script = """
+              network.once("stabilizationIterationsDone", function () {
+                  network.setOptions({physics: false});
+                  network.fit({animation: false});
+                  network.moveTo({scale: 1.45});
+              });
+    """
+    html = html.replace("              return network;", fit_script + "\n              return network;", 1)
+    output_path.write_text(html, encoding="utf-8")
 
 
 def render_period_html(nodes_path: Path, edges_path: Path, output_path: Path, min_edge_weight: int) -> None:
@@ -76,6 +144,7 @@ def render_period_html(nodes_path: Path, edges_path: Path, output_path: Path, mi
     network = build_network(nodes_df, edges_df)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     network.write_html(str(output_path), notebook=False)
+    expand_network_view(output_path)
 
 
 def main() -> None:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -10,7 +11,7 @@ from build_sankey import build_sankey_frames, render_sankey
 from extract_topics import tag_papers
 from fetch_dblp import DEFAULT_VENUE_KEYS, fetch_all, load_manual_papers, load_manual_papers_from_files
 from periods import DEFAULT_PERIOD_END, DEFAULT_PERIOD_SIZE, DEFAULT_PERIOD_START, build_periods
-from visualize_pyvis import render_period_html
+from visualize_pyvis import CATEGORY_COLORS, render_period_html
 
 
 def ensure_dirs(project_root: Path, target_slug: str) -> dict[str, Path]:
@@ -66,23 +67,161 @@ def infer_title_prefix(venue_keys: list[str]) -> str:
     return ""
 
 
-def build_index_html(html_dir: Path, periods: list[str], title_prefix: str = "") -> None:
-    links = [
-        *[
-            (f"{title_prefix}Topic Network {period}".strip(), f"topic_network_{period}.html")
-            for period in periods
-        ],
-        (f"{title_prefix}Topic Transition Sankey".strip(), "topic_transition_sankey.html"),
-    ]
+def build_preview_payload(nodes_path: Path, edges_path: Path, min_edge_weight: int) -> dict[str, list[dict[str, object]]]:
+    nodes_df = pd.read_csv(nodes_path)
+    edges_df = pd.read_csv(edges_path)
+    if not edges_df.empty:
+        edges_df = edges_df[edges_df["Weight"] >= min_edge_weight].copy()
+
+    max_count = float(nodes_df["Count"].max()) if not nodes_df.empty else 1.0
+    nodes = []
+    for row in nodes_df.to_dict("records"):
+        normalized = (float(row["Count"]) / max_count) ** 0.5 if max_count > 0 else 0.0
+        size = 14 + 22 * normalized
+        nodes.append(
+            {
+                "id": row["Id"],
+                "label": row["Label"],
+                "title": f"{row['Label']}<br>{row['Category']}<br>count={row['Count']}",
+                "value": float(row["Count"]),
+                "size": round(size, 2),
+                "color": CATEGORY_COLORS.get(row["Category"], "#577590"),
+                "font": {"color": "#0f172a", "size": 18, "face": "Arial"},
+            }
+        )
+
+    edges = []
+    for row in edges_df.to_dict("records"):
+        edges.append(
+            {
+                "from": row["Source"],
+                "to": row["Target"],
+                "value": float(row["Weight"]),
+                "width": round(0.8 + float(row["Weight"]) * 1.15, 2),
+                "title": f"co-occurrence={row['Weight']}",
+                "color": {"color": "#94a3b8", "opacity": 0.35},
+                "smooth": {"enabled": True, "type": "dynamic"},
+            }
+        )
+    return {"nodes": nodes, "edges": edges}
+
+
+def build_index_html(html_dir: Path, gephi_dir: Path, periods: list[str], min_edge_weight: int, title_prefix: str = "") -> None:
+    preview_payloads: dict[str, dict[str, list[dict[str, object]]]] = {}
+    for period in periods:
+        nodes_path = gephi_dir / f"topic_nodes_{period}.csv"
+        edges_path = gephi_dir / f"topic_edges_{period}.csv"
+        if nodes_path.exists() and edges_path.exists():
+            preview_payloads[period] = build_preview_payload(nodes_path, edges_path, min_edge_weight)
+
     lines = [
         "<!doctype html>",
-        '<html lang="en"><head><meta charset="utf-8"><title>Topic Evolution Outputs</title></head><body>',
+        "<html lang=\"en\">",
+        "<head>",
+        "<meta charset=\"utf-8\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "<title>Topic Evolution Outputs</title>",
+        '<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>',
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />',
+        "<style>",
+        ":root { color-scheme: light; --bg:#f8fafc; --panel:#ffffff; --ink:#0f172a; --muted:#475569; --line:#dbe3ee; --accent:#2563eb; }",
+        "* { box-sizing: border-box; }",
+        "body { margin:0; font-family: Arial, sans-serif; background:var(--bg); color:var(--ink); }",
+        ".page { max-width: 1920px; margin: 0 auto; padding: 20px; }",
+        "h1 { margin: 0 0 8px; font-size: 2rem; }",
+        "h2 { margin: 0 0 12px; font-size: 1.25rem; }",
+        "p.lead { margin: 0 0 24px; color: var(--muted); }",
+        ".panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 40px rgba(15,23,42,0.08); overflow: hidden; }",
+        ".panel-header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 16px 20px; border-bottom: 1px solid var(--line); }",
+        ".panel-header h2 { margin:0; font-size:1.1rem; }",
+        ".panel-header a { color: var(--accent); text-decoration: none; font-weight: 600; }",
+        ".panel iframe { display:block; width:100%; border:0; background:#fff; }",
+        ".sankey-frame { height: 1080px; }",
+        ".section { margin-top: 28px; }",
+        ".section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom: 14px; }",
+        ".section-head p { margin:0; color: var(--muted); }",
+        ".gallery { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; align-items:start; }",
+        ".network-card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 40px rgba(15,23,42,0.08); overflow:hidden; }",
+        ".network-meta { display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 14px 16px; border-bottom: 1px solid var(--line); }",
+        ".network-meta strong { font-size: 1rem; }",
+        ".network-meta a { color: var(--accent); text-decoration:none; font-weight:600; white-space:nowrap; }",
+        ".network-preview { width:100%; height:720px; background:#fff; }",
+        ".network-preview canvas { outline:none; }",
+        "@media (max-width: 1200px) { .gallery { grid-template-columns: 1fr; } .sankey-frame { height: 880px; } .network-preview { height: 720px; } }",
+        "</style>",
+        "</head><body>",
+        "<div class=\"page\">",
         f"<h1>{title_prefix}Topic Evolution Outputs</h1>".replace("  ", " ").strip(),
-        "<ul>",
+        f"<p class=\"lead\">Sankey transition overview followed by period-wise topic clustering views for {', '.join(periods)}.</p>",
+        "<section class=\"panel\">",
+        "<div class=\"panel-header\">",
+        f"<h2>{title_prefix}Topic Transition Sankey</h2>".replace("  ", " ").strip(),
+        '<a href="topic_transition_sankey.html">Open standalone</a>',
+        "</div>",
+        '<iframe class="sankey-frame" src="topic_transition_sankey.html" loading="lazy" title="Topic Transition Sankey"></iframe>',
+        "</section>",
+        '<section class="section">',
+        '<div class="section-head">',
+        "<div>",
+        "<h2>Period-wise Topic Networks</h2>",
+        "<p>Three clustering views are arranged side by side for direct comparison across periods.</p>",
+        "</div>",
+        "</div>",
+        '<div class="gallery">',
     ]
-    for label, href in links:
-        lines.append(f'<li><a href="{href}">{label}</a></li>')
-    lines.extend(["</ul>", "</body></html>"])
+    for period in periods:
+        title = f"{title_prefix}Topic Network {period}".replace("  ", " ").strip()
+        href = f"topic_network_{period}.html"
+        lines.extend(
+            [
+                '<article class="network-card">',
+                '<div class="network-meta">',
+                f"<strong>{period}</strong>",
+                f'<a href="{href}">Open standalone</a>',
+                "</div>",
+                f'<div class="network-preview" id="network-preview-{period}"></div>',
+                "</article>",
+            ]
+        )
+    lines.extend(
+        [
+            "</div>",
+            "</section>",
+            "<script>",
+            "const previewOptions = {",
+            "  autoResize: true,",
+            "  interaction: { hover: true, navigationButtons: false, keyboard: false },",
+            "  physics: {",
+            "    enabled: true,",
+            "    solver: 'forceAtlas2Based',",
+            "    stabilization: { iterations: 1200, fit: true },",
+            "    minVelocity: 0.15,",
+            "    forceAtlas2Based: { gravitationalConstant: -80, centralGravity: 0.01, springLength: 170, springConstant: 0.04, damping: 0.9, avoidOverlap: 0.8 }",
+            "  },",
+            "  edges: { smooth: { type: 'dynamic' }, color: { inherit: false } },",
+            "  nodes: { shape: 'dot', borderWidth: 1.5, borderWidthSelected: 2, scaling: { min: 10, max: 36 } }",
+            "};",
+        ]
+    )
+    for period in periods:
+        payload = preview_payloads.get(period, {"nodes": [], "edges": []})
+        var_name = f"data_{period.replace('-', '_')}"
+        lines.extend(
+            [
+                f"const {var_name} = {json.dumps(payload)};",
+                f"(function() {{",
+                f"  const container = document.getElementById('network-preview-{period}');",
+                f"  const data = {{ nodes: new vis.DataSet({var_name}.nodes), edges: new vis.DataSet({var_name}.edges) }};",
+                f"  const network = new vis.Network(container, data, previewOptions);",
+                f"  network.once('stabilizationIterationsDone', function() {{",
+                f"    network.setOptions({{ physics: false }});",
+                f"    network.fit({{ animation: false }});",
+                f"    network.moveTo({{ scale: 0.95 }});",
+                f"  }});",
+                f"}})();",
+            ]
+        )
+    lines.extend(["</script>", "</div>", "</body></html>"])
     (html_dir / "index.html").write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -209,7 +348,7 @@ def run_pipeline(
     sankey_nodes_df.to_csv(sankey_nodes, index=False, encoding="utf-8")
     sankey_edges_df.to_csv(sankey_edges, index=False, encoding="utf-8")
     render_sankey(sankey_nodes_df, sankey_edges_df, sankey_html, sankey_min_weight)
-    build_index_html(paths["html"], periods, title_prefix=title_prefix)
+    build_index_html(paths["html"], paths["gephi"], periods, min_edge_weight, title_prefix=title_prefix)
     build_root_html_index(paths["html_root"])
 
 
